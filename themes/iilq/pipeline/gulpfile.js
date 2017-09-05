@@ -49,12 +49,12 @@ gulp.task("image-resize", () => {
       imageresize({ width: imagehalf }),
       os.cpus().length
     ))
-    .pipe(gulp.dest("../static/assets/images/_half"))
+    .pipe(gulp.dest("../static/assets/images/half"))
     .pipe(parallel(
       imageresize({ width: imagethumb }),
       os.cpus().length
     ))
-    .pipe(gulp.dest("../static/assets/images/_thumb"));
+    .pipe(gulp.dest("../static/assets/images/thumb"));
 });
 
 

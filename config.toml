@@ -1,5 +1,5 @@
 archetypedir = "archetypes"
-baseurl = "https://www.innovationlogistique.com"
+baseurl = "https://www.innovationlogistique.com/"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
@@ -7,16 +7,10 @@ canonifyurls = true
 config = "config.toml"
 contentdir = "content"
 copyright = ""
-# Set to true is you don't want livereload in local development
-disableLiveReload= false
-# Set to false if you want rss xml files auto-generated
-disableRSS = false
-# Set to false if you want a sitemap.xml created at the site root
-disableSitemap = false
-# Set the unicode character used for the "return" link in page footnotes.
-footnotereturnlinkcontents = "↩"
+
 # Create an array of files you don't want hugo to build
 ignoreFiles = []
+defaultContentLanguage = "fr"
 languageCode = "en-us"
 # Point the generator to the folder used for layouts and templating
 layoutDir = "layouts"
@@ -32,7 +26,7 @@ preserveTaxonomyNames = true
 # This sets the title of the directory where hugo builds and pushes the final site when running "Hugo" (ie, without "server")
 publishdir = "public"
 pygmentsUseClasses = true
-relativeURLs = true
+# relativeURLs = true
 source = ""
 # This is the top-level, global site title
 title = "IILQ"
@@ -46,7 +40,7 @@ verboseLog = false
 watch = true
 
 [permalinks]
-  singles = "/:title/"
+  singles = "/:slug/"
 
 #CUSTOM PARAMS
 [params]
@@ -75,7 +69,7 @@ watch = true
   ## Setting this to true will add a "noindex" to *every* page on the site
   removefromexternalsearch = true
   ## This is used when the BaseURL does not need to modified (eg, in share links)
-  siteaddress = ""
+  siteaddress = "https://www.innovationlogistique.com/"
   ## Set to true to add Google Tag Manager to the Site
   addgtm = false
   gtmid = ""

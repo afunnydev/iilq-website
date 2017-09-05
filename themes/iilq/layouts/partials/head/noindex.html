@@ -1,1 +1,5 @@
-{{- if .Site.Params.RemoveFromExternalSearch -}}<meta name="robots" content="noindex">{{- end -}}
+{{- if .Params.noindex -}}
+<meta name="robots" content="noindex">
+{{- else if .Site.Params.RemoveFromExternalSearch -}}
+<meta name="robots" content="noindex">
+{{- end -}}

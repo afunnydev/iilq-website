@@ -17,7 +17,7 @@
 		{{- end -}}
 	{{- end -}}
 {{ end }}
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="{{.Lang}}">
 <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
 <meta property="og:image" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}">
 <meta property="og:image:secure_url" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}"/>
