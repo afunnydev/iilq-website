@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dummy on IILQ</title>
+    <link>https://www.innovationlogistique.com/articles/</link>
+    <description>Recent content in Dummy on IILQ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.innovationlogistique.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dummy1</title>
+      <link>https://www.innovationlogistique.com/articles/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.innovationlogistique.com/articles/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dummy2</title>
+      <link>https://www.innovationlogistique.com/articles/dummy2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.innovationlogistique.com/articles/dummy2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
