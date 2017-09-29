@@ -11,25 +11,25 @@
     
     
     <item>
-      <title>Dummy1</title>
-      <link>https://www.innovationlogistique.com/articles/test/</link>
+      <title></title>
+      <link>https://www.innovationlogistique.com/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.innovationlogistique.com/articles/test/</guid>
+      <guid>https://www.innovationlogistique.com/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Dummy2</title>
-      <link>https://www.innovationlogistique.com/articles/dummy2/</link>
+      <title></title>
+      <link>https://www.innovationlogistique.com/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.innovationlogistique.com/articles/dummy2/</guid>
+      <guid>https://www.innovationlogistique.com/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Dummy3</title>
+      <title>Contactez-nous pour toutes vos questions</title>
       <link>https://www.innovationlogistique.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -38,20 +38,39 @@
     </item>
     
     <item>
-      <title>Dummy4</title>
-      <link>https://www.innovationlogistique.com/iilq/</link>
+      <title>Dummy1</title>
+      <link>https://www.innovationlogistique.com/articles/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.innovationlogistique.com/iilq/</guid>
+      <guid>https://www.innovationlogistique.com/articles/test/</guid>
+      <description>This is an article, for the best and the worst
+Testing title Hello</description>
+    </item>
+    
+    <item>
+      <title>Dummy2</title>
+      <link>https://www.innovationlogistique.com/articles/test2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.innovationlogistique.com/articles/test2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Institut d&#39;Innovation en Logistique du Québec</title>
-      <link>https://www.innovationlogistique.com/</link>
+      <link>https://www.innovationlogistique.com/_%CC%A7index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.innovationlogistique.com/</guid>
+      <guid>https://www.innovationlogistique.com/_%CC%A7index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimiser votre chaîne logistique</title>
+      <link>https://www.innovationlogistique.com/iilq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.innovationlogistique.com/iilq/</guid>
       <description></description>
     </item>
     

@@ -72,7 +72,7 @@ watch = true
   siteaddress = "https://www.innovationlogistique.com/"
   ## Set to true to add Google Tag Manager to the Site
   addgtm = false
-  gtmid = ""
+  GTMID = ""
   # Set to true to include a CDN call to FontAwesome
   usefontawesome = false
 # MARKDOWN

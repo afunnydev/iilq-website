@@ -2,8 +2,9 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
-const imagefull = 1200;
-const imagehalf = 600;
+const imagefull = 1600;
+const imagehalf = 1200;
+const imagequart = 600
 const imagemin = require("gulp-imagemin");
 const imageresize = require('gulp-image-resize');
 const imagethumb = 80;
@@ -49,12 +50,17 @@ gulp.task("image-resize", () => {
       imageresize({ width: imagehalf }),
       os.cpus().length
     ))
-    .pipe(gulp.dest("../static/assets/images/half"))
+    .pipe(gulp.dest("../static/assets/images/_half"))
+    .pipe(parallel(
+      imageresize({ width: imagequart }),
+      os.cpus().length
+    ))
+    .pipe(gulp.dest("../static/assets/images/_quart"))
     .pipe(parallel(
       imageresize({ width: imagethumb }),
       os.cpus().length
     ))
-    .pipe(gulp.dest("../static/assets/images/thumb"));
+    .pipe(gulp.dest("../static/assets/images/_thumb"));
 });
 
 

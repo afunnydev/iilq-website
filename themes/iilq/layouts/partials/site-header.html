@@ -1,4 +1,54 @@
 {{- partial "header/google-tag-manager.html" . -}}
 <header id="site-header" class="site-header">
-
+	<div id="top-bar">
+		
+	</div>
+	<div id="main-header">
+		<div id="logo">
+			<a href='/{{ if eq .Lang "en" }}en{{ end }}'>
+				<img src="/icons/Logo_IILQ.png" alt="Logo IILQ">
+			</a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>
+					<a href="#">Innovation</a>
+					<ul>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Intégré</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Transfert</a>
+					<ul>
+						<li><a href="#">ERP</a></li>
+						<li><a href="#">WMS</a></li>
+						<li><a href="#">TMS</a></li>
+						<li><a href="#">CRM</a></li>
+						<li><a href="#">RFID</a></li>
+						<li><a href="#">GS1 128</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">LogisTIC 4.0</a>
+					<ul>
+						<li><a href="#">Conférence</a></li>
+						<li>
+							<a href="#">Ateliers Découvertes</a>
+							<ul>
+								<li><a href="#">Découvrir</a></li>
+								<li><a href="#">Choisir</a></li>
+								<li><a href="#">Essayer</a></li>
+								<li><a href="#">Cadrer</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Partenaires</a></li>
+				<li><a href="#">Clients</a></li>
+				<li><a href="#">IILQ</a></li>
+				<li><a href="#">Blogue</a></li>
+			</ul>
+		</div>
+	</div>
 </header>

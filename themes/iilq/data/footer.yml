@@ -1,0 +1,9 @@
+footer:
+  - fr:
+    - newslettertxt: "Inscrivez-vous à notre infolettre"
+    - nameph: "Votre nom"
+    - emailph: "Courriel"
+  - en:
+    - newslettertxt: "Subscribe to our newsletter"
+    - nameph: "Your name"
+    - emailph: "Email"

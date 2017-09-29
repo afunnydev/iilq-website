@@ -16,15 +16,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.innovationlogistique.com/articles/test/</guid>
-      <description></description>
+      <description>This is an article, for the best and the worst
+Testing title Hello</description>
     </item>
     
     <item>
       <title>Dummy2</title>
-      <link>https://www.innovationlogistique.com/articles/dummy2/</link>
+      <link>https://www.innovationlogistique.com/articles/test2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.innovationlogistique.com/articles/dummy2/</guid>
+      <guid>https://www.innovationlogistique.com/articles/test2/</guid>
       <description></description>
     </item>
     
