@@ -1,5 +1,203 @@
 {{ define "main" }}
 <main class="main">
-	
+	<header id="inner-header-slider">
+      <div id="hero-slider">
+          
+          <div class="item hero-slide">
+              <img src="/img/slider/slider1.jpg" alt="">
+              <div class="slider-caption">
+                  <span class="title" data-animation="fadeInDown" data-delay="0.2s">Logistic 4.0</span>
+                  <p data-animation="fadeInUp" data-delay="0.2s">Par: Guy Normandeau</p>
+                  <a href="#" class="read-btn" data-animation="fadeIn" data-delay="0.4s">Lire l’article</a>
+              </div>
+              <!-- // slider caption  -->
+          </div>
+          <!-- // slider item  -->
+
+          <div class="item hero-slide">
+              <img src="/img/slider/slider2.jpg" alt="">
+              <div class="slider-caption">
+                  <span class="title" data-animation="fadeInDown" data-delay="0.2s">Logistic 4.0</span>
+                  <p data-animation="fadeInUp" data-delay="0.2s">Par: Guy Normandeau</p>
+                  <a href="#" class="read-btn" data-animation="fadeIn" data-delay="0.4s">Lire l’article</a>
+              </div>
+              <!-- // slider caption  -->
+          </div>
+          <!-- // slider item  -->
+
+
+      </div>
+      <!-- // hero slider  -->
+  </header>
+  <!-- // hero  -->
+
+  <section id="blog-listing-page">
+      <div class="container">
+          
+          <div id="blog-articles-list">
+              
+              <div id="popular-blogs">
+                  <header>
+                      <h4>Articles populaire</h4>
+                  </header>
+
+                  <div class="popular-articles-slider">
+                      
+                      <div class="item">
+                          <div class="article-box">
+                              <img src="/img/misc/blgo1.jpg" alt="" class="img-responsive">
+                              <a href="#">
+                                  <div class="article-caption">
+                                      <h5>Transfert de technologie</h5>
+                                      <p>Ulparcie ndelentemo cor aut...</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <!-- // article  -->
+
+                      <div class="item">
+                          <div class="article-box">
+                              <img src="/img/misc/blgo1.jpg" alt="" class="img-responsive">
+                              <a href="#">
+                                  <div class="article-caption">
+                                      <h5>Transfert de technologie</h5>
+                                      <p>Ulparcie ndelentemo cor aut...</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <!-- // article  -->
+
+                      <div class="item">
+                          <div class="article-box">
+                              <img src="/img/misc/blgo1.jpg" alt="" class="img-responsive">
+                              <a href="#">
+                                  <div class="article-caption">
+                                      <h5>Transfert de technologie</h5>
+                                      <p>Ulparcie ndelentemo cor aut...</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <!-- // article  -->
+
+                      <div class="item">
+                          <div class="article-box">
+                              <img src="/img/misc/blgo1.jpg" alt="" class="img-responsive">
+                              <a href="#">
+                                  <div class="article-caption">
+                                      <h5>Transfert de technologie</h5>
+                                      <p>Ulparcie ndelentemo cor aut...</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <!-- // article  -->
+
+                      <div class="item">
+                          <div class="article-box">
+                              <img src="/img/misc/blgo1.jpg" alt="" class="img-responsive">
+                              <a href="#">
+                                  <div class="article-caption">
+                                      <h5>Transfert de technologie</h5>
+                                      <p>Ulparcie ndelentemo cor aut...</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <!-- // article  -->                                                                                                                
+
+
+                  </div>
+                  <!-- // slider  -->
+
+              </div>
+              <!-- // popular articles  -->
+
+              <div class="row">
+
+                  <div class="col-lg-8 col-md-8 col-sm-8">
+                      <div id="blog-left-column">
+                        {{ range .Pages }}
+                          <article class="blog-article">
+                              <div class="image-holder">
+                                  <a href="#">
+                                      <img src="/img/misc/blog-listing.jpg" alt="" class="img-responsive">
+                                  </a>
+                              </div>
+                              <!-- // iamge holder  -->
+                              <h3>Logistic 4.0</h3>
+                              <p>Ulparcie ndelentemo cor aut verspic ipsant oditatum vid quidesciur mo eosam facerum reptassim vent, velis autem qui con nost ipictem ea conse est, nonestestrum endipsae nonsed mo eat qui acearibus coreiustia natet, sam laboritate od quid modi omnimo corati tem est accusdandia serum venissint moloris ut untorum exped que pelecte debit...</p>
+                              <footer>
+                                  <div class="meta-info">
+                                      <ul>
+                                          <li><a href="#">#Logistic4.0</a></li>
+                                          <li><a href="#">#transport</a></li>
+                                          <li><a href="#">#innovatation</a></li>
+                                      </ul>
+                                  </div>
+                                  <!-- // meta  -->                                
+                                  <a href="{{ .Permalink }}" class="read-btn">Lire l’article</a>
+                              </footer>
+                          </article>
+                          <!-- // article  -->
+												{{ end }}
+                          
+                          
+                          <div id="pagination-block">
+                              <ul>
+                                  <li class="prev-btn"><a href="#">Précédent</a></li>
+                                  <li><a href="#">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#">3</a></li>
+                                  <li class="next-btn"><a href="#">Suivant</a></li>
+                              </ul>
+                          </div>
+                          <!-- // pagination -->
+
+                      </div>
+                      <!-- // blog left column  -->                            
+                  </div>
+                  <!-- // col md 8  -->
+
+                  <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4" style="overflow: hidden;">
+                      <aside id="blog-sidebar">
+                          
+                          <div id="social-bar">
+                              <h5>Suivez-nous sur :</h5>
+                              <a href="#" target="_blank"><span class="icon-twitter"></span></a>
+                              <a href="#" target="_blank"><span class="icon-fb"></span></a>
+                              <a href="#" target="_blank"><span class="icon-linkedin"></span></a>
+                              <a href="#" target="_blank"><span class="icon-googleplus"></span></a>                                
+                          </div>
+                          <!-- // socials  -->
+
+                          <div class="category-box">
+                              <h5>ARTICLE PAR SUJET</h5>
+                              <ul>
+                                  <li><a href="#">Ulparcie</a></li>
+                                  <li><a href="#">Delentemo</a> </li>
+                                  <li><a href="#">Verspic</a> </li>
+                                  <li><a href="#">Opsant</a> </li>
+                              </ul>
+                          </div>
+                          <!-- // category  -->
+
+                      </aside>
+                  </div>
+                  <!-- // blog sidebar  -->                        
+
+              </div>
+              <!-- // row  -->
+
+
+          </div>
+          <!-- // list of articles  -->
+
+      </div>
+      <!-- // container  -->
+  </section>
+  <!-- // blog listing  -->
 </main>
 {{ end }}

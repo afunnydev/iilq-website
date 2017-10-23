@@ -1,240 +1,249 @@
 backend:
   name: github
-  repo: felixdb/localc # Path to your Github repository
-  branch: master # Branch to update (master by default)
+  repo: felixdb/clinique-tandem # Path to your Github repository
+  branch: development # Branch to update (master by default)
 
-media_folder: "themes/iilq/source-images" # Folder where user uploaded files should go
-public_folder: "assets/images" # The src attribute for uploaded media will begin with img/uploads
+media_folder: "themes/clinique-tandem/static/assets/images/uploads" # Folder where user uploaded files should go
+public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with
 
 publish_mode: editorial_workflow
 
 collections:
   - name: "settings"
-    label: "Paramètres"
+    label: "Settings"
     editor:
       preview: false
     files:
-      - name: "coordonnees"
-        label: "Coordonnées"
-        file: "themes/iilq/data/coordonnees.yml"
-        description: "C'est ici que vous pourrez modifier vos coordonnées."
+      - name: "informations"
+        label: "Informations sur l'entreprise"
+        file: "data/settings.yml"
+        description: "Modification des informations sur l'entreprise"
         fields:
-          - name: coordonnees
-            label: Coordonnées
+          - name: socials
+            label: Réseaux sociaux
             widget: object
+            description: "Si le champ est vide, l'icône n'apparaitra pas."
             create: false
             fields:
-              - {label: "Français", name: "fr", widget: "object"}
-              - {label: "Anglais", name: "en", widget: "object"}
-              - {label: "Numéro de téléphone", name: "phone", widget: "string"}
-              - {label: "Téléphone condensé", name: "", widget: "string"}
-  #     - name: "equipe"
-  #       label: "Membres de l'équipe"
-  #       file: "data/equipe.yml"
-  #       description: "Votre équipe, ne pas mettre d'accent dans les noms de fichier svp!"
-  #       fields:
-  #         - name: equipe
-  #           label: Membre
-  #           widget: list
-  #           create: true 
-  #           fields:
-  #             - {label: "Nom", name: "name", widget: "string"}
-  #             - {label: "Fonction en français", name: "fonction", widget: "string"}
-  #             - {label: "Fonction en anglais", name: "position", widget: "string"}
-  #             - {label: "Ordre", name: "weight", widget: "number"}
-  #             - {label: "Image", name: "photo", widget: "image"}
-  #     - name: "temoignage"
-  #       label: "Témoignages"
-  #       file: "data/temoignages.yml"
-  #       fields:
-  #         - name: orthesepro
-  #           label: "Orthèses - Professionels"
-  #           widget: object
-  #           fields:
-  #             - {label: "Témoignages - FR", name: "temoignagefr", widget: "text"}
-  #             - {label: "Témoignages - EN", name: "temoignageen", widget: "text"}
-  #             - {label: "Témoin - FR", name: "temoinfr", widget: "string"}
-  #             - {label: "Témoin - EN", name: "temoinen", widget: "string"}
-  #             - {label: "Image", name: "image", widget: "image"}
-  #         - name: orthesepatients
-  #           label: "Orthèses - Patients"
-  #           widget: object
-  #           fields:
-  #             - {label: "Témoignages - FR", name: "temoignagefr", widget: "text"}
-  #             - {label: "Témoignages - EN", name: "temoignageen", widget: "text"}
-  #             - {label: "Témoin - FR", name: "temoinfr", widget: "string"}
-  #             - {label: "Témoin - EN", name: "temoinen", widget: "string"}
-  #             - {label: "Image", name: "image", widget: "image"}
-  #         - name: cryovizionpro
-  #           label: "Cryovizion - Professionels"
-  #           widget: object
-  #           fields:
-  #             - {label: "Témoignages - FR", name: "temoignagefr", widget: "text"}
-  #             - {label: "Témoignages - EN", name: "temoignageen", widget: "text"}
-  #             - {label: "Témoin - FR", name: "temoinfr", widget: "string"}
-  #             - {label: "Témoin - EN", name: "temoinen", widget: "string"}
-  #             - {label: "Image", name: "image", widget: "image"}
-  #         - name: cryovizionpatients
-  #           label: "Cryovizion - Patients"
-  #           widget: object
-  #           fields:
-  #             - {label: "Témoignages - FR", name: "temoignagefr", widget: "text"}
-  #             - {label: "Témoignages - EN", name: "temoignageen", widget: "text"}
-  #             - {label: "Témoin - FR", name: "temoinfr", widget: "string"}
-  #             - {label: "Témoin - EN", name: "temoinen", widget: "string"}
-  #             - {label: "Image", name: "image", widget: "image"}
-      - name: "categoriesorg"
-        label: "Organisation des catégories"
-        file: "data/categoriesorg.yml"
+              - {label: "Facebook", name: "facebookurl", widget: "string", required: false}
+              - {label: "Twitter", name: "twitterurl", widget: "string", required: false}
+              - {label: "Youtube", name: "youtubeurl", widget: "string", required: false}
+              - {label: "LinkedIn", name: "linkedinurl", widget: "string", required: false}
+          - {label: "Numéro de téléphone", name: "phone", widget: "string"}
+          - {label: "Numéro de téléphone, version web", name: "mphone", widget: "string", description: "Gardez le même format"}
+          - {label: "Courriel", name: "email", widget: "string"}
+          - {label: "Description par défaut du site", name: "sitedescription", widget: "string", description: "Utilisez moins de 160 caractères", required: false}
+          - {label: "Image par défaut pour les réseaux sociaux", name: "defaultsocialimage", widget: "image", required: false}
+          - {label: "Retirer des moteurs de recherche", name: "removefromexternalsearch", widget: "boolean", required: false, default: false}
+      - name: "equipe"
+        label: "Membres de l'équipe"
+        file: "data/equipe.yml"
+        description: "Votre équipe, ne pas mettre d'accent dans les noms de fichier svp!"
         fields:
-          - name: categories
-            label: Catégories
+          - name: equipe
+            label: Membre
             widget: list
+            create: true 
             fields:
               - {label: "Nom", name: "nom", widget: "string"}
-              - {label: "Lien", name: "url", widget: "string", required: false}
-              - {label: "Nombre d'items", name: "nombre", widget: "number"}
-              - {label: "Image", name: "photo", widget: "image", required: false}
-              - {label: "Sous-catégories", name: "souscategories", widget: "list", required: false}
-
-  - name: "produitsfr" # Used in routes, e.g. /admin/collections/blog
-    label: "Produits-FR" # Used in the UI
-    folder: "content/produits" # The path to the folder where the documents are stored
-    slug: "{{id}}"
+              - {label: "Titre", name: "titre", widget: "string"}
+              - {label: "Description", name: "description", widget: "text", required: false}
+              - {label: "Image", name: "photo", widget: "image", default: "/assets/images/placeholder-team.jpeg"}
+              - {label: "Ordre", name: "ordre", widget: "number", required: false}
+  - name: "services" # Used in routes, e.g. /admin/collections/blog
+    label: "Services" # Used in the UI
+    folder: "content/services" # The path to the folder where the documents are stored
+    slug: "{{identifiant}}"
+    create: true # Allow users to create new documents in this collection
+    editor:
+      preview: false
+    filter: 
+      field: "i18nlanguage"
+      value: "fr"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre SEO", name: "title", widget: "string"}
+      - {label: "Description SEO", name: "description", widget: "text", required: false}
+      - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "string"}
+      - label: "Aperçu" 
+        name: "resume" 
+        widget: "object" 
+        fields:
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Description", name: "court", widget: "string"}
+      - {label: "Image", name: "image", widget: "image" ,required: false}
+      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
+      - {label: "Retirer le bouton?", name: "removebutton", widget: "boolean", required: false, default: false}
+      - {label: "Ordre", name: "ordre", widget: "number", required: false}
+      - {label: "Rendre le service invisible?", name: "draft", widget: "boolean", required: false, default: false}
+      - {label: "Texte", name: "body", widget: "markdown", required: false}
+  - name: "formations" # Used in routes, e.g. /admin/collections/blog
+    label: "Formations" # Used in the UI
+    folder: "content/formations" # The path to the folder where the documents are stored
+    slug: "{{identifiant}}"
+    editor:
+      preview: false
     create: true # Allow users to create new documents in this collection
     filter: 
       field: "i18nlanguage"
       value: "fr"
     fields: # The fields for each document, usually in front matter
-      - {label: "Backorder?", name: "draft", widget: "boolean", required: false, default: false}
-      - {label: "Nom officiel", name: "title", widget: "string"}
-      - {label: "Description SEO", name: "description", widget: "text", , required: false}
-      - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test/"]}
-      - {label: "Nom d'affichage du créateur", name: "nomcreateur", widget: "string", default: "Local C"}
-      - {label: "Délai de livraison", name: "delai", widget: "string", default: "3 à 4 semaines"}
-      - {label: "Image principale", name: "image", widget: "image"}
-      - label: "Toutes les images (incluant la principale)"
-        name: "images"
-        widget: "list"
-        fields: 
-          - {label: "Image", name: "url", widget: "image" }
-      - {label: "Identifiant du créateur", name: "createurs", widget: "relation", collection: "createursfr", searchFields: ["id"], valueField: "id"}
-      - {label: "Catégories", name: "categories", widget: "list"}
-      - label: "Quantité et prix (qui formera le tableau)"
-        name: "prix"
-        widget: "list"
-        fields: 
-          - {label: "Quantité", widget: "string", name: "quantite" }
-          - {label: "Prix pour cette quantité (sans symbole)", widget: "number", name: "montant" }
-      - {label: "Note à propos du prix", name: "noteprix", widget: "string", required: false}
-      - {label: "Interval de prix (pour l'affichage en catalogue)", name: "pricerange", widget: "string", default: "12,50$ à 17,50$"}
-      - label: "Variantes (options pour le client)"
-        name: "variante"
-        widget: "list"
-        required: false
-        fields: 
-          - {label: "Nom de la variante", widget: "string", name: "nom" }
-          - {label: "Les différents choix pour cette variante", widget: "list", name: "choix" }
-      - {label: "Personnalisations possibles", name: "personnalisation", widget: "list"}
-      - {label: "Produits connexes (utiliser les identifiants)", name: "crosssell", widget: "list"}
-      - {label: "Identifiant UNIQUE", name: "id", default: "01-trousse-confort", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-produit"], widget: "relation", collection: "produitsfr", searchFields: ["id"], valueField: "id"}
+      - {label: "Titre SEO", name: "title", widget: "string"}
+      - {label: "Description SEO", name: "description", widget: "text", required: false}
+      - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - label: "Aperçu" 
+        name: "resume" 
+        widget: "object" 
+        fields:
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Note", name: "note", widget: "string"}
+          - {label: "Brandcrumbs - Titre", name: "btitre", widget: "string"}
+      - label: "Lieu" 
+        name: "lieu" 
+        widget: "object" 
+        fields:
+          - {label: "Visible?", name: "need", widget: "boolean", required: false, default: true}
+          - {label: "Texte du lien", name: "text", widget: "string", required: false}
+          - {label: "Lien", name: "link", widget: "string", required: false}
+      - label: "Lien ressources" 
+        name: "toplink" 
+        widget: "object" 
+        fields:
+          - {label: "Visible?", name: "need", widget: "boolean", required: false, default: true}
+          - {label: "Texte du lien", name: "text", widget: "string", required: false}
+          - {label: "Lien", name: "link", widget: "string", required: false}
+      - label: "Professeurs" 
+        name: "teacher" 
+        create: true
+        widget: "list" 
+        fields:
+          - {label: "Image", name: "timage", widget: "image"}
+          - {label: "Description", name: "tdesc", widget: "string"} 
+      - label: "Ressources - Sidebar" 
+        name: "ressources" 
+        widget: "object" 
+        fields:
+          - {label: "Visible?", name: "need", widget: "boolean", required: false, default: false}
+          - {label: "Texte", name: "text", widget: "markdown", required: false}
       - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
-      - {label: "Menu", name: "menuposition", widget: "hidden", default: "catalogue"}
-      - {label: "Description du produit", name: "body", widget: "markdown"}
-      - {label: "Type", name: "type", widget: "hidden", default: "produits"}
-
-  - name: "produitsen" # Used in routes, e.g. /admin/collections/blog
-    label: "Produits-EN" # Used in the UI
-    folder: "content/produits" # The path to the folder where the documents are stored
-    slug: "{{id}}.{{i18nlanguage}}"
-    create: true # Allow users to create new documents in this collection
-    filter: 
-      field: "i18nlanguage"
-      value: "en"
-    fields: # The fields for each document, usually in front matter
-      - {label: "Backorder?", name: "draft", widget: "boolean", required: false, default: false}
-      - {label: "Nom officiel", name: "title", widget: "string"}
-      - {label: "Description SEO", name: "description", widget: "text", , required: false}
-      - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test/"]}
-      - {label: "Nom d'affichage du créateur", name: "nomcreateur", widget: "string", default: "Local C"}
-      - {label: "Délai de livraison", name: "delai", widget: "string", default: "3 à 4 semaines"}
-      - {label: "Image principale", name: "image", widget: "image"}
-      - label: "Toutes les images (incluant la principale)"
-        name: "images"
-        widget: "list"
-        fields: 
-          - {label: "Image", name: "url", widget: "image" }
-      - {label: "Identifiant du créateur", name: "createurs", widget: "relation", collection: "createursen", searchFields: ["id"], valueField: "id"}
-      - {label: "Catégories", name: "categories", widget: "list"}
-      - label: "Quantité et prix (qui formera le tableau)"
-        name: "prix"
-        widget: "list"
-        fields: 
-          - {label: "Quantité", widget: "string", name: "quantite" }
-          - {label: "Prix pour cette quantité (sans symbole)", widget: "number", name: "montant" }
-      - {label: "Note à propos du prix", name: "noteprix", widget: "string", required: false}
-      - {label: "Interval de prix (pour l'affichage en catalogue)", name: "pricerange", widget: "string", default: "12,50$ à 17,50$"}
-      - label: "Variantes (options pour le client)"
-        name: "variante"
-        widget: "list"
-        required: false
-        fields: 
-          - {label: "Nom de la variante", widget: "string", name: "nom" }
-          - {label: "Les différents choix pour cette variante", widget: "list", name: "choix" }
-      - {label: "Personnalisations possibles", name: "personnalisation", widget: "list"}
-      - {label: "Produits connexes (utiliser les identifiants)", name: "crosssell", widget: "list"}
-      - {label: "Identifiant UNIQUE", name: "id", default: "01-trousse-confort", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-produit"], widget: "relation", collection: "produitsfr", searchFields: ["id"], valueField: "id"}
-      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "en"}
-      - {label: "Menu", name: "menuposition", widget: "hidden", default: "catalogue"}
-      - {label: "Description du produit", name: "body", widget: "markdown"}
-      - {label: "Type", name: "type", widget: "hidden", default: "produits"}
-  
-  - name: "createursfr" # Used in routes, e.g. /admin/collections/blog
-    label: "Créateurs-FR" # Used in the UI
-    folder: "content/createurs" # The path to the folder where the documents are stored
-    slug: "{{id}}"
+      - {label: "Ordre", name: "ordre", widget: "number", required: false}
+      - {label: "Rendre le service invisible?", name: "draft", widget: "boolean", required: false, default: false}
+      - {label: "Texte", name: "body", widget: "markdown", required: false}
+  - name: "mieux-comprendre" # Used in routes, e.g. /admin/collections/blog
+    label: "Sujets du mieux-comprendre" # Used in the UI
+    folder: "content/ressources/mieux-comprendre" # The path to the folder where the documents are stored
+    slug: "{{identifiant}}"
+    editor:
+      preview: false
     create: true # Allow users to create new documents in this collection
     filter: 
       field: "i18nlanguage"
       value: "fr"
     fields: # The fields for each document, usually in front matter
-      - {label: "Rendre invisible?", name: "draft", widget: "boolean", required: false, default: false}
-      - {label: "Type", name: "type", widget: "hidden", default: "createursindiv"}
-      - {label: "Nom officiel", name: "title", widget: "string"}
-      - {label: "Description SEO", name: "description", widget: "text", , required: false}
-      - {label: "Identifiant UNIQUE", name: "id", default: "localc", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "createursfr", searchFields: ["id"], valueField: "id"}
-      - {label: "Lien (identique à l'identifiant)", name: "slug", widget: "string", default: "localc", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test/"]}
-      - {label: "Site web du créateur (OBLIGATOIRE)", name: "site", widget: "string"}
-      - {label: "Lien vers sa page Facebook", name: "facebook", widget: "string", required: false}
-      - {label: "Lien vers sa page Instagram", name: "instagram", widget: "string", required: false}
-      - {label: "Lien vers sa page Pinterest", name: "pinterest", widget: "string", required: false}
-      - {label: "Lien vers sa page LinkedIn", name: "linkedin", widget: "string", required: false}
-      - {label: "Image ", name: "image", widget: "image"}
+      - {label: "Titre SEO", name: "title", widget: "string"}
+      - {label: "Description SEO", name: "description", widget: "text", required: false}
+      - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "string"}
+      - {label: "Titre", name: "titre", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
-      - {label: "Menu", name: "menuposition", widget: "hidden", default: "createurs"}
-      - {label: "Description du créateur", name: "body", widget: "markdown"}
-
-  - name: "createursen" # Used in routes, e.g. /admin/collections/blog
-    label: "Créateurs-EN" # Used in the UI
-    folder: "content/createurs" # The path to the folder where the documents are stored
-    slug: "{{id}}.{{i18nlanguage}}"
-    create: true # Allow users to create new documents in this collection
-    filter: 
-      field: "i18nlanguage"
-      value: "en"
-    fields: # The fields for each document, usually in front matter
-      - {label: "Rendre invisible?", name: "draft", widget: "boolean", required: false, default: false}
-      - {label: "Type", name: "type", widget: "hidden", default: "createursindiv"}
-      - {label: "Nom officiel", name: "title", widget: "string"}
-      - {label: "Description SEO", name: "description", widget: "text", , required: false}
-      - {label: "Identifiant UNIQUE", name: "id", default: "localc", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "createursfr", searchFields: ["id"], valueField: "id"}
-      - {label: "Lien (identique à l'identifiant)", name: "slug", widget: "string", default: "localc", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test/"]}
-      - {label: "Site web du créateur (OBLIGATOIRE)", name: "site", widget: "string"}
-      - {label: "Lien vers sa page Facebook", name: "facebook", widget: "string", required: false}
-      - {label: "Lien vers sa page Instagram", name: "instagram", widget: "string", required: false}
-      - {label: "Lien vers sa page Pinterest", name: "pinterest", widget: "string", required: false}
-      - {label: "Lien vers sa page LinkedIn", name: "linkedin", widget: "string", required: false}
-      - {label: "Image ", name: "image", widget: "image"}
-      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "en"}
-      - {label: "Menu", name: "menuposition", widget: "hidden", default: "createurs"}
-      - {label: "Description du créateur", name: "body", widget: "markdown"}
+      - {label: "Type", name: "type", widget: "hidden", default: "mieuxcomprendre"}
+      - {label: "Ordre", name: "ordre", widget: "number", required: false}
+      - {label: "Rendre le service invisible?", name: "draft", widget: "boolean", required: false, default: false}
+      - {label: "Texte", name: "body", widget: "markdown", required: false}
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - name: "accueil"
+        label: "Accueil"
+        file: "content/_index.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - label: "Image du haut" 
+            name: "slider" 
+            widget: "object" 
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Texte", name: "quote", widget: "markdown"}
+          - {label: "Services - Titre", name: "servicestitle", widget: "string"}
+          - {label: "À propos - Gauche", name: "aboutleft", widget: "markdown"}
+          - {label: "À propos - Droite", name: "aboutright", widget: "markdown"}
+          - {label: "Contact - Entête", name: "contact", widget: "markdown"} 
+          - {label: "Texte du bouton", name: "btntext", widget: "string"}  
+      - name: "services"
+        label: "Services"
+        file: "content/services/_index.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Root page", name: "rootPage", widget: "hidden", default: "true"}
+          - {label: "Image", name: "image", widget: "image", required: false}
+      - name: "formations"
+        label: "Formations"
+        file: "content/formations/_index.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Texte", name: "body", widget: "markdown", required: false}
+      - name: "a-propos"
+        label: "À propos"
+        file: "content/singles/a-propos.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "a-propos"}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Texte", name: "body", widget: "markdown", required: false}
+      - name: "equipe"
+        label: "Équipe"
+        file: "content/singles/equipe.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "equipe"}
+          - {label: "Image", name: "image", widget: "image", required: false}
+      - name: "liens-utiles"
+        label: "Liens utiles"
+        file: "content/ressources/liens-utiles.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "liens-utiles"}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Texte", name: "body", widget: "markdown", required: false}
+      - name: "faq"
+        label: "FAQ"
+        file: "content/ressources/faq.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "faq"}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Texte", name: "body", widget: "markdown", required: false}
+      - name: "contact"
+        label: "Page contact"
+        file: "content/singles/contact.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "contact"}
+          - {label: "Heures d'ouverture", name: "heures", widget: "string"}
+          - {label: "Services - Menu déroulant", name: "services", widget: "list"}
+          - {label: "Image", name: "image", widget: "image", required: false}

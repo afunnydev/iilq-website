@@ -52,6 +52,18 @@
 		}
 		/* caption */
 		.slider-caption {
+			*:first-child {
+				margin-bottom: 15px;
+				@include breakpoint(phone-xs) {
+					margin-bottom: 15px;
+				}
+				@include breakpoint(tablet) {
+					margin-bottom: 10px;
+				}
+				@include breakpoint(phone)  {
+					margin-bottom: 15px
+				}
+			}
 			@include centre(both);
 			text-align: center;
 			max-width: 900px;
@@ -65,23 +77,18 @@
 				width: 95%;
 			}
 			span.title {
-				text-transform: uppercase;
 				color:$yellow;
 				font-family: $font-heading;
 				font-size: 4em;
 				display: block;
 				letter-spacing: 6px;
-				margin-bottom: 20px;
 				@include breakpoint(tablet) {
 					font-size: 3.4em;
-					margin-bottom: 10px;
 				}
 				@include breakpoint(phone) {
-					margin-bottom: 15px;
 					font-size: 3.5em;
 				}
 				@include breakpoint(phone-xs)  {
-					margin-bottom: 15px;
 					font-size: 3.5em;
 				}
 			}

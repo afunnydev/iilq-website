@@ -4,25 +4,25 @@
 
 #inner-page-content {
 	#intro-block {
-		background:$yellow;
+		background: $yellow;
 		min-height: 300px;
 		position: relative;
 		padding-left: 100px;
 		font-size: 16px;
 		@include small-lap {
-			min-height: 250px;
+			min-height: 225px;
 			font-size: 15px;
 			padding-left: 50px;
 		}
 		@include breakpoint(laptop) {
 			font-size: 13px;
-			min-height: 250px;
+			min-height: 225px;
 			padding-left: 50px;
 		}
 		@include breakpoint(tablet) {
 			font-size: 13px;
 			padding-left: 30px;
-			min-height: 250px;
+			min-height: 225px;
 		}
 		@include breakpoint(phone)  {
 			font-size: 14px;
@@ -62,7 +62,7 @@
 			}
 			h1 {
 				color:$yellow;
-				font-size: 3em;
+				font-size: 2.5em;
 				margin-bottom: 30px;
 				letter-spacing: 4px;
 				@include breakpoint(phone) {
@@ -270,7 +270,7 @@
 		position: relative;
 		background:#efeff0;
 		padding:100px;
-		@incldue breakpoint(laptop) {
+		@include breakpoint(laptop) {
 			font-size: 14px;
 			padding:50px;
 		}
@@ -310,8 +310,8 @@
 			margin-bottom: 30px;
 			color:$blue;
 			font-family: $font-heading;
-			font-size: 3em;
-			letter-spacing: 3px;
+			font-size: 2.3em;
+			letter-spacing: 2px;
 		}
 		p {
 			@include regular-text;

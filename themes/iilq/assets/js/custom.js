@@ -35,16 +35,14 @@ $( '#hero-slider' )
               doAnimations($animatingElements);    
     });
     $('#hero-slider').slick({
-       autoplay: true,
-       autoplaySpeed: 10000,
-       arrows:true,
-       dots: false,
-       fade: true,
-        autoplay: true,
-        autoplaySpeed: 3500,
-        pauseOnFocus: false,
-        pauseOnHover:false,
-        pauseOnDotsHover: false,     
+      arrows:true,
+      dots: false,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      pauseOnFocus: false,
+      pauseOnHover:false,
+      pauseOnDotsHover: false     
     });
     function doAnimations(elements) {
         var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';

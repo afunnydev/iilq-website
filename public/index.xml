@@ -57,6 +57,24 @@ Testing title Hello</description>
     </item>
     
     <item>
+      <title>Dummy3</title>
+      <link>https://www.innovationlogistique.com/articles/test3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.innovationlogistique.com/articles/test3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dummy4</title>
+      <link>https://www.innovationlogistique.com/articles/test4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.innovationlogistique.com/articles/test4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Institut d&#39;Innovation en Logistique du Québec</title>
       <link>https://www.innovationlogistique.com/_%CC%A7index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

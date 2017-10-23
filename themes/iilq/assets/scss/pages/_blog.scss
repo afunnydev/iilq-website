@@ -409,12 +409,14 @@
 				background:$yellow;
 				border-radius:50%;
 				margin-right: 10px;
+				margin-bottom: 10px;
 				text-align: center;
 				font-size: 0.8em;
 				color:$blue-dark;
 				position: relative;
 				@include breakpoint(tablet) {
 					margin-right: 5px;
+					margin-bottom: 5px;
 					width: 30px;
 					height: 30px;
 					line-height: 30px;
@@ -449,6 +451,7 @@
 			position: relative;
 			padding:1.875em;
 			padding-top: 3.750em;
+			margin-bottom: -200px;
 			@include breakpoint(phone) {
 				height: auto!important;
 				min-height: auto!important;

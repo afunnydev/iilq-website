@@ -376,9 +376,9 @@
 			span.title {
 				color:$yellow;
 				font-family: $font-heading;
-				font-size: 4.5em;
+				font-size: 2.5em;
 				display: block;
-				letter-spacing: 6px;
+				letter-spacing: 3px;
 				margin-bottom: 15px;
 				@include breakpoint(phone) {
 					margin-bottom: 15px;
