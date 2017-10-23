@@ -1,4 +1,5 @@
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.sitedescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectiondescriptions .Title }}{{ end }}" />
-<title>{{.Site.Title}}{{if not .IsHome}} | {{.Title}}{{ else }} | Institut d'Innovation en Logistique du Québec{{end}}</title>
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Data.settings.sitedescription }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Data.settings.sitedescription }}{{ end }}" />
+<title>{{.Site.Title}}{{if not .IsHome}} | {{.Title}}{{ else }} | {{.Site.Data.settings.sitetitle}}{{end}}</title>

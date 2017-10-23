@@ -1,0 +1,31 @@
+footer:
+  fr:
+    newslettertxt: "Inscrivez-vous à notre infolettre"
+    nameph: "Votre nom"
+    emailph: "Courriel"
+  en:
+    newslettertxt: "Subscribe to our newsletter"
+    nameph: "Your name"
+    emailph: "Email"
+socials:
+  facebook: "#"
+  twitter: "#"
+  instagram: "#"
+  linkedin: "#"
+  google: "#"
+  youtube: "#"
+  txtfr: "Suivez-nous sur:"
+  txten: "Follow us:"
+coordonnees:
+  fr:
+    street: 1111, rue Lapierre
+    office: Bureau 1.043
+    city: Montréal, Lasalle, QC
+    zip: H8N  2J4
+  en:
+    street: 1111 Lapierre St
+    office: Office 1.043
+    city: Montreal, Lasalle, QC
+    zip: H8N  2J4
+  phone: "514 364-2640"
+  cphone: "+15143642640"

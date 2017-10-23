@@ -13,7 +13,7 @@
     "wordCount": {{.WordCount}},
     "image": {
         "@type": "ImageObject",
-        "url": "{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}",
+        "url": "{{ .Site.Data.settings.shareimgurl }}{{.Params.image | default .Site.Data.settings.defaultimage }}",
         "height": 533,
         "width": 800
     },
@@ -23,10 +23,10 @@
     },
     "publisher": {
         "@type": "Organization",
-        "name": "{{.Site.Params.organizationname}}",
+        "name": "{{.Site.Data.settings.organizationname}}",
         "logo": {
             "@type": "ImageObject",
-            "url": "{{.Site.BaseURL}}/assets/images/{{.Site.Params.defaultsocialimage}}"
+            "url": "{{ .Site.Data.settings.shareimgurl }}{{.Site.Data.settings.defaultimage}}"
         }
     }
 }

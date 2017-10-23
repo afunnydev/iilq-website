@@ -1,0 +1,198 @@
+/*=============================
+=            Fonts            =
+=============================*/
+
+@include font-face('sharpsans', '../fonts/SharpSansDispNo1-Bold');
+@include font-face('sharpsansbook', '../fonts/SharpSansDispNo1-Book');
+@include font-face('zilabold', '../fonts/Zilla Slab Bold Bold');
+@include font-face('zilaregular', '../fonts/Zilla Slab Regular');
+@include font-face('customfonts', '../fonts/customfonts');
+
+/*=====  End of Fonts  ======*/
+
+/*============================================
+=            Define Var for Fonts            =
+============================================*/
+
+$font-main: zilaregular;
+$font-book: sharpsansbook;
+$font-heading: sharpsans;
+$font-alt: zilabold;
+
+/*=====  End of Define Var for Fonts  ======*/
+
+/*===================================
+=            Body Styles            =
+===================================*/
+
+body {
+	font: {
+		size:$base-size;
+		weight: $regular;
+		family: $font-main;
+	}
+	-webkit-text-size-adjust: 100%;  //fix for iOS
+	color:$black;
+	overflow-x:hidden;
+}
+
+html {
+	font-size: $base-size;
+}
+
+a {
+	@include animate-fade;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: 0;
+		text-decoration: none;
+	}
+}
+
+/*=====  End of Body Styles  ======*/
+
+/*=============================================
+=            General Styles            =
+=============================================*/
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1;
+  font-family: $font-heading;
+}
+
+img {
+	@include animate-fade;
+}
+
+/*=====  End of General Styles  ======*/
+
+/*==================================
+=            Icon FOnts            =
+==================================*/
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'customfonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-target:before {
+  content: "\e912";
+}
+.icon-eye:before {
+  content: "\e913";
+}
+.icon-head-verse:before {
+  content: "\e914";
+}
+.icon-canada .path1:before {
+  content: "\e915";
+  color: rgb(63, 68, 78);
+}
+.icon-canada .path2:before {
+  content: "\e916";
+  margin-left: -1.5263671875em;
+  color: rgb(63, 68, 78);
+}
+.icon-canada .path3:before {
+  content: "\e917";
+  margin-left: -1.5263671875em;
+  color: rgb(63, 68, 78);
+}
+.icon-canada .path4:before {
+  content: "\e918";
+  margin-left: -1.5263671875em;
+  color: rgb(63, 68, 78);
+}
+.icon-canada .path5:before {
+  content: "\e919";
+  margin-left: -1.5263671875em;
+  color: rgb(63, 68, 78);
+}
+.icon-canada .path6:before {
+  content: "\e91a";
+  margin-left: -1.5263671875em;
+  color: rgb(63, 68, 78);
+}
+.icon-canada .path7:before {
+  content: "\e91b";
+  margin-left: -1.5263671875em;
+  color: rgb(255, 255, 255);
+}
+.icon-canada .path8:before {
+  content: "\e91c";
+  margin-left: -1.5263671875em;
+  color: rgb(63, 68, 78);
+}
+.icon-logosmall:before {
+  content: "\e91d";
+}
+.icon-send-ico:before {
+  content: "\e911";
+}
+.icon-twitter:before {
+  content: "\e90d";
+}
+.icon-fb:before {
+  content: "\e90e";
+}
+.icon-googleplus:before {
+  content: "\e90f";
+}
+.icon-linkedin:before {
+  content: "\e910";
+}
+.icon-monitor-ico:before {
+  content: "\e90c";
+}
+.icon-mobile-ico:before {
+  content: "\e909";
+}
+.icon-next-arrows:before {
+  content: "\e90a";
+}
+.icon-quote-back:before {
+  content: "\e90b";
+}
+.icon-chart-ico:before {
+  content: "\e908";
+}
+.icon-question-ico:before {
+  content: "\e907";
+}
+.icon-head-ico:before {
+  content: "\e904";
+}
+.icon-pc-diamond:before {
+  content: "\e905";
+}
+.icon-ver-ico:before {
+  content: "\e906";
+}
+.icon-search-icon:before {
+  content: "\e903";
+}
+.icon-next:before {
+  content: "\e901";
+}
+.icon-back:before {
+  content: "\e902";
+}
+.icon-if_11_Search_106236:before {
+  content: "\e900";
+}
+
+
+
+/*=====  End of Icon FOnts  ======*/

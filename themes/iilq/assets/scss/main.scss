@@ -1,0 +1,44 @@
+/** 
+ * Title: Main SASS file
+ * Description: Import All Other sass files
+ * Author: Srdjan Mitrovic
+ * Version: 0.1 
+**/
+
+@import "base/_variables.scss"; 
+
+// Vendors
+@import "vendors/bootstrap/bootstrap.scss";
+@import "vendors/_bootstrap-xl.scss";
+@import "vendors/_select.scss";
+@import "vendors/_animate";
+
+// Helpers
+@import "helpers/_breakpoints.scss"; 
+@import "helpers/_mixins.scss"; 
+@import "helpers/_pulls.scss"; 
+
+// Base 
+@import "base/_reset.scss";
+@import "base/_typography.scss"; 
+@import "base/_variables.scss"; 
+
+
+// Layout
+@import "layout/_content.scss"; 
+@import "layout/_footer.scss"; 
+@import "layout/_header.scss"; 
+@import "layout/_sidebar.scss";
+
+// Components
+@import "components/_navigation.scss"; 
+
+// Pages
+@import "pages/_home.scss";
+@import "pages/_about.scss";
+@import "pages/_contact.scss";
+@import "pages/_blog.scss";
+@import "pages/_projects.scss";
+
+// Slider
+@import "vendors/_slick.scss";

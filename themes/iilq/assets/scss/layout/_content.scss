@@ -1,0 +1,366 @@
+/*===================================
+=            Intro Block            =
+===================================*/
+
+#inner-page-content {
+	#intro-block {
+		background:$yellow;
+		min-height: 300px;
+		position: relative;
+		padding-left: 100px;
+		font-size: 16px;
+		@include small-lap {
+			min-height: 250px;
+			font-size: 15px;
+			padding-left: 50px;
+		}
+		@include breakpoint(laptop) {
+			font-size: 13px;
+			min-height: 250px;
+			padding-left: 50px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 13px;
+			padding-left: 30px;
+			min-height: 250px;
+		}
+		@include breakpoint(phone)  {
+			font-size: 14px;
+			padding-left: 25px;
+			min-height: auto;
+		}
+		&:hover {
+			.page-link {
+				background:$blue-light;
+				width: 350px;
+				@include small-lap {
+					width: 275px;
+				}
+				@include breakpoint(tablet) {
+					width: 250px;
+				}
+				&:before {
+					border-color: transparent $blue-light transparent transparent;	
+				}
+			}			
+		}
+		/* content */
+		.content {
+			@include centre(y);
+			padding-right: 450px;
+			color:$blue-dark;
+			font-family: $font-heading;
+			@include breakpoint(tablet) {
+				padding-right: 300px;
+			}
+			@include breakpoint(phone)  {
+				@include clear-pos;
+				padding-right: 15px;
+				text-align: center;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			h1 {
+				color:$yellow;
+				font-size: 3em;
+				margin-bottom: 30px;
+				letter-spacing: 4px;
+				@include breakpoint(phone) {
+					font-size: 2.3em;
+					margin-bottom: 20px;
+					letter-spacing: 3px;
+				}
+				@include breakpoint(phone-xs)  {
+					font-size: 2em;
+					margin-bottom: 20px;
+					letter-spacing: 2px;
+				}
+			}
+			p {
+				line-height: 1.4;
+				font-size: 2em;
+				@include breakpoint(phone-xs)  {
+					font-size: 1.2em;
+				}
+			}
+		}
+		/* link */
+		.page-link {
+			@include breakpoint(phone) {
+				display: none;
+			}
+				display: block;
+				background:$blue;
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				right: 0px;
+				top:0px;
+				text-align: center;
+				color:$yellow;
+				font-size: 140px;
+				@include slow-fade;
+				@include small-lap {
+					height: 225px;
+					width: 250px;
+				}
+				@include breakpoint(laptop) {
+					height: 250px;
+					font-size: 100px;
+				}
+				@include breakpoint(tablet) {
+					width: 230px;
+					font-size: 100px;
+					height: 250px;
+				}				&:before {
+					content:'';
+					width: 30px;
+					height: 30px;
+					@include centre(y);
+					left:-25px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 25px 25px 25px 0;
+					border-color: transparent $blue transparent transparent;		
+					@include slow-fade;			
+				}
+				span {
+					@include centre(both);
+				}
+		}
+	}
+}
+
+/*=====  End of Intro Block  ======*/
+
+/*======================================
+=            Features Block            =
+======================================*/
+
+#inner-page-content {
+	#features-block {
+		background:#40444e;
+		padding-top: 4.250em;
+		padding-bottom: 4.250em;
+		font-size: 16px;
+		@include small-lap {
+			padding-top: 4em;
+			padding-bottom: 4em;
+			font-size: 15px;
+		}
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding-top: 4em;
+			padding-bottom: 4em;
+		}
+		@include breakpoint(tablet) {
+			font-size: 14px;
+			padding-top: 4em;
+			padding-bottom: 4em;
+		}
+		@include breakpoint(phone) {
+			padding-top: 3em;
+			padding-bottom: 3em;
+			font-size: 14px;
+		}
+		.features-box {
+			text-align: center;
+			@include breakpoint(phone) {
+				margin-bottom: 30px;
+			}
+			.icon-holder {
+				position: relative;
+				font-size: 90px;
+				display: block;
+				-webkit-font-smoothing: antialiased;		
+				background:$yellow;
+				color:$blue;
+				height: 220px;
+				width: 220px;
+				border-radius:50%;
+				line-height: 220px;		
+				margin:0px auto;	
+				position: relative;
+				&.target-icon {
+					img {
+						margin-left: -15px;
+						margin-top: -3px;
+					}
+				}
+				&.head-icon {
+					img {
+						max-width: 100px;
+					}
+				}
+				@include breakpoint(tablet) {
+					font-size: 80px;
+					width: 180px;
+					height: 180px;
+					line-height: 180px;
+				}
+				@include breakpoint(phone) {
+					margin-bottom: 40px;
+					width: 180px;
+					height: 180px;
+					line-height: 180px;
+					font-size: 80px;
+				}
+				@include breakpoint(phone-xs) {
+					margin-bottom: 40px;
+					font-size: 70px;
+					width: 170px;
+					height: 170px;
+					line-height: 170px;
+				}
+				&:after {
+					pointer-events: none;
+				    position: absolute;
+				    width: 101%;
+				    height: 101%;
+				    border-radius: 50%;
+				    content: '';
+				    box-sizing: content-box;	
+					top: -5px;
+				    left: -6px;
+				    padding: 2px;
+				    z-index: 10;
+				    opacity: 0;		
+				    border:2px solid $blue-light;	    				
+				}		
+				img {
+					z-index: 9999;
+					position: relative;
+					@include centre(both);
+					max-width: 150px;
+					&.icon-head-verse {
+						font-size: 120px;
+					}
+				}
+				&:hover {
+					background:$blue-light;
+					span {
+						font-size: 80px;
+					}
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+			.title {
+				text-transform: uppercase;
+				font-size: 1.563em;
+				font-family: $font-heading;
+				color:$blue-dark;
+				letter-spacing: 2px;
+			}
+		}
+	}	
+}
+
+/*=====  End of Features Block  ======*/
+
+/*=====================================
+=            Inner Content            =
+=====================================*/
+
+#inner-page-content {
+	#inner-content {
+		font-size: 16px;
+		position: relative;
+		background:#efeff0;
+		padding:100px;
+		@incldue breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		&:before {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			top:0px;	
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		h2 {
+			margin-bottom: 30px;
+			color:$blue;
+			font-family: $font-heading;
+			font-size: 3em;
+			letter-spacing: 3px;
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/*=====  End of Inner Content  ======*/
+
+/*=======================================
+=            regular Content            =
+=======================================*/
+
+#regular-content {
+	background:#efeff0;
+	padding:50px;
+	font-size: 16px;
+	@include small-lap {
+		padding:40px;
+	}
+	@include breakpoint(laptop) {
+		padding:40px;
+		font-size: 14px;
+	}
+	@include breakpoint(tablet) {
+		padding: 35px;
+		font-size: 14px;
+	}
+	@include breakpoint(phone) {
+		padding:30px;
+		font-size: 15px;
+	}
+	@include breakpoint(phone-xs) {
+		padding:20px;
+		font-size: 14px;
+	}
+	h2 {
+		margin-bottom: 20px;
+		color:$blue;
+		font-family: $font-heading;
+		font-size: 2.5em;
+		letter-spacing: 3px;
+	}
+	p {
+		color:$text;
+		line-height: 1.3;
+		font-size: 1.2em;
+	}
+}
+
+/*=====  End of regular Content  ======*/

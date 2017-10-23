@@ -1,0 +1,172 @@
+/*==============================
+=            Footer            =
+==============================*/
+
+#page-footer {
+	font-size: 16px;
+	border-top:10px solid $yellow;
+	background:$blue-dark;
+	padding-top: 2.500em;
+	padding-bottom: 2.500em;
+	padding-left: 65px;
+	@include small-lap {
+		font-size: 15px;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	@include breakpoint(laptop) {
+		font-size: 15px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 14px;
+	}
+	@include breakpoint(phone) {
+		padding-left: 0px;
+	}
+	@include breakpoint(phone-xs) {
+		font-size: 14px;
+	}
+	h6 {
+		color:$gray-light;
+		font-family: $font-main;
+		font-size: 1.2em;
+		font-weight: 400;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+	}	
+	/* social block */
+	#social-block {
+		a {
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			line-height: 40px;
+			background:$gray-light;
+			border-radius:50%;
+			margin-right: 10px;
+			text-align: center;
+			font-size: 0.8em;
+			color:$blue-dark;
+			position: relative;
+			&:after {
+				width: 40px;
+				height: 40px;
+				border:1px solid $yellow;
+				position: absolute;
+				top:-2px;
+				left:-2px;
+				content:'';
+				border-radius:50%;
+				opacity: 0;
+			}
+			&:hover {
+				background:$yellow;
+				&:after {
+					opacity: 1;
+				}
+			}
+		}		
+	}
+	/* newsletter block */
+	#newsletter-block {
+		padding-top: 2em;
+		#form-wrapper {
+			position: relative;
+			width: 420px;
+			@include breakpoint(phone) {
+				width: 100%;
+			}
+			input[type="text"], input[type="email"] {
+				border:none;
+				padding-left: 15px;
+				height: 35px;
+				line-height: 35px;
+				width: 320px;
+				margin-bottom: 10px;
+				font-family: $font-book;
+				font-size: 0.9em;
+				@include breakpoint(phone) {
+					width: 70%;
+				}
+			}
+			button {
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				right: 0px;
+				top:0px;
+				border:none;
+				background:$blue;
+				@include breakpoint(phone) {
+					width: 25%;
+				}
+				&:before {
+					content:'';
+					width: 30px;
+					height: 30px;
+					@include centre(y);
+					left:-12px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 12px 12px 12px 0;
+					border-color: transparent $blue transparent transparent;
+					@include animate-fade;			
+					z-index: 555;						
+				}
+				&:after {
+					@include custom-ico;
+					content:'\e911';
+					color:$yellow;
+					font-size: 46px;
+				}
+				&:hover {
+					background:$yellow;
+					&:after {
+						color:$blue-dark;
+					}
+					&:before {
+						border-color: transparent $yellow transparent transparent;
+					}
+				}
+			}
+		}
+
+		input::-webkit-input-placeholder {
+		  color:$blue-dark;
+		}
+		input:-moz-placeholder {
+		  color:$blue-dark;
+		}
+		input::-moz-placeholder {
+		  color:$blue-dark;
+		}
+		input:-ms-input-placeholder {
+		  color:$blue-dark;
+		}
+
+	}
+}
+
+/*=====  End of Footer  ======*/
+
+.floating-cta {
+	position: fixed;
+	right:5px;
+	bottom:5px;
+	a {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius:50%;
+		background:$blue;
+		border:2px solid $white;
+	    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.15);
+	    text-align: center;
+	    position: relative;
+	    img {
+	    	max-width: 75%;
+	    	@include centre(both);
+	    }
+	}
+}
