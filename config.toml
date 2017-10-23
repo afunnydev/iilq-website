@@ -1,5 +1,5 @@
 archetypedir = "archetypes"
-baseurl = "https://www.innovationlogistique.com/"
+baseurl = "https://scientist-signalers-41166.netlify.com/"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
