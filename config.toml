@@ -1,5 +1,5 @@
 archetypedir = "archetypes"
-baseurl = "https://iilq.netlify.com//"
+baseurl = "https://iilq.netlify.com/"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true

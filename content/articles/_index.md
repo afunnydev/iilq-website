@@ -1,5 +1,5 @@
 ---
-title: Dummy
+title: Blog
 description: "Apprenez sur la logistique"
 image: ""
 pagetitle: "Articles populaires"

@@ -3,83 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://iilq.netlify.com//</loc>
+    <loc>https://iilq.netlify.com/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//</loc>
+    <loc>https://iilq.netlify.com/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//logistic-4-0/ateliers-decouvertes/</loc>
+    <loc>https://iilq.netlify.com/logistic-4-0/ateliers-decouvertes/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//categories/</loc>
+    <loc>https://iilq.netlify.com/articles/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//contact/</loc>
+    <loc>https://iilq.netlify.com/contact/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//articles/</loc>
+    <loc>https://iilq.netlify.com/articles/test/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//articles/test/</loc>
+    <loc>https://iilq.netlify.com/articles/test2/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//articles/test2/</loc>
+    <loc>https://iilq.netlify.com/articles/test3/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//articles/test3/</loc>
+    <loc>https://iilq.netlify.com/articles/test4/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//articles/test4/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iilq.netlify.com//</loc>
+    <loc>https://iilq.netlify.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//innovation/</loc>
+    <loc>https://iilq.netlify.com/innovation/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//_%CC%A7index/</loc>
+    <loc>https://iilq.netlify.com/_%CC%A7index/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//logistic-4-0/</loc>
+    <loc>https://iilq.netlify.com/logistic-4-0/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//iilq/</loc>
+    <loc>https://iilq.netlify.com/iilq/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//singles/</loc>
+    <loc>https://iilq.netlify.com/singles/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//tags/</loc>
+    <loc>https://iilq.netlify.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//transfert/</loc>
+    <loc>https://iilq.netlify.com/transfert/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com//transfert/tms/</loc>
+    <loc>https://iilq.netlify.com/transfert/tms/</loc>
   </url>
   
 </urlset>

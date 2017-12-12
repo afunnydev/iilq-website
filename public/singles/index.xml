@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Singles on IILQ</title>
-    <link>https://iilq.netlify.com//singles/</link>
+    <link>https://iilq.netlify.com/singles/</link>
     <description>Recent content in Singles on IILQ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://iilq.netlify.com//singles/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iilq.netlify.com/singles/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://iilq.netlify.com//</link>
+      <link>https://iilq.netlify.com/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com//</guid>
+      <guid>https://iilq.netlify.com/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://iilq.netlify.com//</link>
+      <link>https://iilq.netlify.com/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com//</guid>
+      <guid>https://iilq.netlify.com/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contactez-nous pour toutes vos questions</title>
-      <link>https://iilq.netlify.com//contact/</link>
+      <link>https://iilq.netlify.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com//contact/</guid>
+      <guid>https://iilq.netlify.com/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimiser votre chaîne logistique</title>
-      <link>https://iilq.netlify.com//iilq/</link>
+      <link>https://iilq.netlify.com/iilq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com//iilq/</guid>
+      <guid>https://iilq.netlify.com/iilq/</guid>
       <description></description>
     </item>
     
