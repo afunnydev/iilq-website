@@ -8,7 +8,6 @@
 	background:$blue-dark;
 	padding-top: 2.500em;
 	padding-bottom: 2.500em;
-	padding-left: 65px;
 	@include small-lap {
 		font-size: 15px;
 		padding-top: 2em;
@@ -25,6 +24,9 @@
 	}
 	@include breakpoint(phone-xs) {
 		font-size: 14px;
+	}
+	.container {
+		padding-left: 65px;		
 	}
 	h6 {
 		color:$gray-light;

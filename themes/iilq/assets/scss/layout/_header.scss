@@ -607,3 +607,57 @@
 
 
 /*=====  End of Mobile Menu  ======*/
+/*=====================================
+=            Yellow Header            =
+=====================================*/
+
+#yellow-header {
+	height:550px;
+	background:$blue;
+	position: relative;
+	background:$yellow;
+	&.blue-header {
+		background:$blue!important;
+	}
+	@include breakpoint(laptop) {
+		height: 500px;
+	}
+	@include breakpoint(tablet) {
+		height: 450px;
+	}
+	@include breakpoint(phone) {
+		height: 300px;
+	}
+	.container {
+		height: 100%;
+		img {
+			@include centre(both);
+			@include breakpoint(laptop) {
+				max-width: 90%;
+			}
+			@include breakpoint(tablet) {
+				max-width: 80%;
+			}
+			@include breakpoint(phone) {
+				max-width: 80%;
+			}
+		}
+	}	
+}
+
+.yellow-border {
+	
+}
+
+/*=====  End of Yellow Header  ======*/
+
+/*=======================================
+=            Transfer Header            =
+=======================================*/
+
+#transfer-header {
+	border-bottom:10px solid $yellow;
+	position: relative;
+}
+
+/*=====  End of Transfer Header  ======*/

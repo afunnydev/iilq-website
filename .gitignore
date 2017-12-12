@@ -1,2 +1,2 @@
-/themes/iilq/pipeline/node_modules/*
 .DS_Store
+node_modules/*

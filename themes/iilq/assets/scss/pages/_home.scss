@@ -66,12 +66,12 @@
 			}
 			@include centre(both);
 			text-align: center;
-			max-width: 900px;
+			max-width: 1100px;
 			@include breakpoint(laptop) {
-				width: 70%;
+				width: 80%;
 			}
 			@include breakpoint(tablet) {
-				width: 70%;
+				width: 80%;
 			}
 			@include breakpoint(phone)  {
 				width: 95%;
@@ -79,22 +79,22 @@
 			span.title {
 				color:$yellow;
 				font-family: $font-heading;
-				font-size: 4em;
+				font-size: 3.5em;
 				display: block;
 				letter-spacing: 6px;
 				@include breakpoint(tablet) {
-					font-size: 3.4em;
+					font-size: 3em;
 				}
 				@include breakpoint(phone) {
-					font-size: 3.5em;
+					font-size: 3em;
 				}
 				@include breakpoint(phone-xs)  {
-					font-size: 3.5em;
+					font-size: 3em;
 				}
 			}
 			p {
 				color:$yellow;
-				font-size: 2.5em;
+				font-size: 2.2em;
 				line-height: 1.4;
 				@include breakpoint(laptop) {
 					line-height: 1.2;
@@ -342,11 +342,23 @@
 					z-index: 9999;
 					position: relative;
 					@include centre(both);
+					-webkit-transition: 0.5s;
+					-moz-transition: 0.5s;
+					-ms-transition: 0.5s;
+					-o-transition: 0.5s;
+					transition: 0.5s;
+					&.shake {
+						font-size: 1.5em;
+					}
 				}
 				&:hover {
 					background:$blue-light;
 					span {
 						font-size: 80px;
+						&.shake {
+							font-size: 1.2em;
+						}
+
 					}
 					&:after {
 						opacity: 1;
@@ -393,7 +405,7 @@
 		}
 		.content-box {
 			@extend .content-box-ext;
-			background:$blue;
+			background:$blue-dark;
 			width: 25%;
 			float: left;
 			@include breakpoint(tablet) {
@@ -407,12 +419,12 @@
 				width: 30px;
 				height: 30px;
 				@include centre(y);
-				right:-25px;
+				left: -25px;
 				width: 0;
 				height: 0;
 				border-style: solid;
-				border-width: 25px 0 25px 25px;
-				border-color: transparent transparent transparent $blue;	
+				border-width: 25px 25px 25px 0;
+				border-color: transparent $blue-dark transparent transparent;	
 				@include animate-fade;			
 				z-index: 50;		
 			}
@@ -423,7 +435,7 @@
 		}
 		.link-box {
 			@extend .link-box-ext;
-			background:$blue-dark;
+			background:$blue;
 			float: left;
 			.icon-holder {
 				@include centre(both);
@@ -456,7 +468,7 @@
 					filter: grayscale(100%);
 				}
 				.content-box {
-					background:$blue-dark;
+					background:$blue;
 					width: 28%;
 					@include breakpoint(tablet) {
 						width: 60%;
@@ -465,11 +477,14 @@
 						width: 50%;
 					}
 					&:after {
-						border-color: transparent transparent transparent $blue-dark!important;	
+						border-color: transparent $blue transparent transparent;	
+					}
+					h3 {
+						width: 75%;
 					}					
 				}
 				.link-box {
-					background:$blue;
+					background:$blue-dark;
 					width: 22%;
 					@include breakpoint(tablet) {
 						width: 40%;
@@ -587,6 +602,9 @@
 					}
 					&:after {
 						border-color: transparent $blue transparent transparent;
+					}
+					h3 {
+						width: 75%;
 					}					
 				}
 				.link-box {
@@ -672,21 +690,25 @@
 				@include centre(both);
 				span {
 					color:$white;
-					font-size: 160px;
+					font-size: 100px;
 					display: block;
 					@include animate-fade;
 					@include breakpoint(laptop) {
-						font-size: 120px;
+						font-size: 80px;
 					}
 					@include breakpoint(tablet) {
-						font-size: 130px;
+						font-size: 85px;
 					}
 					@include breakpoint(phone-xs) {
-						font-size: 100px;
+						font-size: 60px;
 					}
 
 				}
 			}
+		}
+		.image-box {
+			float: right;
+			@extend .image-box-ext;
 		}
 		/* test */
 		.slider-box {
@@ -773,6 +795,9 @@
 					}
 					&:after {
 						border-color: transparent transparent transparent $blue;	
+					}
+					h3 {
+						width: 75%;
 					}					
 				}
 				.link-box {
@@ -828,12 +853,12 @@
 				width: 30px;
 				height: 30px;
 				@include centre(y);
-				left:-25px;
+				right:-25px;
 				width: 0;
 				height: 0;
 				border-style: solid;
-				border-width: 25px 25px 25px 0;
-				border-color: transparent $blue-dark transparent transparent;
+				border-width: 25px 0 25px 25px;
+				border-color: transparent transparent transparent $blue-dark;
 				@include animate-fade;			
 				z-index: 555;		
 			}
@@ -889,8 +914,11 @@
 						width: 50%;
 					}
 					&:after {
-						border-color: transparent $blue transparent transparent;
-					}					
+						border-color: transparent transparent transparent $blue;
+					}	
+					h3 {
+						width: 75%;
+					}				
 				}
 				.link-box {
 					background:$blue-dark;
@@ -909,5 +937,19 @@
 		}			
 	}
 }
+#main-home-content {
+	a {
+		.content-box {
+			h3 {
+				-webkit-transition: 0.5s width;
+				-moz-transition: 0.5s width;
+				-ms-transition: 0.5s width;
+				-o-transition: 0.5s width;
+				transition: 0.5s width;
+			}
+		}
+	}
+}
+	
 
 /*=====  End of Blog Box  ======*/
