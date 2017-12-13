@@ -411,13 +411,13 @@
 					}
 				}
 				&:hover {
-					background:$blue-light;
-					&:before {
-						border-bottom-color: $blue-light;
-					}
-					&:after {
-						border-top-color: $blue-light;
-					}
+					// background:$blue-light;
+					// &:before {
+					// 	border-bottom-color: $blue-light;
+					// }
+					// &:after {
+					// 	border-top-color: $blue-light;
+					// }
 				}
 			}
 			.title {
