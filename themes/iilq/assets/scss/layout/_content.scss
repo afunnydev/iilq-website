@@ -498,7 +498,7 @@
 		font-size: 3em;
 		letter-spacing: 3px;
 		span {
-			font-family: $font-book;
+			font-family: $fontzilaregular;
 		}
 	}
 	p {
@@ -560,7 +560,7 @@
 		padding-left: 25px;
 		padding-right: 25px;
 		padding-top: 17px;
-		font-family: $font-alt;
+		font-family: $font-heading;
 		padding-bottom: 17px;
 		margin-top: 20px;
 		&:hover {
@@ -615,6 +615,7 @@
 			font-size: 4em;
 			letter-spacing: 2px;
 			display: inline-block;
+			font-family: $fontsharpbold;
 		}
 		img {
 			display: inline-block;
@@ -681,7 +682,7 @@
 		h2 {
 			margin-bottom: 30px;
 			color:$blue;
-			font-family: $font-book;
+			font-family: $fontzilaregular;
 			font-size: 3em;
 			letter-spacing: 3px;
 			strong {
@@ -696,6 +697,9 @@
 				&:hover {
 					color:$blue-dark;
 				}
+			}
+			strong {
+				font-family: $font-heading;
 			}
 		}
 		img.img-responsive {
@@ -721,7 +725,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-top: 17px;
-			font-family: $font-alt;
+			font-family: $font-heading;
 			padding-bottom: 17px;
 			margin-top: 20px;
 			&:hover {
