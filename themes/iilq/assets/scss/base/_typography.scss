@@ -7,6 +7,7 @@
 @include font-face('zilabold', '../fonts/Zilla Slab Bold Bold');
 @include font-face('zilaregular', '../fonts/Zilla Slab Regular');
 @include font-face('customfonts', '../fonts/customfonts');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:600');
 
 /*=====  End of Fonts  ======*/
 
@@ -16,8 +17,9 @@
 
 $font-main: zilaregular;
 $font-book: sharpsansbook;
-$font-heading: zilabold;
+$font-heading: 'Zilla Slab';
 $font-alt: zilabold;
+
 
 /*=====  End of Define Var for Fonts  ======*/
 
