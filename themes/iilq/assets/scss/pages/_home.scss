@@ -260,83 +260,142 @@
 #main-home-content {
 	#features-block {
 		background:#f2f1f2;
-		padding-top: 6.250em;
+		padding-top: 3em;
 		padding-bottom: 6.250em;
 		font-size: 16px;
 		@include small-lap {
-			padding-top: 4em;
-			padding-bottom: 4em;
+			padding-top: 2.5em;
+			padding-bottom: 6em;
 			font-size: 15px;
 		}
 		@include breakpoint(laptop) {
 			font-size: 14px;
-			padding-top: 4em;
-			padding-bottom: 4em;
+			padding-top: 2.5em;
+			padding-bottom: 6em;
 		}
 		@include breakpoint(tablet) {
 			font-size: 14px;
-			padding-top: 4em;
-			padding-bottom: 4em;
+			padding-top: 2.5em;
+			padding-bottom: 6em;
 		}
 		@include breakpoint(phone) {
 			padding-top: 3em;
 			padding-bottom: 3em;
 			font-size: 14px;
 		}
+		.col-sm-4 {
+			&:last-child(){
+				.features-box {
+					@include breakpoint(phone) {
+						margin-bottom: 81.96px;
+					}
+					@include breakpoint(phone-xs) {
+						margin-bottom: 79.07px;
+					}
+				}
+			}
+		}
 		.features-box {
 			text-align: center;
 			@include breakpoint(phone) {
-				margin-bottom: 30px;
+				margin-bottom: 163.92px;
+			}
+			@include breakpoint(phone-xs) {
+				margin-bottom: 158.14px;
 			}
 			.icon-holder {
 				position: relative;
-				font-size: 100px;
+				font-size: 90px;
 				display: block;
 				-webkit-font-smoothing: antialiased;		
 				background:$yellow;
-				color:$blue-dark;
-				height: 220px;
-				width: 220px;
-				border-radius:50%;
+				color: $blue-dark;
+				width: 220px; 
+				height: 127.02px;
 				line-height: 220px;		
-				margin:0px auto;	
-				margin-bottom: 50px;	
+				margin: 63.51px auto;	
 				position: relative;
+				&.target-icon {
+					img {
+						margin-left: -15px;
+						margin-top: -3px;
+					}
+				}
+				&.head-icon {
+					img {
+						max-width: 100px;
+					}
+				}
 				@include breakpoint(tablet) {
-					margin-bottom: 40px;
 					font-size: 80px;
-					width: 180px;
-					height: 180px;
+					width: 180px; 
+  					height: 103.92px;
+  					margin: 51.96px auto;
 					line-height: 180px;
 				}
 				@include breakpoint(phone) {
-					margin-bottom: 40px;
-					width: 180px;
-					height: 180px;
+					width: 180px; 
+  					height: 103.92px;
+  					margin: 51.96px auto;
 					line-height: 180px;
 					font-size: 80px;
 				}
 				@include breakpoint(phone-xs) {
-					margin-bottom: 40px;
 					font-size: 70px;
-					width: 170px;
-					height: 170px;
+					width: 170px; 
+  					height: 98.15px;
+  					margin: 49.07px auto;
 					line-height: 170px;
 				}
+				&:after,
+				&:before {
+					content: "";
+					position: absolute;
+					width: 0;
+					border-left: 110px solid transparent;
+					border-right: 110px solid transparent;
+					left: 0;
+					-webkit-font-smoothing: antialiased;
+					@include breakpoint(phone) {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+					@include breakpoint(tablet) {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+					@include breakpoint(phone-xs) {
+						border-left: 85px solid transparent;
+						border-right: 85px solid transparent;
+					}
+				}
+				&:before {
+				  bottom: 100%;
+				  border-bottom: 63.51px solid $yellow;
+				  @include breakpoint(phone) {
+						border-bottom: 51.96px solid $yellow;
+					}
+					@include breakpoint(tablet) {
+						border-bottom: 51.96px solid $yellow;
+					}
+					@include breakpoint(phone-xs) {
+						border-bottom: 49.07px solid $yellow;
+					}
+				}
+
 				&:after {
-					pointer-events: none;
-				    position: absolute;
-				    width: 101%;
-				    height: 101%;
-				    border-radius: 50%;
-				    content: '';
-				    box-sizing: content-box;	
-					top: -5px;
-				    left: -6px;
-				    padding: 2px;
-				    z-index: 10;
-				    opacity: 0;		
-				    border:2px solid $blue-light;	    				
+				  top: 100%;
+				  width: 0;
+				  border-top: 63.51px solid $yellow;
+				  @include breakpoint(phone) {
+						border-top: 51.96px solid $yellow;
+					}
+					@include breakpoint(tablet) {
+						border-top: 51.96px solid $yellow;
+					}
+					@include breakpoint(phone-xs) {
+						border-top: 49.07px solid $yellow;
+					}
 				}		
 				span {
 					z-index: 9999;
@@ -353,15 +412,11 @@
 				}
 				&:hover {
 					background:$blue-light;
-					span {
-						font-size: 80px;
-						&.shake {
-							font-size: 1.2em;
-						}
-
+					&:before {
+						border-bottom-color: $blue-light;
 					}
 					&:after {
-						opacity: 1;
+						border-top-color: $blue-light;
 					}
 				}
 			}
@@ -371,6 +426,18 @@
 				font-family: $font-heading;
 				color:$blue-dark;
 				letter-spacing: 2px;
+				position: absolute;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    top: 115%;
+			    @include breakpoint(phone) {
+			    	top: inherit;
+    				bottom: -100px;
+			    }
+			    @include breakpoint(phone-xs) {
+			    	top: inherit;
+    				bottom: -100px;
+			    }		
 			}
 		}
 	}

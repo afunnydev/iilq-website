@@ -167,10 +167,25 @@
 			padding-bottom: 3em;
 			font-size: 14px;
 		}
+		.col-sm-4 {
+			&:last-child(){
+				.features-box {
+					@include breakpoint(phone) {
+						margin-bottom: 81.96px;
+					}
+					@include breakpoint(phone-xs) {
+						margin-bottom: 79.07px;
+					}
+				}
+			}
+		}
 		.features-box {
 			text-align: center;
 			@include breakpoint(phone) {
-				margin-bottom: 30px;
+				margin-bottom: 133.92px;
+			}
+			@include breakpoint(phone-xs) {
+				margin-bottom: 128.14px;
 			}
 			.icon-holder {
 				position: relative;
@@ -179,11 +194,10 @@
 				-webkit-font-smoothing: antialiased;		
 				background:$yellow;
 				color:$blue;
-				height: 220px;
-				width: 220px;
-				border-radius:50%;
+				width: 220px; 
+				height: 127.02px;
 				line-height: 220px;		
-				margin:0px auto;	
+				margin: 63.51px auto;	
 				position: relative;
 				&.target-icon {
 					img {
@@ -198,38 +212,73 @@
 				}
 				@include breakpoint(tablet) {
 					font-size: 80px;
-					width: 180px;
-					height: 180px;
+					width: 180px; 
+  					height: 103.92px;
+  					margin: 51.96px auto;
 					line-height: 180px;
 				}
 				@include breakpoint(phone) {
-					margin-bottom: 40px;
-					width: 180px;
-					height: 180px;
+					width: 180px; 
+  					height: 103.92px;
+  					margin: 51.96px auto;
 					line-height: 180px;
 					font-size: 80px;
 				}
 				@include breakpoint(phone-xs) {
-					margin-bottom: 40px;
 					font-size: 70px;
-					width: 170px;
-					height: 170px;
+					width: 170px; 
+  					height: 98.15px;
+  					margin: 49.07px auto;
 					line-height: 170px;
 				}
+				&:after,
+				&:before {
+					content: "";
+					position: absolute;
+					width: 0;
+					border-left: 110px solid transparent;
+					border-right: 110px solid transparent;
+					left: 0;
+					@include breakpoint(phone) {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+					@include breakpoint(tablet) {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+					@include breakpoint(phone-xs) {
+						border-left: 85px solid transparent;
+						border-right: 85px solid transparent;
+					}
+				}
+				&:before {
+				  bottom: 100%;
+				  border-bottom: 63.51px solid $yellow;
+				  @include breakpoint(phone) {
+						border-bottom: 51.96px solid $yellow;
+					}
+					@include breakpoint(tablet) {
+						border-bottom: 51.96px solid $yellow;
+					}
+					@include breakpoint(phone-xs) {
+						border-bottom: 49.07px solid $yellow;
+					}
+				}
+
 				&:after {
-					pointer-events: none;
-				    position: absolute;
-				    width: 101%;
-				    height: 101%;
-				    border-radius: 50%;
-				    content: '';
-				    box-sizing: content-box;	
-					top: -5px;
-				    left: -6px;
-				    padding: 2px;
-				    z-index: 10;
-				    opacity: 0;		
-				    border:2px solid $blue-light;	    				
+				  top: 100%;
+				  width: 0;
+				  border-top: 63.51px solid $yellow;
+				  @include breakpoint(phone) {
+						border-top: 51.96px solid $yellow;
+					}
+					@include breakpoint(tablet) {
+						border-top: 51.96px solid $yellow;
+					}
+					@include breakpoint(phone-xs) {
+						border-top: 49.07px solid $yellow;
+					}
 				}		
 				img {
 					z-index: 9999;
@@ -241,43 +290,17 @@
 					}
 				}
 
-				&:hover {
-					background:$blue-light;
-					span {
-						font-size: 80px;
-					}
-					&:after {
-						opacity: 1;
-					}
-				}
+				// &:hover {
+				// 	background:$blue-light;
+				// 	span {
+				// 		font-size: 80px;
+				// 	}
+				// 	&:after {
+				// 		opacity: 1;
+				// 	}
+				// }
 			}
-			// .icon-holder {
-			//   position: relative;
-			//   width: 220px; 
-			//   height: 127.02px;
-			//   background-color: #fff604;
-			//   margin: 63.51px 0;
-			// }
 
-			// .icon-holder:before,
-			// .icon-holder:after {
-			//   content: "";
-			//   position: absolute;
-			//   width: 0;
-			//   border-left: 110px solid transparent;
-			//   border-right: 110px solid transparent;
-			// }
-
-			// .icon-holder:before {
-			//   bottom: 100%;
-			//   border-bottom: 63.51px solid #fff604;
-			// }
-
-			// .icon-holder:after {
-			//   top: 100%;
-			//   width: 0;
-			//   border-top: 63.51px solid #fff604;
-			// }
 			.title {
 				text-transform: uppercase;
 				font-size: 1.563em;
