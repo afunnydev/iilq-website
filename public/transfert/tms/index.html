@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="This is a description" />
-<title>IILQ | Transfert - Liste</title>
+<title>IILQ | TMS</title>
 
 
 <meta property="fb:pages" content="#" />
@@ -17,7 +17,7 @@
 	<meta property="og:article:author" content="" />
 	<meta property="og:article:section" content="Transfert" />
 <meta property="og:locale" content="fr">
-<meta property="og:title" content="Transfert - Liste">
+<meta property="og:title" content="TMS">
 <meta property="og:image" content="https://www.innovationlogistique.com">
 <meta property="og:image:secure_url" content="https://www.innovationlogistique.com"/>
 <meta property="og:image:type" content="image/jpeg" />
@@ -32,6 +32,14 @@
 
 
 	
+	<link rel="preload" href="">
+	<link rel="prefetch" href="https://iilq.netlify.com/transfert/erp/">
+	<link rel="prerender" href="https://iilq.netlify.com/transfert/erp/">
+	
+	
+	<link rel="preload" href="">
+	<link rel="prefetch" href="https://iilq.netlify.com/transfert/rfid/">
+	<link rel="prerender" href="https://iilq.netlify.com/transfert/rfid/">
 	
 
 
@@ -60,16 +68,28 @@
     <div id="menu">
 
         <ul class="nav-links">
-            <li><a href="https://iilq.netlify.com/innovation">Innovation </a> </li>
+            <li class="has-menu">
+              <a href="https://iilq.netlify.com/innovation">Innovation </a> 
+              <ul>
+                <li><a href="https://iilq.netlify.com/innovation/groupe-innovation">Groupe Innovation</a></li>
+              </ul>
+            </li>
             <li class="has-menu"> 
             	<a href="https://iilq.netlify.com/transfert">Transfert </a>
                 <ul>
-                  <li><a href="#">ERP</a></li>
-                  <li><a href="#">WMS</a></li>
-                  <li><a href="https://iilq.netlify.com/tms">TMS</a></li>
-                  <li><a href="#">CRM</a></li>
-                  <li><a href="#">RFID</a></li>
-                  <li><a href="#">GS1 128</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/crm/">CRM</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/erp/">ERP</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/tms/">TMS</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/rfid/">RFID</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/wms/">WMS</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/gs1-128/">GS1-128</a></li>
+                  
                 </ul>
             </li>                      
             <li><a href="#">LogisTIC 4.0</a></li>
@@ -114,23 +134,37 @@
 
         <nav class="navbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="https://iilq.netlify.com/innovation">Innovation</a></li>
+              <li class="active dropdown">
+                <a class="dropdown-toggle" href="https://iilq.netlify.com/innovation">Innovation </a> 
+                <ul class="dropdown-menu animated fadeIn">
+                  <li><a href="https://iilq.netlify.com/innovation/groupe-innovation">Groupe Innovation</a></li>
+                </ul>
+              </li>
               <li class="dropdown">
                 <a class="dropdown-toggle" href="https://iilq.netlify.com/transfert">Transfert
                 </a>
                 <ul class="dropdown-menu animated fadeIn">
-                  <li><a href="#">ERP</a></li>
-                  <li><a href="#">WMS</a></li>
-                  <li><a href="https://iilq.netlify.com/transfert/tms">TMS</a></li>
-                  <li><a href="#">CRM</a></li>
-                  <li><a href="#">RFID</a></li>
-                  <li><a href="#">GS1 128</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/crm/">CRM</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/erp/">ERP</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/tms/">TMS</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/rfid/">RFID</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/wms/">WMS</a></li>
+                  
+                  <li><a href="https://iilq.netlify.com/transfert/gs1-128/">GS1-128</a></li>
+                  
                 </ul>
               </li>
               <li class="dropdown">
               	<a href="https://iilq.netlify.com/logistic-4-0" class="dropdown-toggle">LogisTIC 4.0</a>
               	<ul class="dropdown-menu animated fadeIn">
-	            		<li><a href="https://iilq.netlify.com/logistic-4-0/ateliers-decouvertes/">Formations</a></li>
+	            		<li><a href="https://iilq.netlify.com/logistic-4-0/formations/">Formations</a></li>
+                  <li><a href="https://iilq.netlify.com/logistic-4-0/ateliers-decouverte/">Ateliers Découvertes</a></li>
+                  <li><a href="https://iilq.netlify.com/logistic-4-0/conferences/">Conférences</a></li>
 	            	</ul>
               </li>
 	            <li class="dropdown">
@@ -154,7 +188,8 @@
 			<div id="all-content-wrapper" class="all-content-wrapper">
 				
 <header id="transfer-header" class="yellow-border">
-    <img src="https://iilq.netlify.com/img/erp.jpg" alt="" class="img-responsive">
+    <img src="https://iilq.netlify.com/img/banniere-TMS.jpg" alt="tms" class="img-responsive hidden-xs">
+    <img src="https://iilq.netlify.com/img/banniere-mobile-TMS.jpg" alt="tms" class="img-responsive visible-xs">
     <div class="header-caption">
         
     </div>
@@ -169,22 +204,34 @@
         
         <div class="col-lg-9 col-md-8 col-sm-8">
             <div class="single-content">
-                <h2>TMS</h2>
-                <h3>Qu’est-ce que c’est ?</h3>
-                <p>Le Transport Management System est un progiciel souvent complémentaire à un progiciel
-                ERP ou encore un système WMS. Il sert spécifiquement à gérer l’ensemble des opérations
-                liées aux transports des matières, des marchandises et des produits finis. Le logiciel peut
-                être adapté en fonction du transport : TL (charge complète), LTL (charge partielle) et
-                intermodal (combinaison de plusieurs modes de transport).</p>
-                <ul>
-                    <li>Optimisation du processus de gestion</li>
-                    <li> Interconnexion des départements</li>
-                    <li> Traçabilité de l’information grâce aux données obtenues en temps réel</li>
-                    <li> Standardisation des processus de production</li>
-                    <li> Maîtrise des coûts, des délais de fabrication et de la distribution</li>
-                    <li> Augmentation de la productivité globale</li>
-                </ul>
-                <p><strong>Il existe de nombreux choix d’ERP dans une multitude de domaines spécialisés, il peut donc s’avérer difficile de choisir la solution convenant à vos besoins.</strong></p>
+                
+
+<h2 id="tms">TMS</h2>
+
+<h3 id="qu-est-ce-que-c-est">Qu’est-ce que c’est ?</h3>
+
+<p>Le Transport Management System est un progiciel souvent complémentaire à un progiciel ERP ou encore un système WMS. Il sert spécifiquement à gérer l’ensemble des opérations liées aux transports des matières, des marchandises et des produits finis. Le logiciel peut être adapté en fonction du transport : TL (charge complète), LTL (charge partielle) et intermodal (combinaison de plusieurs modes de transport).</p>
+
+<h3 id="son-objectif">Son objectif ?</h3>
+
+<p>Déterminer quel type de transport est optimal afin de minimiser les coûts et les délais de livraison entre le point de départ de livraison et les points d’expédition. Ces différents modules de gestions vous permettront de planifier vos déplacements de marchandise et d’effectuer le suivi des transports de manière optimale.</p>
+
+<h3 id="comment-ça-fonctionne">Comment ça fonctionne ?</h3>
+
+<p>Le progiciel regroupe l’ensemble des commandes prêtes à être acheminées pour ensuite les répartir dans une liste d’expéditions. Il cherchera par le fait même à minimiser les frais de transport en attribuant le transporteur approprié pour chaque expédition tout en estimant le temps requis pour compléter les livraisons. L’ensemble des données est récolté par le biais d’étiquette à code à barres et accessible pour l’ensemble des transporteurs dont les informations sont intégrées au système. Il existe deux types d’interfaces au logiciel TMS : celle utilisée par les chargeurs (plan du transport et impression des étiquettes) et celle utilisée par le transporteur (données en temps réel au format EDIFACT).</p>
+
+<h3 id="les-bénéfices-de-l-instaurer">Les bénéfices de l’instaurer ?</h3>
+
+<ul>
+<li>Optimisation des coûts liés aux transports</li>
+<li>Automatisation de la planification des transports</li>
+<li>Traçabilité des unités de transports disponibles et déployées</li>
+<li>Fonctionnalité de préfacturation</li>
+<li>Assurer un service de livraison de qualité</li>
+</ul>
+
+<p>Il existe de nombreux choix d’un TMS dans une multitude de domaines spécialisés, il peut donc s’avérer difficile de choisir la solution convenant à vos besoins.</p>
+
             </div>
         </div>
         

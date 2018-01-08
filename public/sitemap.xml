@@ -3,7 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://iilq.netlify.com/</loc>
+    <loc>https://iilq.netlify.com/transfert/crm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/transfert/erp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/transfert/tms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/transfert/rfid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/transfert/wms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/transfert/gs1-128/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/articles/manufacturing-execution-system-vs-erp/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/articles/rfid/</loc>
+    <lastmod>2018-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/articles/differenciation-retardee/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -11,11 +46,16 @@
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com/logistic-4-0/ateliers-decouvertes/</loc>
+    <loc>https://iilq.netlify.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/logistic-4-0/ateliers-decouverte/</loc>
   </url>
   
   <url>
     <loc>https://iilq.netlify.com/articles/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -24,27 +64,36 @@
   </url>
   
   <url>
+    <loc>https://iilq.netlify.com/logistic-4-0/conferences/</loc>
+  </url>
+  
+  <url>
     <loc>https://iilq.netlify.com/contact/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com/articles/test/</loc>
+    <loc>https://iilq.netlify.com/categories/diff%C3%A9renciation/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com/articles/test2/</loc>
+    <loc>https://iilq.netlify.com/categories/erp/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com/articles/test3/</loc>
+    <loc>https://iilq.netlify.com/logistic-4-0/formations/</loc>
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com/articles/test4/</loc>
+    <loc>https://iilq.netlify.com/innovation/groupe-innovation/</loc>
   </url>
   
   <url>
     <loc>https://iilq.netlify.com/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -61,7 +110,25 @@
   </url>
   
   <url>
+    <loc>https://iilq.netlify.com/categories/mes/</loc>
+    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://iilq.netlify.com/iilq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/categories/production/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/categories/rfid/</loc>
+    <lastmod>2018-01-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -76,10 +143,6 @@
   
   <url>
     <loc>https://iilq.netlify.com/transfert/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iilq.netlify.com/transfert/tms/</loc>
   </url>
   
 </urlset>

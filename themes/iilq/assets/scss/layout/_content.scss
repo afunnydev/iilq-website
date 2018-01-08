@@ -631,10 +631,9 @@
 			}
 			@include breakpoint(phone) {
 				max-width: 100%;
-				margin-top: 15px;
 				display: block!important;
 				height: auto;
-				margin-left: 0px;
+				margin: 15px auto 0;
 			}
 		}
 	}
@@ -737,6 +736,367 @@
 }
 
 /*=====  End of Fomration Page  ======*/
+
+/*======================================
+=            Ateliers Page            =
+======================================*/
+
+#atelier-content {
+	.intro-block {
+		text-align: center;
+		padding: 50px 100px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding: 50px 70px;
+		}
+		@include small-lap {
+			padding: 70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding: 50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding: 50px 40px;
+			font-size: 13px;
+		}
+		@include breakpoint(phone-xs) {
+			padding: 30px;
+			font-size: 12px;
+		}
+		h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 3em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			margin-bottom: 30px;
+			@include breakpoint(phone) {
+				font-size: 2.5em;
+			}
+		}
+		p {
+			@include regular-text;
+			color: white;
+			text-align: left;
+			margin-bottom: 15px;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		&:nth-child(odd) {
+			background:#efeff0;
+			h3 {
+				color:$blue;
+			}
+		}
+		&:nth-child(even) {
+			background:#d4dfe1;
+			h3 {
+				color:$blue;
+			}
+		}		
+		h3 {
+			margin-bottom: 15px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 70px;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+			&:last-child(){
+				margin-bottom: 0;
+			}
+		}
+		.read-btn {
+			color:$text;
+			border:2px solid $blue;
+			display: inline-block;
+			font-size: 1.250em;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 17px;
+			font-family: $font-heading;
+			padding-bottom: 17px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}
+		}
+		&.no-margin {
+			p {
+				margin-bottom: 20px;
+			}
+		}				
+	}
+}
+
+/*=====  End of Ateliers Page  ======*/
+
+/*======================================
+=            Groupe d'innovation Page            =
+======================================*/
+
+#groupe-content {
+	.intro-block {
+		text-align: center;
+		padding: 40px 100px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding: 40px 70px;
+		}
+		@include small-lap {
+			padding: 40 70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding: 40px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding: 40px 40px;
+			font-size: 13px;
+		}
+		@include breakpoint(phone-xs) {
+			padding: 30px;
+			font-size: 12px;
+		}
+		h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 3em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			@include breakpoint(phone) {
+				font-size: 2.5em;
+			}
+		}
+		p {
+			@include regular-text;
+			color: white;
+			text-align: left;
+			margin-bottom: 15px;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		&:nth-child(odd) {
+			background:#efeff0;
+			h3 {
+				color:$blue;
+			}
+		}
+		&:nth-child(even) {
+			background:#d4dfe1;
+			h3 {
+				color:$blue;
+			}
+		}		
+		h3 {
+			margin-bottom: 15px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 70px;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+			&:last-child(){
+				margin-bottom: 0;
+			}
+		}
+		.read-btn {
+			color:$text;
+			border:2px solid $blue;
+			display: inline-block;
+			font-size: 1.250em;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 17px;
+			font-family: $font-heading;
+			padding-bottom: 17px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}
+		}
+		h6 {
+			font-size: 1.5em;
+			color:$blue-dark;
+			line-height: 120%;
+			margin-bottom: 20px;
+			font-weight: 700;
+			font-family: $font-heading;
+			br {
+				@include breakpoint(phone) {
+					display: none;
+				}
+			}
+		}
+		ul {
+			li {
+				display: block;
+				color:$blue;
+				line-height: 1.2;
+				font-size: 1.2em;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				position: relative;
+				padding-left: 15px;
+				font-family: $font-heading;
+				&:before {
+					width: 6px;
+					height: 6px;
+					background:$blue;
+					content:'';
+					position: absolute;
+					left:0px;
+					top:13px;
+					border-radius:50%;
+				}
+			}
+		}
+		&.no-margin {
+			p {
+				margin-bottom: 20px;
+			}
+		}				
+	}
+}
+
+/*=====  End of Groupe Page  ======*/
 
 /*===============================================
 =            Transfer Single Content            =

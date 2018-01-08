@@ -1,6 +1,7 @@
 {{ define "main" }}
 <header id="transfer-header" class="yellow-border">
-    <img src="/img/erp.jpg" alt="" class="img-responsive">
+    <img src="{{ .Params.banniere.desktop }}" alt="{{ .Params.identifiant }}" class="img-responsive hidden-xs">
+    <img src="{{ .Params.banniere.mobile }}" alt="{{ .Params.identifiant }}" class="img-responsive visible-xs">
     <div class="header-caption">
         
     </div>
@@ -15,22 +16,7 @@
         
         <div class="col-lg-9 col-md-8 col-sm-8">
             <div class="single-content">
-                <h2>TMS</h2>
-                <h3>Qu’est-ce que c’est ?</h3>
-                <p>Le Transport Management System est un progiciel souvent complémentaire à un progiciel
-                ERP ou encore un système WMS. Il sert spécifiquement à gérer l’ensemble des opérations
-                liées aux transports des matières, des marchandises et des produits finis. Le logiciel peut
-                être adapté en fonction du transport : TL (charge complète), LTL (charge partielle) et
-                intermodal (combinaison de plusieurs modes de transport).</p>
-                <ul>
-                    <li>Optimisation du processus de gestion</li>
-                    <li> Interconnexion des départements</li>
-                    <li> Traçabilité de l’information grâce aux données obtenues en temps réel</li>
-                    <li> Standardisation des processus de production</li>
-                    <li> Maîtrise des coûts, des délais de fabrication et de la distribution</li>
-                    <li> Augmentation de la productivité globale</li>
-                </ul>
-                <p><strong>Il existe de nombreux choix d’ERP dans une multitude de domaines spécialisés, il peut donc s’avérer difficile de choisir la solution convenant à vos besoins.</strong></p>
+                {{ .Content }}
             </div>
         </div>
         <!-- // single content  -->

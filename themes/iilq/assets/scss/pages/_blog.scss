@@ -52,6 +52,10 @@
 			color:$text;
 			line-height: 1.3;
 			font-size: 1.3em;
+			margin-bottom: 20px;
+			strong {
+				font-family: $fontsharpbold;
+			}
 		}
 		ul {
 			margin-top: 20px;

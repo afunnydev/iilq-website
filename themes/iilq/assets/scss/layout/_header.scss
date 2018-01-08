@@ -131,6 +131,7 @@
 				display: none;
 			}
 			.navbar-nav {
+				display: inline-block;
 				@include breakpoint(tablet) {
 					float: none;
 				}
@@ -612,21 +613,20 @@
 =====================================*/
 
 #yellow-header {
-	height:550px;
-	background:$blue;
+	height:450px;
 	position: relative;
 	background:$yellow;
 	&.blue-header {
 		background:$blue!important;
 	}
 	@include breakpoint(laptop) {
-		height: 500px;
+		height: 400px;
 	}
 	@include breakpoint(tablet) {
-		height: 450px;
+		height: 350px;
 	}
 	@include breakpoint(phone) {
-		height: 300px;
+		height: 250px;
 	}
 	.container {
 		height: 100%;

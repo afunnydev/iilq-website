@@ -6,45 +6,37 @@
     <description>Recent content in Blog on IILQ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://iilq.netlify.com/articles/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Dummy1</title>
-      <link>https://iilq.netlify.com/articles/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>MES – Manufacturing Execution System vs ERP</title>
+      <link>https://iilq.netlify.com/articles/manufacturing-execution-system-vs-erp/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/test/</guid>
-      <description>This is an article, for the best and the worst
-Testing title Hello</description>
+      <guid>https://iilq.netlify.com/articles/manufacturing-execution-system-vs-erp/</guid>
+      <description>Performance, délai de production et respect des normes sont trois mots d’ordre afin qu’une entreprise soit apte à répondre à la demande du marché. L’avancé des recherches ainsi que le progrès technologique ont permis aux dirigeants d’optimiser leur chaîne de production grâce à des logiciels de plus en plus performants. Cette pression pesant sur les épaules des manufacturiers afin de produire plus avec moins représente un défi quotidien dans l’atteinte de rentabilité.</description>
     </item>
     
     <item>
-      <title>Dummy2</title>
-      <link>https://iilq.netlify.com/articles/test2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>RFID</title>
+      <link>https://iilq.netlify.com/articles/rfid/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/test2/</guid>
-      <description></description>
+      <guid>https://iilq.netlify.com/articles/rfid/</guid>
+      <description>La technologie d’identification par radiofréquence (RFID) capture et mémorise automatiquement des données qui ont comme canal les ondes et les rayons émis par une radiofréquence. Son fonctionnement est relativement simple : un récepteur détectera et lira les données de la puce électronique d’une étiquette présente dans un objet. Cette puce n’est pas percevable par le consommateur et les fréquences peuvent même être captées au travers de matériaux peu épais. Afin d’assurer une lecture des données, les informations dans la puce sont regroupées sous un identifiant, généralement unique, et transmises par l’antenne plate de l’étiquette.</description>
     </item>
     
     <item>
-      <title>Dummy3</title>
-      <link>https://iilq.netlify.com/articles/test3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Différenciation retardée</title>
+      <link>https://iilq.netlify.com/articles/differenciation-retardee/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/test3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dummy4</title>
-      <link>https://iilq.netlify.com/articles/test4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iilq.netlify.com/articles/test4/</guid>
-      <description></description>
+      <guid>https://iilq.netlify.com/articles/differenciation-retardee/</guid>
+      <description>La différenciation retardée est une stratégie visant une meilleure organisation de la production, en ne personnalisant la demande du client qu’à la toute fin du cycle de production. La complexité des échanges et la demande croissante de plus en plus précise des consommateurs nécessitent une massification de la production. La technique de différenciation retardée répond aux différentes caractéristiques recherchées par les consommateurs :
+ Des prix réduits De courts délais de livraison Le pouvoir de commander au moment et à l’endroit désiré  Le rendement engendré par une production en grande série d’une gamme de produits dont les éléments de base sont communs permet à l’entreprise d’adapter son produit fini tout en le spécialisant à une demande dite individuelle.</description>
     </item>
     
   </channel>

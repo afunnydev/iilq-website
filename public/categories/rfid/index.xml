@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RFID on IILQ</title>
+    <link>https://iilq.netlify.com/categories/rfid/</link>
+    <description>Recent content in RFID on IILQ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://iilq.netlify.com/categories/rfid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RFID</title>
+      <link>https://iilq.netlify.com/articles/rfid/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://iilq.netlify.com/articles/rfid/</guid>
+      <description>La technologie d’identification par radiofréquence (RFID) capture et mémorise automatiquement des données qui ont comme canal les ondes et les rayons émis par une radiofréquence. Son fonctionnement est relativement simple : un récepteur détectera et lira les données de la puce électronique d’une étiquette présente dans un objet. Cette puce n’est pas percevable par le consommateur et les fréquences peuvent même être captées au travers de matériaux peu épais. Afin d’assurer une lecture des données, les informations dans la puce sont regroupées sous un identifiant, généralement unique, et transmises par l’antenne plate de l’étiquette.</description>
+    </item>
+    
+  </channel>
+</rss>

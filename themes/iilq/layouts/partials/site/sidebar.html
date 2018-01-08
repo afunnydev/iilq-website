@@ -1,0 +1,29 @@
+<aside id="blog-sidebar">
+                          
+  <div id="social-bar">
+      <h5>Suivez-nous sur :</h5>
+      <a href="#" target="_blank"><span class="icon-twitter"></span></a>
+      <a href="#" target="_blank"><span class="icon-fb"></span></a>
+      <a href="#" target="_blank"><span class="icon-linkedin"></span></a>
+      <a href="#" target="_blank"><span class="icon-googleplus"></span></a>                                
+  </div>
+  <!-- // socials  -->
+
+  <div class="category-box">
+      <h5>ARTICLE PAR SUJET</h5>
+      {{ $tags := $.Site.Taxonomies.categories.ByCount }}
+      <ul>
+        {{ if eq .Lang "fr" }}
+        {{ range $tags }}
+        <li><a href="{{ $.Site.BaseURL }}categories/{{ .Term | urlize }}">{{ .Term }}</a></li>
+        {{ end }}
+        {{ else if eq .Lang "en" }}
+        {{ range $tags }}
+        <li><a href="{{ $.Site.BaseURL }}en/categories/{{ .Term | urlize }}">{{ .Term }}</a></li>
+        {{ end }}
+        {{ end }}               
+      </ul>
+  </div>
+  <!-- // category  -->
+
+</aside>

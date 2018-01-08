@@ -12,10 +12,28 @@
     
     <item>
       <title>Ateliers - Découvertes</title>
-      <link>https://iilq.netlify.com/logistic-4-0/ateliers-decouvertes/</link>
+      <link>https://iilq.netlify.com/logistic-4-0/ateliers-decouverte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/logistic-4-0/ateliers-decouvertes/</guid>
+      <guid>https://iilq.netlify.com/logistic-4-0/ateliers-decouverte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conférences</title>
+      <link>https://iilq.netlify.com/logistic-4-0/conferences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iilq.netlify.com/logistic-4-0/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formations</title>
+      <link>https://iilq.netlify.com/logistic-4-0/formations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iilq.netlify.com/logistic-4-0/formations/</guid>
       <description></description>
     </item>
     

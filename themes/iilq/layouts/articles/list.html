@@ -43,71 +43,20 @@
 
                   <div class="popular-articles-slider">
                       
+                      {{ range .Pages }}
                       <div class="item">
                           <div class="article-box">
-                              <img src="/img/blgo1.jpg" alt="" class="img-responsive">
+                              <img src="{{.Params.image}}" alt="" class="img-responsive">
                               <a href="#">
                                   <div class="article-caption">
-                                      <h5>Transfert de technologie</h5>
-                                      <p>Ulparcie ndelentemo cor aut...</p>
+                                      <h5>{{.Title}}</h5>
+                                      <!-- <p>Ulparcie ndelentemo cor aut...</p> -->
                                   </div>
                               </a>
                           </div>
                       </div>
                       <!-- // article  -->
-
-                      <div class="item">
-                          <div class="article-box">
-                              <img src="/img/blgo1.jpg" alt="" class="img-responsive">
-                              <a href="#">
-                                  <div class="article-caption">
-                                      <h5>Transfert de technologie</h5>
-                                      <p>Ulparcie ndelentemo cor aut...</p>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                      <!-- // article  -->
-
-                      <div class="item">
-                          <div class="article-box">
-                              <img src="/img/blgo1.jpg" alt="" class="img-responsive">
-                              <a href="#">
-                                  <div class="article-caption">
-                                      <h5>Transfert de technologie</h5>
-                                      <p>Ulparcie ndelentemo cor aut...</p>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                      <!-- // article  -->
-
-                      <div class="item">
-                          <div class="article-box">
-                              <img src="/img/blgo1.jpg" alt="" class="img-responsive">
-                              <a href="#">
-                                  <div class="article-caption">
-                                      <h5>Transfert de technologie</h5>
-                                      <p>Ulparcie ndelentemo cor aut...</p>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                      <!-- // article  -->
-
-                      <div class="item">
-                          <div class="article-box">
-                              <img src="/img/blgo1.jpg" alt="" class="img-responsive">
-                              <a href="#">
-                                  <div class="article-caption">
-                                      <h5>Transfert de technologie</h5>
-                                      <p>Ulparcie ndelentemo cor aut...</p>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                      <!-- // article  -->                                                                                                                
-
+                      {{ end }}
 
                   </div>
                   <!-- // slider  -->
@@ -122,19 +71,25 @@
                         {{ range .Pages }}
                           <article class="blog-article">
                               <div class="image-holder">
-                                  <a href="#">
-                                      <img src="/img/blog-listing.jpg" alt="" class="img-responsive">
+                                  <a href="{{.Permalink}}">
+                                      <img src="{{.Params.image}}" alt="" class="img-responsive">
                                   </a>
                               </div>
                               <!-- // iamge holder  -->
-                              <h3>Logistic 4.0</h3>
-                              <p>Ulparcie ndelentemo cor aut verspic ipsant oditatum vid quidesciur mo eosam facerum reptassim vent, velis autem qui con nost ipictem ea conse est, nonestestrum endipsae nonsed mo eat qui acearibus coreiustia natet, sam laboritate od quid modi omnimo corati tem est accusdandia serum venissint moloris ut untorum exped que pelecte debit...</p>
+                              <h3>{{ .Title }}</h3>
+                              <p>{{ .Summary }}</p>
                               <footer>
                                   <div class="meta-info">
                                       <ul>
-                                          <li><a href="#">#Logistic4.0</a></li>
-                                          <li><a href="#">#transport</a></li>
-                                          <li><a href="#">#innovatation</a></li>
+                                          {{ if eq .Lang "fr" }}
+                                            {{ range $i, $e := .Params.categories }}
+                                            <li><a href="{{ $.Site.BaseURL }}categories/{{ $e | urlize }}">#{{$e}}</a></li>
+                                            {{end}}
+                                          {{ else if eq .Lang "en" }}
+                                            {{ range $i, $e := .Params.categories }}{{ if $i }}/{{ end }} 
+                                            <li><a href="{{ $.Site.BaseURL }}en/categories/{{ $e | urlize }}">#{{$e}}</a></li>
+                                            {{end}}
+                                          {{ end }}
                                       </ul>
                                   </div>
                                   <!-- // meta  -->                                
@@ -162,29 +117,7 @@
                   <!-- // col md 8  -->
 
                   <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4" style="overflow: hidden;">
-                      <aside id="blog-sidebar">
-                          
-                          <div id="social-bar">
-                              <h5>Suivez-nous sur :</h5>
-                              <a href="#" target="_blank"><span class="icon-twitter"></span></a>
-                              <a href="#" target="_blank"><span class="icon-fb"></span></a>
-                              <a href="#" target="_blank"><span class="icon-linkedin"></span></a>
-                              <a href="#" target="_blank"><span class="icon-googleplus"></span></a>                                
-                          </div>
-                          <!-- // socials  -->
-
-                          <div class="category-box">
-                              <h5>ARTICLE PAR SUJET</h5>
-                              <ul>
-                                  <li><a href="#">Ulparcie</a></li>
-                                  <li><a href="#">Delentemo</a> </li>
-                                  <li><a href="#">Verspic</a> </li>
-                                  <li><a href="#">Opsant</a> </li>
-                              </ul>
-                          </div>
-                          <!-- // category  -->
-
-                      </aside>
+                      {{- partial "site/sidebar.html" . -}}
                   </div>
                   <!-- // blog sidebar  -->                        
 
