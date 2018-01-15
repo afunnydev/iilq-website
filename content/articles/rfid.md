@@ -34,3 +34,5 @@ Cette technologie permet notamment de récolter plusieurs informations, grâce �
 - Une logistique mobile
 
 On peut en conclure que cette technologie prendra le relai des codes à barres dans un futur plus proche que nous l’imaginons, puisqu’elle ne se limite pas au type de produits, mais permet d’attribuer une étiquette unique à chaque produit. Il s’agit d’un choix à considérer dans l’optique d’optimiser le rendement d’une chaîne logistique!
+
+![Schema RFID](/img/schema-RFID.png "Schema RFID")

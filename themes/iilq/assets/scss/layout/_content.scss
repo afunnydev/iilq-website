@@ -1158,6 +1158,11 @@
 			font-size: 1.8em;
 			margin-bottom: 10px;
 		}
+		img {
+			display: block;
+		    max-width: 100%;
+		    height: auto;
+		}
 		p {
 			@include regular-text;
 			margin-bottom: 30px;

@@ -19,7 +19,7 @@ Le progiciel Manufacturing Execution System (MES) permet d’analyser les donné
 
 Selon la norme ANSI/ISA-95, applicable à l’échelle internationale, ce progiciel doit répondre à 11 critères afin d’être considéré comme entièrement fonctionnel :
 
-**Il faut un tableau ici**
+![Tableau MES](/img/tableau-MES.png "Tableau MES")
 
 Il est possible de personnaliser l’utilisation d’un MES. Les fonctionnalités du système sont installées sous forme de modules, ce qui permet à l’entreprise de choisir les modules répondant le mieux à ses besoins et champs d’activités. Il est également important de noter que l’installation d’un tel logiciel n’automatise pas l’usine, mais plutôt le transfert et l’analyse des données, parce qu’il est capable d’engendrer des interactions entre ses différents modules. Le choix des fonctionnalités à implanter dépendra également des fonctionnalités déjà exécutées par d’autres progiciels tels qu’un Entreprise Ressource Planning (ERP). Afin d’observer une réduction des coûts de production, il est important d’assurer qu’un MES est complémentaire au système ERP déjà en place. 
 

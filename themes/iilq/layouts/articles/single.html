@@ -3,12 +3,9 @@
 	<header id="inner-header" class="single-article-header">
       <img src="/img/contact.jpg" alt="" class="img-responsive">
       <div class="overlay"></div>
-      <div class="header-caption">
-          <h1>{{.Title}}</h1>
-          <div class="meta-info">
-              <span>Par: {{.Params.author}}</span>
-          </div>
-      </div>
+      <!-- <div class="header-caption">
+      
+      </div> -->
       <!-- // caption  -->
   </header>
   <!-- // inner header  -->
@@ -20,7 +17,8 @@
           <div class="row">
               <div class="col-lg-9 col-md-8 col-sm-8">
                   <article id="blog-single-block">
-                      {{.Content | markdownify}}
+                    <h1>{{.Title}}</h1>
+                    {{.Content}}
                   </article>
                   <!-- // blg single  -->                        
               </div>

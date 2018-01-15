@@ -40,4 +40,6 @@ L’implantation de ce système instaure une base de données dite centralisée,
 - Clients prospects facilement identifiables et atteignables
 - Anticiper les efforts marketing à déployer
 
+![Schema CRM](/img/tableau-crm.png "Schema CRM")
+
 Il existe de nombreux choix d’un CRM dans une multitude de domaines spécialisés, il peut donc s’avérer difficile de choisir la solution convenant à vos besoins. 
