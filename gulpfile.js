@@ -7,6 +7,7 @@ var del = require('del');
 var exec = require('child_process').exec;
 
 // image resizing variables
+const imagelarge = 2600
 const imagefull = 1920;
 const imagehalf = 1024;
 const imagequart = 600;
@@ -18,6 +19,7 @@ gulp.task("clean-image", function(){
     'themes/iilq/static/quart/**/*',
     'themes/iilq/static/half/**/*',
     'themes/iilq/static/thumb/**/*',
+    'themes/iilq/static/large/**/*',
     'themes/iilq/static/img/*',
     // we don't want to clean this file though so we negate the pattern
     '!themes/iilq/static/img/ico',
@@ -29,6 +31,8 @@ gulp.task("clean-image", function(){
 // resize and optimize images
 gulp.task("image-resize", () => {
   return gulp.src("themes/iilq/source-images/*.{jpg,png,jpeg,gif}")
+    .pipe(imageresize({ width: imagelarge }))
+    .pipe(gulp.dest("themes/iilq/static/large/img"))
     .pipe(imageresize({ width: imagefull }))
     .pipe(gulp.dest("themes/iilq/static/img"))
     .pipe(imageresize({ width: imagehalf }))

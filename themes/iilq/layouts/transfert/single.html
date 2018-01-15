@@ -1,6 +1,7 @@
 {{ define "main" }}
 <header id="transfer-header" class="yellow-border">
-    <img src="{{ .Params.banniere.desktop }}" alt="{{ .Params.identifiant }}" class="img-responsive hidden-xs">
+    <img src="/large{{ .Params.banniere.desktop }}" alt="{{ .Params.identifiant }}" class="img-responsive hidden">
+    <img src="{{ .Params.banniere.desktop }}" alt="{{ .Params.identifiant }}" class="img-responsive hidden-xs regular">
     <img src="{{ .Params.banniere.mobile }}" alt="{{ .Params.identifiant }}" class="img-responsive visible-xs">
     <div class="header-caption">
         
@@ -14,87 +15,56 @@
 
     <div class="row">
         
-        <div class="col-lg-9 col-md-8 col-sm-8">
+        <div class="col-sm-12">
             <div class="single-content">
                 {{ .Content }}
             </div>
         </div>
         <!-- // single content  -->
 
-        <div class="col-lg-3 col-md-4 col-sm-4">
-            <div class="single-sidebar-transfer">
-                
-                <div class="subpages-box">
-                    <h5>ARTICLE PAR SUJET</h5>
-                    <ul>
-                        <li><a href="#">ERP</a></li>
-                        <li><a href="#">WMS</a> </li>
-                        <li><a href="#">TMS</a> </li>
-                        <li><a href="#">CRM</a> </li>
-                        <li><a href="#">RFID</a> </li>
-                        <li><a href="#">GSI 128</a> </li>
-                    </ul>
-                </div>
-                <!-- // category  -->
-
-                <div class="blog-sidebar">
-                    <h4>Articles populaire</h4>
-
-                <div class="popular-articles-slider-sidebar">
-                    
-                    <div class="item">
-                        <div class="article-box">
-                            <img src="/img/blgo1.jpg" alt="" class="img-responsive">
-                            <a href="#">
-                                <div class="article-caption">
-                                    <h6>Transfert de technologie</h6>
-                                    <p>Ulparcie ndelentemo cor aut...</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- // article  -->
-                    
-                    <div class="item">
-                        <div class="article-box">
-                            <img src="/img/blgo1.jpg" alt="" class="img-responsive">
-                            <a href="#">
-                                <div class="article-caption">
-                                    <h6>Transfert de technologie</h6>
-                                    <p>Ulparcie ndelentemo cor aut...</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- // article  -->                                                                                                                
-
-
-                </div>
-                <!-- // slider  -->
-
-                </div>
-                <!-- // sidebar  -->
-
-            </div>
-        </div>
-        <!-- // sidebar  -->
-
     </div>
     <!-- // row   -->
 
-        <footer>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Nous sommes prêts à optimiser votre chaîne logistique, l’êtes-vous ?</h5>
-                </div>
-                <div class="col-md-6">
-                    <a href="#">Contactez-nous</a>
-                </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Nous sommes prêts à optimiser votre chaîne logistique, l’êtes-vous ?</h5>
             </div>
-        </footer>
+            <div class="col-md-6">
+                <a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a>
+            </div>
+        </div>
+    </footer>
 
 </div>
 <!-- // foramtion content  -->
+<div id="popular-blogs" class="transfert">
+    <header>
+      <h4>{{ i18n "popular_articles" }}</h4>
+    </header>
+
+    <div class="popular-articles-slider transfert">
+      
+      {{ range where .Site.RegularPages "Type" "articles" }}
+      <div class="item">
+          <div class="article-box">
+              <img src="{{.Params.image}}" alt="" class="img-responsive">
+              <a href="{{.Permalink}}">
+                  <div class="article-caption">
+                      <h5>{{.Title}}</h5>
+                      <!-- <p>Ulparcie ndelentemo cor aut...</p> -->
+                  </div>
+              </a>
+          </div>
+      </div>
+      <!-- // article  -->
+      {{ end }}
+
+    </div>
+    <!-- // slider  -->
+
+</div>
+<!-- // popular articles  -->
 </div>
 <!-- // container  -->
 {{ end }}

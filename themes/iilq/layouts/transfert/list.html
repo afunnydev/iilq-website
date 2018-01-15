@@ -1,6 +1,6 @@
 {{ define "main" }}
 <header id="inner-header">
-    <img src="/img/transfer.jpg" alt="" class="img-responsive">
+    <img src="{{.Params.image}}" alt="" class="img-responsive">
     <div class="header-caption">
         
     </div>
@@ -12,7 +12,7 @@
    <div class="container">
        
         <div class="intro-block">
-            <h2>TRANSFERT</h2>
+            <h1>{{.Params.titre}}</h1>
         </div>
         <!-- // intro  -->
 
@@ -41,15 +41,13 @@
 
         <div class="content-block">
             <h2><strong>Nous vous outillons</strong></h2>
-            <p>L’échange d’informations et de connaissances alimente l’acquisition de compétences <br>
-                logistiques et c’est que nous prônons à l’IILQ. Nous voulons contribuer à votre développement <br>
-                et à votre succès en vous outillant pour suivre l’évolution du marché. <br>
-                <p><a href="#">ERP :</a> votre flux d’activités intégré et votre prise de décision facilitée <br>
-               <a href="#"> WMS :</a> la gestion de votre inventaire et vos commandes de produits simplifiées <br>
-               <a href="#"> TMS :</a> la gestion de vos transports optimisée <br>
-              <a href="#">  CRM :</a> vos relations clients améliorées <br>
-               <a href="#"> RFID :</a> des puces pour retracer facilement vos produits <br>
-              <a href="#">  GS1 128 :</a> le code-barre qui en fait plus</p>
+            <p>L’échange d’informations et de connaissances alimente l’acquisition de compétences logistiques et c’est que nous prônons à l’IILQ. Nous voulons contribuer à votre développement et à votre succès en vous outillant pour suivre l’évolution du marché. <br>
+            <p><a href="/transfert/erp">ERP :</a> votre flux d’activités intégré et votre prise de décision facilitée <br>
+               <a href="/transfert/wms">WMS :</a> la gestion de votre inventaire et vos commandes de produits simplifiées <br>
+               <a href="/transfert/tms">TMS :</a> la gestion de vos transports optimisée <br>
+               <a href="/transfert/crm">CRM :</a> vos relations clients améliorées <br>
+               <a href="/transfert/rfid">RFID :</a> des puces pour retracer facilement vos produits <br>
+               <a href="/transfert/gs1-128">GS1 128 :</a> le code-barre qui en fait plus</p>
         </div>
         <!-- // content block  -->       
 
@@ -65,7 +63,7 @@
             à moyen long terme. C’est pourquoi l’analyse de vos besoins sur un horizon de plusieurs
             années est primordiale afin d’instaurer une solution gagnante.</p>
             <h6>Découvrez notre offre de service</h6>
-                <a href="#" class="read-btn">Contactez-nous</a>
+            <a href='{{ $.Scratch.Get "contactPage" }}' class="read-btn">{{ i18n "contact" }}</a>
         </div>
         <!-- // content block  -->                                          
 

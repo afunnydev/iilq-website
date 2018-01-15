@@ -57,6 +57,20 @@
                       </div>
                       <!-- // article  -->
                       {{ end }}
+                      {{ range .Pages }}
+                      <div class="item">
+                          <div class="article-box">
+                              <img src="{{.Params.image}}" alt="" class="img-responsive">
+                              <a href="#">
+                                  <div class="article-caption">
+                                      <h5>{{.Title}}</h5>
+                                      <!-- <p>Ulparcie ndelentemo cor aut...</p> -->
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <!-- // article  -->
+                      {{ end }}
 
                   </div>
                   <!-- // slider  -->

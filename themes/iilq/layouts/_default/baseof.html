@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		{{ $.Scratch.Add "homePage" ("/" | absLangURL) }}
+		{{ $.Scratch.Add "contactPage" ("contact/" | absLangURL) }}
+		{{ $.Scratch.Add "aboutPage" ("iilq/" | absLangURL) }}
+		{{ $.Scratch.Add "articlesPage" ("articles/" | absLangURL) }}
+		{{ $.Scratch.Add "clientsPage" ("clients/" | absLangURL) }}
+		{{ $.Scratch.Add "logisticPage" ("logistic-4-0/" | absLangURL) }}
+		{{ $.Scratch.Add "innovationPage" ("innovation/" | absLangURL) }}
+		{{ $.Scratch.Add "transfertPage" ("transfert/" | absLangURL) }}
+		{{ if eq .Lang "fr" }}
+		{{ $.Scratch.Add "ateliersPage" ("logistic-4-0/ateliers-decouverte/" | absLangURL) }}
+		{{ else if eq .Lang "en" }}
+		{{ $.Scratch.Add "ateliersPage" ("logistic-4-0/ateliers-decouverte/" | absLangURL) }}
+		{{ end }}
 		{{ partial "site-head.html" . }}
 	</head>
 	<body>

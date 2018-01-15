@@ -53,15 +53,15 @@
 		/* caption */
 		.slider-caption {
 			*:first-child {
-				margin-bottom: 15px;
+				// margin-bottom: 15px;
 				@include breakpoint(phone-xs) {
-					margin-bottom: 15px;
+					// margin-bottom: 15px;
 				}
 				@include breakpoint(tablet) {
-					margin-bottom: 10px;
+					// margin-bottom: 10px;
 				}
 				@include breakpoint(phone)  {
-					margin-bottom: 15px
+					// margin-bottom: 15px
 				}
 			}
 			@include centre(both);
@@ -81,6 +81,7 @@
 				font-family: $font-heading;
 				font-size: 3.5em;
 				display: block;
+				line-height: 0.9;
 				letter-spacing: 6px;
 				@include breakpoint(tablet) {
 					font-size: 3em;
@@ -305,7 +306,7 @@
 			}
 			.icon-holder {
 				position: relative;
-				font-size: 90px;
+				font-size: 120px;
 				display: block;
 				-webkit-font-smoothing: antialiased;		
 				background:$yellow;
@@ -315,6 +316,9 @@
 				line-height: 220px;		
 				margin: 63.51px auto;	
 				position: relative;
+				&.small-icon {
+					font-size: 90px;
+				}
 				&.target-icon {
 					img {
 						margin-left: -15px;
