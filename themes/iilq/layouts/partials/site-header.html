@@ -11,30 +11,29 @@
 
         <ul class="nav-links">
             <li class="has-menu">
-              <a href="/innovation">Innovation </a> 
+              <a href='{{ $.Scratch.Get "innovationPage" }}'>Innovation </a> 
               <ul>
                 <li><a href="/innovation/groupe-innovation">Groupe Innovation</a></li>
               </ul>
             </li>
             <li class="has-menu"> 
-            	<a href="/transfert">Transfert </a>
+            	<a href='{{ $.Scratch.Get "transfertPage" }}'>Transfert </a>
                 <ul>
                   {{ range where .Site.RegularPages "Type" "transfert"}}
                   <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                   {{ end }}
                 </ul>
             </li>                      
-            <li><a href="#">LogisTIC 4.0</a></li>
+            <li><a href='{{ $.Scratch.Get "logisticPage" }}'>LogisTIC 4.0</a></li>
             <li class="has-menu">
-            	<a href="#nothing">IILQ</a>
+            	<a href='{{ $.Scratch.Get "aboutPage" }}'>IILQ</a>
             	<ul>
-            		<li><a href="#">Partenaires</a></li>
-            		<li><a href="#">Clients</a></li>
-            		<li><a href="{{ .Site.BaseURL }}iilq">À propos</a></li>
+                <li><a href='{{ $.Scratch.Get "clientsPage" }}'>Clients et Partenaires</a></li>
+            		<li><a href='{{ $.Scratch.Get "aboutPage" }}'>À propos</a></li>
             	</ul>
             </li>
-            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
-            <li><a href="{{ .Site.BaseURL }}articles">Blogue</a></li>
+            <li><a href='{{ $.Scratch.Get "contactPage" }}'>Contact</a></li>
+            <li><a href='{{ $.Scratch.Get "articlesPage" }}'>Blogue</a></li>
         </ul>
         <!-- // ul  -->
     
@@ -67,13 +66,13 @@
         <nav class="navbar">
             <ul class="nav navbar-nav">
               <li class="active dropdown">
-                <a class="dropdown-toggle" href="/innovation">Innovation </a> 
+                <a class="dropdown-toggle" href='{{ $.Scratch.Get "innovationPage" }}'>Innovation </a> 
                 <ul class="dropdown-menu animated fadeIn">
                   <li><a href="/innovation/groupe-innovation">Groupe Innovation</a></li>
                 </ul>
               </li>
               <li class="dropdown">
-                <a class="dropdown-toggle" href="/transfert">Transfert
+                <a class="dropdown-toggle" href='{{ $.Scratch.Get "transfertPage" }}'>Transfert
                 <!-- <span class="caret"></span> --></a>
                 <ul class="dropdown-menu animated fadeIn">
                   {{ range where .Site.RegularPages "Type" "transfert"}}
@@ -82,7 +81,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-              	<a href="/logistic-4-0" class="dropdown-toggle">LogisTIC 4.0</a>
+              	<a href='{{ $.Scratch.Get "logisticPage" }}' class="dropdown-toggle">LogisTIC 4.0</a>
               	<ul class="dropdown-menu animated fadeIn">
 	            		<li><a href="{{ .Site.BaseURL }}logistic-4-0/formations/">Formations</a></li>
                   <li><a href="{{ .Site.BaseURL }}logistic-4-0/ateliers-decouverte/">Ateliers Découvertes</a></li>
@@ -90,16 +89,15 @@
 	            	</ul>
               </li>
 	            <li class="dropdown">
-	            	<a href="#nothing" class="dropdown-toggle">IILQ
+	            	<a href='{{ $.Scratch.Get "aboutPage" }}' class="dropdown-toggle">IILQ
 	            	<!-- <span class="caret"></span> --></a>
 	            	<ul class="dropdown-menu animated fadeIn">
-	            		<li><a href="#">Partenaires</a></li>
-	            		<li><a href="#">Clients</a></li>
-	            		<li><a href="{{ .Site.BaseURL }}iilq">À propos</a></li>
+	            		<li><a href='{{ $.Scratch.Get "clientsPage" }}'>Clients et Partenaires</a></li>
+	            		<li><a href='{{ $.Scratch.Get "aboutPage" }}'>À propos</a></li>
 	            	</ul>
 	            </li>
-	            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
-	            <li><a href="{{ .Site.BaseURL }}articles">Blogue</a></li>
+	            <li><a href='{{ $.Scratch.Get "contactPage" }}'>Contact</a></li>
+	            <li><a href='{{ $.Scratch.Get "articlesPage" }}'>Blogue</a></li>
             </ul>
         </nav>
 

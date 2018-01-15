@@ -42,14 +42,6 @@
   </url>
   
   <url>
-    <loc>https://iilq.netlify.com/</loc>
-  </url>
-  
-  <url>
-    <loc>https://iilq.netlify.com/</loc>
-  </url>
-  
-  <url>
     <loc>https://iilq.netlify.com/logistic-4-0/ateliers-decouverte/</loc>
   </url>
   
@@ -61,6 +53,10 @@
   <url>
     <loc>https://iilq.netlify.com/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/clients-et-partenaires/</loc>
   </url>
   
   <url>
