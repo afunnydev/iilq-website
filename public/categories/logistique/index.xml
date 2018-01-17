@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logistique on IILQ</title>
+    <link>https://iilq.netlify.com/categories/logistique/</link>
+    <description>Recent content in Logistique on IILQ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://iilq.netlify.com/categories/logistique/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eCom vs logistique</title>
+      <link>https://iilq.netlify.com/articles/ecom-vs-logistique/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://iilq.netlify.com/articles/ecom-vs-logistique/</guid>
+      <description>Qu’est-ce que le e-commerce? Le e-commerce ou le commerce électronique sont deux termes utilisés pour définir l’ensemble des achats, des ventes ou des échanges de biens ou de services réalisés par le biais de réseaux électroniques. Bien que la grande majorité des transactions commerciales sont effectuées grâce au réseau internet, il existe d’autres types de réseaux utilisés dans le cadre du commerce B to B (interentreprise).
+Ces transactions peuvent être complétées au moyen de différents terminaux comme les ordinateurs, les consoles, les télévisions intelligentes, les téléphones intelligents, les tablettes, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

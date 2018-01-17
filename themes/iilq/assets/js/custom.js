@@ -201,25 +201,24 @@ $('.menu-btn').click(function(){
   
       var menu_ul = $('.nav-links > li.has-menu > ul'),
            menu_a  = $('.nav-links > li.has-menu > a');
+           menu_span = $('.nav-links > li.has-menu > a > span');
       
       menu_ul.hide();
     
-      menu_a.click(function(e) {
+      menu_span.click(function(e) {
         e.preventDefault();
         if(!$(this).hasClass('active')) {
           menu_a.removeClass('active');
           menu_ul.filter(':visible').slideUp('normal');
-          $(this).addClass('active').next().stop(true,true).slideDown('normal');
+          $(this).addClass('active').parent().next().stop(true,true).slideDown('normal');
         } else {
           $(this).removeClass('active');
-          $(this).next().stop(true,true).slideUp('normal');
+          $(this).parent().next().stop(true,true).slideUp('normal');
         }
       });
     
     });
     
- $(".nav-links > li.has-menu > a ").attr("href","javascript:;");
-
  $(function() {
   $('a[href*="#mas-header"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

@@ -88,6 +88,7 @@
 			p {
 				line-height: 1.4;
 				font-size: 1.5em;
+				hyphens: auto;
 				@include breakpoint(phone-xs)  {
 					font-size: 1.2em;
 				}
@@ -384,6 +385,7 @@
 		p {
 			@include regular-text;
 			margin-bottom: 50px;
+			hyphens: auto;
 		}
 	}
 }
@@ -428,6 +430,7 @@
 		color:$text;
 		line-height: 1.3;
 		font-size: 1.2em;
+		hyphens: auto;
 	}
 }
 
@@ -518,6 +521,7 @@
 	p {
 		@include regular-text;
 		margin-bottom: 30px;
+		hyphens: auto;
 	}
 	h6 {
 		font-size: 2em;
@@ -705,6 +709,7 @@
 		p {
 			@include regular-text;
 			margin-bottom: 30px;
+			hyphens: auto;
 			a {
 				color:$blue;
 				&:hover {
@@ -858,6 +863,7 @@
 		p {
 			@include regular-text;
 			margin-bottom: 30px;
+			hyphens: auto;
 			a {
 				color:$blue;
 				&:hover {
@@ -1040,6 +1046,7 @@
 		p {
 			@include regular-text;
 			margin-bottom: 70px;
+			hyphens: auto;
 			a {
 				color:$blue;
 				&:hover {
@@ -1137,6 +1144,7 @@
 			color: white;
 			text-align: left;
 			margin-bottom: 15px;
+			hyphens: auto;
 			a {
 				color:$blue;
 				&:hover {
@@ -1202,6 +1210,7 @@
 		p {
 			@include regular-text;
 			margin-bottom: 70px;
+			hyphens: auto;
 			a {
 				color:$blue;
 				&:hover {
@@ -1331,6 +1340,7 @@
 		p {
 			@include regular-text;
 			margin-bottom: 30px;
+			hyphens: auto;
 		}
 		h6 {
 			font-size: 2em;

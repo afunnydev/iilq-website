@@ -4,7 +4,7 @@ slug: differenciation-retardee
 identifiant: differenciation-retardee
 i18nlanguage: fr
 description: ""
-image: "/img/differentiation-retardee.png"
+image: "/img/differenciation-retardee.png"
 banniere: 
 author: "" 
 activemenu:

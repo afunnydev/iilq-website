@@ -27,6 +27,16 @@
   </url>
   
   <url>
+    <loc>https://iilq.netlify.com/articles/configurateur-de-produits/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iilq.netlify.com/articles/ecom-vs-logistique/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://iilq.netlify.com/articles/manufacturing-execution-system-vs-erp/</loc>
     <lastmod>2018-01-07T00:00:00+00:00</lastmod>
   </url>
@@ -47,7 +57,7 @@
   
   <url>
     <loc>https://iilq.netlify.com/articles/</loc>
-    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -60,6 +70,12 @@
   </url>
   
   <url>
+    <loc>https://iilq.netlify.com/categories/commerce-en-ligne/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://iilq.netlify.com/logistic-4-0/conferences/</loc>
   </url>
   
@@ -69,7 +85,7 @@
   
   <url>
     <loc>https://iilq.netlify.com/categories/diff%C3%A9renciation/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -89,7 +105,7 @@
   
   <url>
     <loc>https://iilq.netlify.com/</loc>
-    <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -106,6 +122,12 @@
   </url>
   
   <url>
+    <loc>https://iilq.netlify.com/categories/logistique/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://iilq.netlify.com/categories/mes/</loc>
     <lastmod>2018-01-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -117,7 +139,7 @@
   
   <url>
     <loc>https://iilq.netlify.com/categories/production/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

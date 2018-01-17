@@ -26,7 +26,11 @@
 		font-size: 14px;
 	}
 	.container {
-		padding-left: 65px;		
+		padding-left: 65px;	
+		@include breakpoint(phone) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}	
 	}
 	h6 {
 		color:$gray-light;
