@@ -1,12 +1,13 @@
 ---
-title: "ERP"
-description: "This is a description"
+title: "Le progiciel qui permet d'automatiser vos activités | IILQ"
+description: "L'instauration d'un ERP améliore l'organisation de l'ensemble des départements en automatisant les flux d'activités et en facilitant les prises de décisions. Notre rôle est de vous aider à choisir la solution logicielle convenant à vos besoins. "
 identifiant: erp
 i18nlanguage: fr
 slug: erp
+titre: ERP
 activemenu: transfert
 draft: false
-image:
+image: /img/banniere-mobile-ERP.jpg
 weight: 2
 banniere:
   desktop: /img/banniere-ERP.jpg

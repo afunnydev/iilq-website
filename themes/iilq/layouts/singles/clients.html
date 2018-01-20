@@ -1,6 +1,6 @@
 {{ define "main" }}
 <header id="inner-header">
-    <img src="{{.Params.image}}" alt="" class="img-responsive">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
     <div class="header-caption">
         
     </div>
@@ -28,7 +28,7 @@
         <!-- // content block  -->
 
         <div class="intro-block">
-            <h2>Nos clients</h2>
+            <h2>{{.Params.titre2}}</h2>
         </div>
         <!-- // intro  -->   
 

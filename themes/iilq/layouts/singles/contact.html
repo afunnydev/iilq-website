@@ -1,9 +1,8 @@
 {{ define "main" }}
 <main class="main" id="contact">
 	<header id="inner-header">
-      <img src="/img/contact.jpg" alt="" class="img-responsive">
+      <img src="{{.Params.image}}" alt="{{.Params.section1.title}}" class="img-responsive">
       <div class="header-caption">
-          
       </div>
       <!-- caption  -->
   </header>
@@ -16,13 +15,20 @@
               <div id="contact-block">
                   <div class="content">
                       <div class="text">
-                      <h4>Contactez-nous</h4>
+                      <h4>{{.Params.section1.title}}</h4>
                       <address>
-                          1111, rue Lapierre <br>
-                          Bureau 1.043 <br>
-                          Montréal, Lasalle, QC <br>
-                          H8N  2J4 <br>
-                          514 364-2640
+                        {{ if eq .Lang "fr" }}
+                          {{.Site.Data.settings.address.fr.road}} <br>
+                          {{.Site.Data.settings.address.fr.app}} <br>
+                          {{.Site.Data.settings.address.fr.city}}, {{.Site.Data.settings.address.fr.province}} <br>
+                          {{.Site.Data.settings.address.fr.postal}} <br>
+                        {{ else if eq .Lang "en" }}
+                          {{.Site.Data.settings.address.en.road}} <br>
+                          {{.Site.Data.settings.address.en.app}} <br>
+                          {{.Site.Data.settings.address.en.city}}, {{.Site.Data.settings.address.en.province}} <br>
+                          {{.Site.Data.settings.address.en.postal}} <br>
+                        {{ end }}
+                          {{.Site.Data.settings.phone}}
                       </address>
                       </div>
                   </div>
@@ -167,22 +173,22 @@
           </a>
 
           <div id="contact-intro">
-              <h4>Questions relatives à la logistique</h4>
-              <p>Nous aidons les entreprises à accroître leurs profitabilités grâce à nos experts en  logisitque et à nos programmes de subvention d’aide à la recherche et au transfert technologique.</p>
+              <h4>{{.Params.section2.title}}</h4>
+              <p>{{.Params.section2.desc}}</p>
           </div>
           <!-- // contact intro  -->
 
-          <div id="contact-form">
+          <form id="contact-form" name="contact-{{.Lang}}" netlify method="post">
               <div class="row">
                   <div class="col-sm-4">
-                      <h6>Écrivez-nous</h6>
-                      <input type="text" placeholder="Votre nom">
-                      <input type="email" placeholder="Votre courriel">
-                      <input type="text" placeholder="Votre sujet">
+                      <h6>{{ i18n "writeus" }}</h6>
+                      <input type="text" name="name" placeholder='{{ i18n "yourname" }}'>
+                      <input type="email" name="email" placeholder='{{ i18n "youremail" }}'>
+                      <input type="text" name="subject" placeholder='{{ i18n "yoursubject" }}'>
                   </div>
                   <!-- // md 4  -->
                   <div class="col-sm-6">
-                      <textarea name="" placeholder="Votre message"></textarea>
+                      <textarea name="message" placeholder='{{ i18n "yourmessage" }}'></textarea>
                   </div>
                   <!-- // col md 6  -->
                   <div class="col-sm-2">
@@ -191,7 +197,7 @@
                   <!-- // md 2  -->
               </div>
               <!-- // row  -->
-          </div>
+          </form>
           <!-- // form  -->
 
 

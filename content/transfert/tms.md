@@ -1,12 +1,13 @@
 ---
-title: "TMS"
-description: "This is a description"
+title: "Gestion des transports optimisée | IILQ"
+description: "Les différents modules de gestions d'un TMS vous permettront de planifier vos déplacements de marchandise et d’effectuer le suivi des transports de manière optimale. Notre rôle est de vous aider à choisir la solution logicielle convenant à vos besoins. "
 identifiant: tms
 i18nlanguage: fr
 slug: tms
 activemenu: transfert
 draft: false
-image:
+image: /img/banniere-mobile-TMS.jpg
+titre: TMS
 weight: 3
 banniere:
   desktop: /img/banniere-TMS.jpg

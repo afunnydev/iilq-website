@@ -1,12 +1,13 @@
 ---
-title: "RFID"
-description: "This is a description"
+title: "Des données intelligentes sur vos produits | IILQ"
+description: "La technologie d'identification par radiofréquence permet d'effectuer le suivi des déplacements des produits dans une chaîne de production afin d’obtenir la position en temps réel des marchandises. Notre rôle est de vous aider à choisir la solution logicielle convenant à vos besoins. "
 identifiant: rfid
 i18nlanguage: fr
 slug: rfid
 activemenu: transfert
 draft: false
-image:
+titre: RFID
+image: /img/banniere-mobile-RFID.jpg
 weight: 4
 banniere:
   desktop: /img/banniere-RFID.jpg

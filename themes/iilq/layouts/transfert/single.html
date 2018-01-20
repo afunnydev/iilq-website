@@ -45,10 +45,10 @@
 
     <div class="popular-articles-slider transfert">
       
-      {{ range where .Site.RegularPages "Type" "articles" }}
+      {{ range (shuffle (where .Site.RegularPages "Type" "articles")) }}
       <div class="item">
           <div class="article-box">
-              <img src="{{.Params.image}}" alt="" class="img-responsive">
+              <img src="/quart{{.Params.imagecarree}}" alt="" class="img-responsive">
               <a href="{{.Permalink}}">
                   <div class="article-caption">
                       <h5>{{.Title}}</h5>

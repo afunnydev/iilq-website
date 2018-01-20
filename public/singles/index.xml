@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Singles on IILQ</title>
+    <title>Singles on IILQ | Institut d&#39;Innovation en Logistique du Québec</title>
     <link>https://iilq.netlify.com/singles/</link>
-    <description>Recent content in Singles on IILQ</description>
+    <description>Recent content in Singles on IILQ | Institut d&#39;Innovation en Logistique du Québec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -34,7 +34,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://iilq.netlify.com/iilq/</guid>
-      <description></description>
+      <description>Vision L’IILQ est devenu un Centre d’excellence dans les technologies de la logistique en s’appuyant sur l’effet de levier que représente son écosystème de développement d’applications mobiles, son laboratoire des technologies de la logistique et ses partenariats avec des partenaires publics et privés.
+Mission La mission de l’IILQ est d’augmenter la performance et la productivité des PME du Québec en renforçant les processus d’innovation qui permettront l’amélioration continue de leurs fonctions logistiques.</description>
     </item>
     
   </channel>

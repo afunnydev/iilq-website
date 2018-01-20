@@ -51,7 +51,8 @@
 	}
 	.header-socials {
 		position: absolute;
-		right: 325px;
+		/* right: 325px; */
+		right: 0;
 		top: 50%;
 		transform: translateY(-50%);
 		width: 200px;
@@ -397,12 +398,18 @@
 					height: 400px;
 				}
 			}
+			opacity: 0;
+			&:first-child {
+				opacity: 1
+			}
+
 		}
 		/* caption */
 		.slider-caption {
 			@include centre(both);
 			text-align: center;
 			max-width: 900px;
+			display: none;
 			@include breakpoint(laptop) {
 				width: 70%;
 			}
@@ -464,6 +471,14 @@
 				&:hover {
 					background:$yellow;
 				}				
+			}
+		}
+		&.slick-initialized {
+			.slider-caption {
+				display: block;
+			}
+			.item {
+				opacity: 1;
 			}
 		}
 	}

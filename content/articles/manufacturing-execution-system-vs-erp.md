@@ -4,9 +4,10 @@ slug: manufacturing-execution-system-vs-erp
 identifiant: manufacturing-execution-system-vs-erp
 i18nlanguage: fr
 description: ""
-image: "/img/mes-vs-erp.png"
-banniere: ""
-author: "" 
+image: "/img/Blogue-MES.jpg"
+imagecarree: "/img/Blogue-MES-carre.jpg"
+banniere: "/img/Blogue-MES-NB-carroussel.jpg"
+author: "Adèle Charest-Normandeau"  
 activemenu:
 weight: 0
 date: 2018-01-07

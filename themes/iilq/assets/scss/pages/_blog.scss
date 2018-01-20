@@ -301,6 +301,11 @@
 					letter-spacing: 2px;
 				}
 			}
+			&.categories {
+				header {
+					padding-top: 3.5em;
+				}
+			}
 		}	
 		/* slider */
 		.popular-articles-slider {
@@ -329,7 +334,8 @@
 				}
 				.article-caption {
 					@extend .dark-overlay;
-					background:rgba(0,0,0,0.7);
+					/* Fixed because image faded */
+					background:rgba(0,0,0,0.0);
 					padding:15px;
 					padding-top: 30px;
 					color:$white;

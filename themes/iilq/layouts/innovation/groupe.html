@@ -1,10 +1,11 @@
 {{ define "main" }}
-<header id="inner-header">
-    <img src="/img/groupe-innovation.jpg" alt="" class="img-responsive">
-    <div class="header-caption">
-        
+<!-- <header id="inner-header">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
+</header> -->
+<header id="yellow-header">
+    <div class="container">
+       <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive"> 
     </div>
-    <!-- // caption  -->
 </header>
 <!-- // inner header  -->
 
@@ -12,27 +13,24 @@
    <div class="container">
        
         <div class="intro-block">
-            <h1>LE GROUPE D'INNOVATION</h1>
+            <h1>{{.Params.titre}}</h1>
         </div>
         <!-- // intro  -->
+            
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
 
-        <div class="content-block no-margin hyphenate">
-            <p>Pour certaines entreprises ayant des problématiques spécifiques, nous proposerons la mise en place de groupe d’innovation regroupant de 4 à 8 entreprises afin d’initier une démarche conjointe.</p>  
-            <h6>Cette démarche inclut les activités suivantes : </h6>
-            <ul>
-                <li>Diagnostiquer de façon détaillée chaque entreprise</li>
-                <li>Identifier les enjeux communs</li>
-                <li>Définir les solutions potentielles</li>
-                <li>Choisir une solution à développer</li>
-                <li>Préparer une proposition de projet</li>
-                <li>Obtenir du financement</li>
-                <li>Réaliser le projet</li>
-            </ul>
+        {{ range $index, $element := $list }}
+        <div class="content-block hyphenate no-margin">
+          {{ if eq (add $index 1) 1 }}
+          <p>{{$.Params.introtext}}</p> 
+          {{ end }}
+          {{ $element.text | markdownify }}
         </div>
-        <!-- // content block  -->         
+        {{ end }}        
 
         <div class="content-block no-margin hyphenate">
-            <p><strong>Le groupe d’innovation est une formule qui nécessite une démarche de plusieurs mois pour lequel nous ferons une demande d’aide financière afin d’absorber une bonne partie des coûts de fonctionnement. Chaque entreprise participante aura à contribuer à une partie du financement en fonction du nombre de participants dans le groupe et de la durée de la démarche. Si vous êtes intéressés à participer à un groupe d’innovation dans votre région, contactez-nous et il nous fera un plaisir de vous trouver un groupe répondant à vos besoins.</strong></p>
+            <p><strong>{{.Params.lastsection}}</strong></p>
             {{- partial "site/parici.html" . -}}
         </div>
         <!-- // content block  -->                                          

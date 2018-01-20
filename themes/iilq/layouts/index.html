@@ -2,67 +2,25 @@
 <main class="main" id="homepage">
 	<header id="hero-header">
       <div id="hero-slider">
-          
+          {{ range .Params.slider }}
+          {{ $link := .link}}
           <div class="item hero-slide">
-            <a href='{{ $.Scratch.Get "ateliersPage" }}'>
-              <img src="/img/slide-ateliers-formations.jpg" alt="">
+            <a href='{{ $.Scratch.Get $link }}'>
+              <img src="{{.img}}" alt="">
               <div class="slider-caption">
-                  <span class="title" data-animation="fadeInDown" data-delay="0.2s">Découvrez nos ateliers</br>et formations</span>
-                  <p data-animation="fadeInUp" data-delay="0.2s">afin d'augmenter votre productivité.</p>
+                {{ if eq .layout 1}}
+                  <span class="title" data-animation="fadeInDown" data-delay="0.2s">{{.toptxt | markdownify}}</span>
+                  <p data-animation="fadeInUp" data-delay="0.2s">{{.bottomtxt | markdownify}}</p>
+                {{ else if eq .layout 2 }}
+                  <p data-animation="fadeInDown" data-delay="0.2s">{{.toptxt | markdownify}}</p>
+                  <span class="title" data-animation="fadeInUp" data-delay="0.2s">{{.bottomtxt | markdownify}}</span>
+                {{ end }}
               </div>
               <!-- // slider caption  -->
             </a>
           </div>
           <!-- // slider item  -->
-
-          <div class="item hero-slide">
-            <a href='{{ $.Scratch.Get "articlesPage" }}'>
-              <img src="/img/slide-articles-blogue.jpg" alt="">
-              <div class="slider-caption">
-                  <p data-animation="fadeInDown" data-delay="0.2s">Curieux d'en apprendre sur l'innovation logistique ? </p>
-                  <span class="title" data-animation="fadeInUp" data-delay="0.2s">Consultez nos articles </br>sur le blogue !</span>
-              </div>
-              <!-- // slider caption  -->
-            </a>
-          </div>
-          <!-- // item  -->
-
-					<div class="item hero-slide">
-            <a href='{{ $.Scratch.Get "logisticPage" }}'>
-              <img src="/img/slide-potentiel-logistic.jpg" alt="">
-              <div class="slider-caption">
-                  <p data-animation="fadeInDown" data-delay="0.2s">Atteignez le plein potentiel</br> de votre entreprise grâce à la</p>
-                  <span class="title" data-animation="fadeInUp" data-delay="0.2s">Logistic 4.0 ?</span>
-              </div>
-              <!-- // slider caption  -->
-            </a>
-          </div>
-          <!-- // item  -->	
-
-          <div class="item hero-slide">
-            <a href='{{ $.Scratch.Get "contactPage" }}'>
-              <img src="/img/slide-optimiser-maillon.jpg" alt="">
-              <div class="slider-caption">
-                  <p data-animation="fadeInDown" data-delay="0.2s">Nous veillons à optimiser </br>votre chaîne logistique,</p>
-                  <span class="title" data-animation="fadeInUp" data-delay="0.2s">un maillon à la fois.</span>
-              </div>
-              <!-- // slider caption  -->
-            </a>
-          </div>
-          <!-- // item  -->
-
-          <div class="item hero-slide">
-            <a href='{{ $.Scratch.Get "contactPage" }}'>
-              <img src="/img/slide-optimiser-maillon.jpg" alt="">
-              <div class="slider-caption">
-                  <p data-animation="fadeInDown" data-delay="0.2s">Apprenez-en plus avec</p>
-                  <span class="title" data-animation="fadeInUp" data-delay="0.2s">notre infolettre</span>
-              </div>
-              <!-- // slider caption  -->
-            </a>
-          </div>
-          <!-- // item  -->
-
+          {{ end }}
 
       </div>
       <!-- // hero slider  -->
@@ -75,10 +33,7 @@
           <a href='{{ $.Scratch.Get "aboutPage" }}'>
               <div id="about-block">
                   <div class="content">
-                      <h1>Qui sommes nous...</h1>
-                      <p>Nous sommes un centre collégial de transfert de technologie (CCTT) et de recherche en logistique.</br>
-											Nous sommes à l'affût des tendances et implantons l'innovation.</br>
-											Nous sommes au service des PME du Québec ! </p>
+                    {{.Params.introtext | markdownify}}
                   </div>
                   <!-- // content  -->
                   <div class="page-link">
@@ -99,7 +54,7 @@
                               <span class="icon-head-ico"></span>
                           </div>
                           <!-- // icon  -->
-                          <span class="title">Innovation</span>
+                          <span class="title">{{.Params.section2.title1}}</span>
                       </div>
                     </a>
                   </div>
@@ -112,7 +67,7 @@
                               <span class="ico-shake-hand shake"></span>
                           </div>
                           <!-- // icon  -->
-                          <span class="title">Transfert</span>
+                          <span class="title">{{.Params.section2.title2}}</span>
                       </div>
                     </a>
                   </div>
@@ -125,7 +80,7 @@
                               <span class="icon-ver-ico"></span>
                           </div>
                           <!-- // icon  -->
-                          <span class="title">Logistic 4.0</span>
+                          <span class="title">{{.Params.section2.title3}}</span>
                       </div>
                     </a>
                   </div>
@@ -145,11 +100,11 @@
                   </div>
                   <!-- // link box  -->
                   <div class="content-box">
-                      <h3>Faites mieux avec moins, grâce à l'intelligence matérielle</h3>
+                      <h3>{{.Params.boites.boite1.title}}</h3>
                   </div>
                   <!-- // content box  -->
                   <div class="image-box">
-                      <img src="/half/img/grid-intelligence.jpg" alt="" class="img-responsive">
+                      <img src="/half{{.Params.boites.boite1.img}}" alt="{{.Params.titre}}" class="img-responsive">
                   </div>
                   <!-- // image box  -->
                   <span class="clearfix"></span>
@@ -160,7 +115,7 @@
           <section id="formations-block">
               <a href='{{ $.Scratch.Get "ateliersPage" }}'>                       
                   <div class="content-box">
-                      <h3>Découvrez nos ateliers et conférences</h3>
+                      <h3>{{.Params.boites.boite2.title}}</h3>
                   </div>
                   <!-- // content box  -->                        
                   <div class="link-box">
@@ -170,7 +125,7 @@
                   </div>
                   <!-- // link box  -->           
                   <div class="image-box">
-                      <img src="/half/img/grid-atelier.jpg" alt="" class="img-responsive">
+                      <img src="/half{{.Params.boites.boite2.img}}" alt="{{.Params.titre}}" class="img-responsive">
                   </div>
                   <!-- // image box  -->                                      
                   <span class="clearfix"></span>                        
@@ -181,7 +136,7 @@
           <section id="contact-block">
               <a href='{{ $.Scratch.Get "articlesPage" }}'>
                   <div class="content-box">
-                      <h3>Découvrir notre blogue</h3>
+                      <h3>{{.Params.boites.boite3.title}}</h3>
                   </div>
                   <!-- // content box  -->
                   <div class="link-box">
@@ -191,7 +146,7 @@
                   </div>
                   <!-- // link box  -->
                   <div class="image-box">
-                      <img src="/half/img/grid-blog.jpg" alt="" class="img-responsive">
+                      <img src="/half{{.Params.boites.boite3.img}}" alt="{{.Params.titre}}" class="img-responsive">
                   </div>
                   <!-- // image box  -->  
                   <span class="clearfix"></span>
@@ -208,11 +163,11 @@
                   </div>
                   <!-- // link box  --> 
                   <div class="content-box">
-                      <h3>Contactez notre équipe</h3>
+                      <h3>{{.Params.boites.boite4.title}}</h3>
                   </div>
                   <!-- // content box  --> 
                   <div class="image-box">
-                      <img src="/half/img/grid-contact.jpg" alt="" class="img-responsive">
+                      <img src="/half{{.Params.boites.boite4.img}}" alt="{{.Params.titre}}" class="img-responsive">
                   </div>
                   <!-- // image box  -->                       
                   <span class="clearfix"></span>                        

@@ -1,6 +1,6 @@
 {{ define "main" }}
 <header id="inner-header">
-    <img src="/img/qui-sommes-nous.jpg" alt="" class="img-responsive">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
     <div class="header-caption">
         
     </div>
@@ -12,85 +12,22 @@
    <div class="container">
        
         <div class="intro-block">
-            <h1>FORMATION</h1>
+            <h1>{{.Params.titre}}</h1>
             <img src="/img/logos/LOGO_Logistique40.png" alt="">
         </div>
         <!-- // intro  -->
 
-        <div class="content-block hyphenate">
-            <h2><strong>ERP :</strong> système intégré de gestion</h2>
-            <p>L’atelier découverte du progiciel ERP est une séance d’exploration dans laquelle
-                vous effectuerez des manipulations dans un contexte de simulation. L’objectif de
-                cette formation est de vous faire comprendre les caractéristiques d’un ERP ainsi
-                que les avantages et retombées positives découlant de son utilisation. Nous vous
-                conseillerons aussi quant au choix du bon ERP en fonction de vos besoins et spécifications.
-                Pour compléter cette formation, nous vous donnerons notre recette afin
-                de réussir parfaitement l’implantation d’un ERP. </p>
-                <p>
-                <p>La formation est d’une durée d’au plus 1 h 30 et nous nous déplacerons dans votre
-                région. Nous fournissons également tout le matériel nécessaire au bon déroulement
-                de la séance.</p>
-                <p><strong>Vous désirez vous inscrire à cet atelier ?</strong></p>
-                {{- partial "site/parici.html" . -}}
-        </div>
-        <!-- // content block  -->
 
-        <div class="content-block hyphenate">
-            <h2><strong>WMS :</strong>  réorganisation de l’entrepôt</h2>
-            <p>L’atelier découverte du progiciel WMS est une séance d’exploration dans laquelle
-            vous effectuerez des manipulations dans un contexte de simulation. Grâce à cette
-            formation, vous serez en mesure de distinguer les caractéristiques d’un WMS par
-            rapport à tout autre type de progiciel. Nous vous démontrerons aussi les avantages
-            et retombées positives découlant de son utilisation. Par ailleurs, nous vous
-            conseillerons quant au choix du bon WMS en fonction de vos besoins et spécifications.
-            Pour compléter cette formation, nous vous donnerons notre recette afin de
-            réussir parfaitement l’implantation d’un WMS.</p>
-            <p>
-            La formation est d’une durée d’au plus 1 h 30 et nous nous déplacerons dans votre
-            région. Nous fournissons également tout le matériel nécessaire au bon déroulement
-            de la séance.</p>
-                <p><strong>Vous désirez vous inscrire à cet atelier ?</strong></p>
-                {{- partial "site/parici.html" . -}}
-        </div>
-        <!-- // content block  -->    
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
 
+        {{ range $index, $element := $list }}
         <div class="content-block hyphenate">
-            <h2><strong>TMS :</strong> optimisation de la gestion du transport</h2>
-            <p>L’atelier découverte du progiciel TMS est une séance d’exploration dans laquelle
-                vous effectuerez des manipulations dans un contexte de simulation. Cette
-                formation, vous permettra de prendre connaissance des caractéristiques d’un
-                TMS ainsi que des fonctions TL (charge complète), LTL (charge partielle) et intermodal
-                (combinaison de plusieurs modes de transport). Nous vous expliquerons
-                également quels sont les avantages et retombées positives découlant de son
-                utilisation. Par ailleurs, nous vous conseillerons quant au choix du bon TMS en
-                fonction de vos besoins et spécifications. Pour compléter cette formation, nous
-                vous donnerons notre recette afin de réussir parfaitement l'implantation d’un
-                TMS.</p>
-                <p>La formation est d'une durée d’au plus 1 h 30 et nous nous déplacerons dans votre
-                    région. Nous fournissons également tout le matériel nécessaire au bon déroulement
-                    de la séance.</p>
-                <p><strong>Vous désirez vous inscrire à cet atelier ?</strong></p>
-                {{- partial "site/parici.html" . -}}
+          {{ $element.text | markdownify }}
+          <p><strong>Vous désirez vous inscrire à cet atelier ?</strong></p>
+          {{- partial "site/parici.html" . -}}
         </div>
-        <!-- // content block  -->       
-
-        <div class="content-block hyphenate">
-            <h2><strong>RFID :</strong>  meilleure traçabilité de vos marchandises</h2>
-            <p>L’atelier découverte sur les étiquettes RFID est une séance d’exploration des divers
-                équipements liés à la technologie de radiofréquence. Cette formation vous
-                permettra également de prendre connaissance des différents types d’étiquettes et
-                nous vous expliquerons quels sont les avantages et retombées positives découlant
-                de leur utilisation. Pour compléter cette formation, nous vous donnerons notre
-                recette afin de réussir parfaitement l’implantation d’étiquette RFID au sein de
-                votre organisation. </p>
-                <p>
-                La formation est d’une durée d’au plus 1 h 30 et se déroulera dans le laboratoire
-                RFID du Cégep André-Laurendeau. Nous fournissons également tout le matériel
-                nécessaire au bon déroulement de la séance.</p>
-                <p><strong>Vous désirez vous inscrire à cet atelier ?</strong></p>
-                {{- partial "site/parici.html" . -}}
-        </div>
-        <!-- // content block  -->                                          
+        {{ end }}                                         
 
    </div>
    <!-- // container  -->

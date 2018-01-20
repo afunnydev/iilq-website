@@ -4,9 +4,10 @@ slug: rfid
 identifiant: rfid
 i18nlanguage: fr
 description: ""
-image: "/img/rfid-articles.png"
-banniere: ""
-author: "" 
+image: "/img/Blogue-RFID.jpg"
+imagecarree: "/img/Blogue-RFID-carre.jpg"
+banniere: "/img/Blogue-RFID-NB-carroussel.jpg"
+author: "Adèle Charest-Normandeau" 
 activemenu:
 weight: 0
 date: 2018-01-03

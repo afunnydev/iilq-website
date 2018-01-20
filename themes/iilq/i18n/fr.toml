@@ -42,3 +42,30 @@
 
 [popular_articles]
   other = "Articles populaires"
+
+[yourname]
+  other = "Votre nom"
+
+[youremail]
+  other = "Votre courriel"
+
+[yoursubject]
+  other = "Votre sujet"
+
+[yourmessage]
+  other = "Votre message"
+
+[subscribe_newsletter]
+  other = "Inscrivez-vous à l’infolettre!"
+
+[follow_us]
+  other = "Suivez nous sur :"
+
+[search]
+  other = "Recherche"
+
+[article_subject]
+  other = "Articles par sujet"
+
+[writeus]
+  other = "Écrivez-nous"

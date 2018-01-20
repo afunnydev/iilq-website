@@ -1590,7 +1590,8 @@
 		}
 		.article-caption {
 			@extend .dark-overlay;
-			background:rgba(0,0,0,0.7);
+			/* Fixed because image faded */
+			background:rgba(0,0,0,0.0);
 			padding:15px;
 			padding-top: 30px;
 			color:$white;
@@ -1611,6 +1612,12 @@
 			}
 		}
 	}
+}
+
+.all-content-wrapper .content-block img {
+	display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*=====  End of Transfer Single Content  ======*/

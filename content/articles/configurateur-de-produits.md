@@ -4,13 +4,14 @@ slug: configurateur-de-produits
 identifiant: configurateur-de-produits
 i18nlanguage: fr
 description: ""
-image: "/img/configurateur-de-produits.png"
-banniere: ""
-author: "" 
+image: "/img/Blogue-Configurateur-de-produits.jpg"
+imagecarree: "/img/Blogue-Configurateur-de-produits-carre.jpg"
+banniere: "/img/Blogue-Configurateur-de-produits-NB-carroussel.jpg"
+author: "Guy Normandeau" 
 activemenu:
 weight: 0
 date: 2018-01-16
-categories: ["Différenciation", "Production"]
+categories: ["Commerce en ligne"]
 ---
 
 Lorsqu’il est question de e-commerce, la flexibilité, la disponibilité et la personnalisation sont trois aspects très importants de la relation client. Les gens qui consomment en ligne désirent avoir un service personnalisé qui répond à leurs besoins immédiats. Que ce soit simplement pour trouver une information ou pour compléter une transaction, les consommateurs aiment pouvoir explorer en toute liberté l’ensemble des possibilités qui s’offrent à eux. 

@@ -27,7 +27,7 @@
             	<a href='{{ $.Scratch.Get "transfertPage" }}'>Transfert <span></span></a>
                 <ul>
                   {{ range where .Site.RegularPages "Type" "transfert"}}
-                  <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                  <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
                   {{ end }}
                 </ul>
             </li>                      
@@ -52,13 +52,21 @@
         </a>
         <!-- // menu btn  -->
         <div class="header-socials hidden-xs">
-          <a href="#" target="_blank"><span class="icon-twitter"></span></a>
-          <a href="#" target="_blank"><span class="icon-fb"></span></a>
-          <a href="#" target="_blank"><span class="icon-linkedin"></span></a>
-          <a href="#" target="_blank"><span class="icon-googleplus"></span></a>
+          {{with .Site.Data.settings.socials.twitter}}
+          <a href="{{.}}" target="_blank"><span class="icon-twitter"></span></a>
+          {{ end }}
+          {{with .Site.Data.settings.socials.facebook}}
+          <a href="{{.}}" target="_blank"><span class="icon-fb"></span></a>
+          {{ end }}
+          {{with .Site.Data.settings.socials.linkedin}}
+          <a href="{{.}}" target="_blank"><span class="icon-linkedin"></span></a>
+          {{ end }}
+          {{with .Site.Data.settings.socials.google}}
+          <a href="{{.}}" target="_blank"><span class="icon-googleplus"></span></a>
+          {{ end }}
         </div>
-        <input type="text" placeholder="Recherche">
-        <button type="search"><span class="icon-if_11_Search_106236"></span></button>  
+        <!-- <input type="text" placeholder='{{ i18n "search" }}'>
+        <button type="search"><span class="icon-if_11_Search_106236"></span></button> -->  
                                         
         <!-- // socials  -->    
     </div>
@@ -92,7 +100,7 @@
                 <!-- <span class="caret"></span> --></a>
                 <ul class="dropdown-menu animated fadeIn">
                   {{ range where .Site.RegularPages "Type" "transfert"}}
-                  <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                  <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
                   {{ end }}
                 </ul>
               </li>

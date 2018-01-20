@@ -1,12 +1,13 @@
 ---
-title: "WMS"
-description: "This is a description"
+title: "Gestion d'entrepôt innovante et intelligente | IILQ"
+description: "L'instauration d'un WMS permet l'optimisation dela gestion des stocks et des opérations effectuées dans les entrepôts tout en maximisant la gestion de l’activité d’un entrepôt en temps réel. Notre rôle est de vous aider à choisir la solution logicielle convenant à vos besoins. "
 identifiant: wms
 i18nlanguage: fr
 slug: wms
 activemenu: transfert
 draft: false
-image:
+titre: WMS
+image: /img/banniere-mobile-WMS.jpg
 weight: 5
 banniere:
   desktop: /img/banniere-WMS.jpg

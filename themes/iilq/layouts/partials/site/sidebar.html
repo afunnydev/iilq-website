@@ -1,16 +1,24 @@
 <aside id="blog-sidebar">
                           
   <div id="social-bar" class="hidden-xs">
-      <h5>Suivez-nous sur :</h5>
-      <a href="#" target="_blank"><span class="icon-twitter"></span></a>
-      <a href="#" target="_blank"><span class="icon-fb"></span></a>
-      <a href="#" target="_blank"><span class="icon-linkedin"></span></a>
-      <a href="#" target="_blank"><span class="icon-googleplus"></span></a>                                
+      <h5>{{ i18n "follow_us" }}</h5>
+      {{with .Site.Data.settings.socials.twitter}}
+      <a href="{{.}}" target="_blank"><span class="icon-twitter"></span></a>
+      {{ end }}
+      {{with .Site.Data.settings.socials.facebook}}
+      <a href="{{.}}" target="_blank"><span class="icon-fb"></span></a>
+      {{ end }}
+      {{with .Site.Data.settings.socials.linkedin}}
+      <a href="{{.}}" target="_blank"><span class="icon-linkedin"></span></a>
+      {{ end }}
+      {{with .Site.Data.settings.socials.google}}
+      <a href="{{.}}" target="_blank"><span class="icon-googleplus"></span></a>
+      {{ end }}                               
   </div>
   <!-- // socials  -->
 
   <div class="category-box">
-      <h5>ARTICLE PAR SUJET</h5>
+      <h5>{{ i18n "article_subject" }}</h5>
       {{ $tags := $.Site.Taxonomies.categories.ByCount }}
       <ul>
         {{ if eq .Lang "fr" }}

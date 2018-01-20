@@ -1,6 +1,41 @@
-removeexternalsearch: true
-sitedescription: ""
-sitetitle: "Institut d'Innovation en Logistique du Québec"
-defaultimage: ""
-shareimgurl: "https://www.innovationlogistique.com"
-organizationname: "Institut d'Innovation en Logistique du Québec"
+socials:
+  facebook: "https://www.facebook.com/iilmcal/"
+  twitter: "https://twitter.com/@iilogistique"
+  instagram: ""
+  linkedin: "https://www.linkedin.com/company/institut-international-de-logistique-de-montr-al/"
+  google: ""
+  youtube: "https://www.youtube.com/user/IILM01"
+  pinteresturl: ""
+  vimeourl: ""
+  dribbleurl: ""
+twitter:
+  share: false
+  id: ""
+address:
+  fr:
+    road: 1111, rue Lapierre
+    app: Bureau 1.043
+    city: Montréal, Lasalle
+    province: QC
+    postal: H8N 2J4
+    country: Canada
+  en:
+    road: 1111 Lapierre St
+    app: Office 1.043
+    city: Montreal, Lasalle
+    province: QC
+    postal: H8N 2J4
+    country: Canada
+phone: '514 364-2640'
+mphone: '+15143642640'
+email: 'guy.normandeau@iilm.ca'
+sitedescriptionfr: "L'IILQ vous offre des services d'aide technique, de recherche appliquée, de formation et de sensibilisation dans le domaine de la logistique auprès des PME du Québec."
+sitetitlefr: "IILQ | Institut d'Innovation en Logistique du Québec"
+titleautocompletion: false
+defaultsocialimage: "/img/logos/logo-iilq.png"
+removefromexternalsearch: true
+
+
+
+
+

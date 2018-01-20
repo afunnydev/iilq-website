@@ -1,10 +1,11 @@
 ---
-title: Clients et partenaires
-description: Ils nous appuient dans notre processus
+title: "Participer au développement de la technologie en logistique | IILQ"
+description: "Grâce à nos partenariats en recherche appliquée, nous offrons des solutions de pointes aux PME québécoises qui cherchent à optimiser leur chaîne logistique. "
 slug: clients-et-partenaires
 titre: Nos partenaires
+titre2: Nos clients
 layout: clients
-image: "/img/qui-sommes-nous.jpg"
+image: "/img/partenaire-client.jpg"
 partenaires:
   - img: /img/logo-reseau-transtech.jpg
     nom: Réseau Transtech

@@ -1,12 +1,13 @@
 ---
-title: "CRM"
-description: "This is a description"
+title: "Acquisition de nouveaux clients facilité et relation client améliorée | IILQ"
+description: "L'implantation d'un progiciel CRM permet notamment de centraliser l’ensemble des communications et des données relatives aux clients actuels et potentiels pour les besoins de l’équipe des ventes. Notre rôle est de vous aider à choisir la solution logicielle convenant à vos besoins. "
 identifiant: crm
 i18nlanguage: fr
 slug: crm
 activemenu: transfert
 draft: false
-image:
+titre: CRM
+image: /img/banniere-mobile-CRM.jpg
 weight: 1
 banniere:
   desktop: /img/banniere-CRM.jpg

@@ -1,5 +1,5 @@
 <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="{{ if .IsHome }}{{ .Site.Data.settings.sitedescription }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Data.settings.sitedescription }}{{ end }}" />
-<title>{{.Site.Title}}{{if not .IsHome}} | {{.Title}}{{ else }} | {{.Site.Data.settings.sitetitle}}{{end}}</title>
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Data.settings.sitedescriptionfr }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Data.settings.sitedescriptionfr }}{{ end }}" />
+<title>{{if .IsHome}}{{.Site.Data.settings.sitetitlefr}}{{ else }}{{.Title}}{{end}}{{if .Site.Data.settings.titleautocompletion}} | {{.Site.Title}}{{end}}</title>
+
