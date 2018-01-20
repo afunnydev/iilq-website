@@ -72,11 +72,11 @@
                                       <ul>
                                           {{ if eq .Lang "fr" }}
                                             {{ range $i, $e := .Params.categories }}
-                                            <li><a href="{{ $.Site.BaseURL }}categories/{{ $e | urlize }}">#{{$e}}</a></li>
+                                            <li><a href="{{ $.Site.BaseURL }}categories/{{ $e | urlize }}">#{{trim $e "&nbsp"}}</a></li>
                                             {{end}}
                                           {{ else if eq .Lang "en" }}
                                             {{ range $i, $e := .Params.categories }}{{ if $i }}/{{ end }} 
-                                            <li><a href="{{ $.Site.BaseURL }}en/categories/{{ $e | urlize }}">#{{$e}}</a></li>
+                                            <li><a href="{{ $.Site.BaseURL }}en/categories/{{ $e | urlize }}">#{{trim $e "&nbsp"}}</a></li>
                                             {{end}}
                                           {{ end }}
                                       </ul>
