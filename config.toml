@@ -63,5 +63,4 @@ watch = true
   latexDashes = true
 
 [taxonomies]
-  tag = "tags"
   category = "categories"

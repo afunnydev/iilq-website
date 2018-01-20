@@ -33,7 +33,7 @@ sitedescriptionfr: "L'IILQ vous offre des services d'aide technique, de recherch
 sitetitlefr: "IILQ | Institut d'Innovation en Logistique du Québec"
 titleautocompletion: false
 defaultsocialimage: "/img/logos/logo-iilq.png"
-removefromexternalsearch: true
+removefromexternalsearch: false
 
 
 
