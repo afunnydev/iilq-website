@@ -28,3 +28,12 @@ L’implantation d’un système MES au sein d’une chaîne logistique permet n
 
 Afin de bien comprendre le fonctionnement et l’intégration d’un MES au sein d’une entreprise, nous suggérons de suivre la formation offerte par l’IILQ à cet effet.
 
+### Pour en savoir plus :
+
+- https://fr.wikipedia.org/wiki/Manufacturing_execution_system
+- http://www.geautomation.com/fr/logiciel-de-gestion-de-fabrication-mes-manufacturing-execution-system
+- http://www.bodet-osys.com/manufacturing-execution-systems-mes/concept-mes.html
+- https://www.cgi.com/fr/manufacturier/systemes-execution-fabrication
+- https://www.mpdv.com/fr
+- http://resources.infosecinstitute.com/wp-content/uploads/101415_2034_MESSecurity1.png
+- https://www.ypsys.com/fr/produits/manufacturing-execution-system/

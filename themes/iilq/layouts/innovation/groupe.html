@@ -1,11 +1,6 @@
 {{ define "main" }}
-<!-- <header id="inner-header">
+<header id="inner-header">
     <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
-</header> -->
-<header id="yellow-header">
-    <div class="container">
-       <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive"> 
-    </div>
 </header>
 <!-- // inner header  -->
 
@@ -31,7 +26,7 @@
 
         <div class="content-block no-margin hyphenate">
             <p><strong>{{.Params.lastsection}}</strong></p>
-            {{- partial "site/parici.html" . -}}
+            {{- partial "site/popuptrigger.html" . -}}
         </div>
         <!-- // content block  -->                                          
 

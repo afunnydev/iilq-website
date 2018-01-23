@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Institut d&#39;Innovation en Logistique du Québec on IILQ | Institut d&#39;Innovation en Logistique du Québec</title>
-    <link>https://iilq.netlify.com/</link>
-    <description>Recent content in Institut d&#39;Innovation en Logistique du Québec on IILQ | Institut d&#39;Innovation en Logistique du Québec</description>
+    <title>IILQ | Institut d&#39;Innovation en Logistique du Québec</title>
+    <link>https://www.innovationlogistique.com/</link>
+    <description>Recent content on IILQ | Institut d&#39;Innovation en Logistique du Québec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://iilq.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.innovationlogistique.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>CRM</title>
-      <link>https://iilq.netlify.com/transfert/crm/</link>
+      <title>Acquisition de nouveaux clients facilité et relation client améliorée | IILQ</title>
+      <link>https://www.innovationlogistique.com/transfert/crm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/transfert/crm/</guid>
+      <guid>https://www.innovationlogistique.com/transfert/crm/</guid>
       <description>CRM Qu’est-ce que c’est ? Le Customer Relationship Management (CRM) est un progiciel de gestion de la relation avec les différents clients permettant de structurer la liste de clients potentiels selon leur secteur d’activité, leur territoire, etc. Obtenir une vue d’ensemble du processus de vente et suivre les indicateurs permettant d’observer la santé de l’entreprise pour les clients convoités et les clients actifs sont également des finalités permises par l’utilisation d’un tel système.</description>
     </item>
     
     <item>
-      <title>ERP</title>
-      <link>https://iilq.netlify.com/transfert/erp/</link>
+      <title>Le progiciel qui permet d&#39;automatiser vos activités | IILQ</title>
+      <link>https://www.innovationlogistique.com/transfert/erp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/transfert/erp/</guid>
+      <guid>https://www.innovationlogistique.com/transfert/erp/</guid>
       <description>ERP Qu’est-ce que c’est ? L’Enterprise Ressources Planning (ERP) est un progiciel constitué de modules reliés à une base de données unique centralisant ainsi l’information.
 Son objectif ? Améliorer l’organisation de l’ensemble des départements (comptabilité, finance, ressources humaines, ventes, etc.) d’une entreprise en automatisant les flux d’activités et faciliter la prise de décision du gestionnaire.
 Comment ça fonctionne ? L’ERP rassemble toutes les étapes de gestion d’entreprise, en automatisant le flux d’activités reliant chaque département et en centralisant toutes les données utiles dans une même base de données.</description>
     </item>
     
     <item>
-      <title>TMS</title>
-      <link>https://iilq.netlify.com/transfert/tms/</link>
+      <title>Gestion des transports optimisée | IILQ</title>
+      <link>https://www.innovationlogistique.com/transfert/tms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/transfert/tms/</guid>
+      <guid>https://www.innovationlogistique.com/transfert/tms/</guid>
       <description>TMS Qu’est-ce que c’est ? Le Transport Management System est un progiciel souvent complémentaire à un progiciel ERP ou encore un système WMS. Il sert spécifiquement à gérer l’ensemble des opérations liées aux transports des matières, des marchandises et des produits finis. Le logiciel peut être adapté en fonction du transport : TL (charge complète), LTL (charge partielle) et intermodal (combinaison de plusieurs modes de transport).
 Son objectif ? Déterminer quel type de transport est optimal afin de minimiser les coûts et les délais de livraison entre le point de départ de livraison et les points d’expédition.</description>
     </item>
     
     <item>
-      <title>RFID</title>
-      <link>https://iilq.netlify.com/transfert/rfid/</link>
+      <title>Des données intelligentes sur vos produits | IILQ</title>
+      <link>https://www.innovationlogistique.com/transfert/rfid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/transfert/rfid/</guid>
+      <guid>https://www.innovationlogistique.com/transfert/rfid/</guid>
       <description>RFID Qu’est-ce que c’est ? La technologie d’identification par radiofréquence (RFID) capture et mémorise automatiquement des données qui ont comme canal les ondes et les rayons émis par une radiofréquence. Contrairement aux codes à barres traditionnels, cette technologie ne se limite pas au type de produits, mais permet d’attribuer une étiquette unique à chaque produit.
 Son objectif ? Cette technologie permet notamment de récolter plusieurs informations, grâce à l’envoi d’une identification numérique émise par la puce de l’étiquette, telles que la référence et les caractéristiques de l’objet.</description>
     </item>
     
     <item>
-      <title>WMS</title>
-      <link>https://iilq.netlify.com/transfert/wms/</link>
+      <title>Gestion d&#39;entrepôt innovante et intelligente | IILQ</title>
+      <link>https://www.innovationlogistique.com/transfert/wms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/transfert/wms/</guid>
+      <guid>https://www.innovationlogistique.com/transfert/wms/</guid>
       <description>WMS Qu’est-ce que c’est ? Le Warehouse Magamenent System (WMS) est un logiciel qui rassemble les informations relatives aux entrées et aux sorties des marchandises de l’entrepôt permettant au gestionnaire d’avoir une vue d’ensemble sur ses activités d’entreposage.
 Son objectif ? Optimiser la gestion des stocks et les opérations effectuées dans les entrepôts tout en maximisant la gestion de l’activité d’un entrepôt en temps réel.
 Comment ça fonctionne ? La fonction d’un WMS est de gérer la localisation et le déplacement de toutes les unités de produits tenues en réserve.</description>
@@ -64,114 +64,114 @@ Comment ça fonctionne ? La fonction d’un WMS est de gérer la localisation et
     
     <item>
       <title>Configurateur de produits</title>
-      <link>https://iilq.netlify.com/articles/configurateur-de-produits/</link>
+      <link>https://www.innovationlogistique.com/articles/configurateur-de-produits/</link>
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/configurateur-de-produits/</guid>
+      <guid>https://www.innovationlogistique.com/articles/configurateur-de-produits/</guid>
       <description>Lorsqu’il est question de e-commerce, la flexibilité, la disponibilité et la personnalisation sont trois aspects très importants de la relation client. Les gens qui consomment en ligne désirent avoir un service personnalisé qui répond à leurs besoins immédiats. Que ce soit simplement pour trouver une information ou pour compléter une transaction, les consommateurs aiment pouvoir explorer en toute liberté l’ensemble des possibilités qui s’offrent à eux.
 Prenons par exemple une entreprise manufacturière d’ordinateurs.</description>
     </item>
     
     <item>
       <title>eCom vs logistique</title>
-      <link>https://iilq.netlify.com/articles/ecom-vs-logistique/</link>
+      <link>https://www.innovationlogistique.com/articles/ecom-vs-logistique/</link>
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/ecom-vs-logistique/</guid>
+      <guid>https://www.innovationlogistique.com/articles/ecom-vs-logistique/</guid>
       <description>Qu’est-ce que le e-commerce? Le e-commerce ou le commerce électronique sont deux termes utilisés pour définir l’ensemble des achats, des ventes ou des échanges de biens ou de services réalisés par le biais de réseaux électroniques. Bien que la grande majorité des transactions commerciales sont effectuées grâce au réseau internet, il existe d’autres types de réseaux utilisés dans le cadre du commerce B to B (interentreprise).
 Ces transactions peuvent être complétées au moyen de différents terminaux comme les ordinateurs, les consoles, les télévisions intelligentes, les téléphones intelligents, les tablettes, etc.</description>
     </item>
     
     <item>
       <title>MES – Manufacturing Execution System vs ERP</title>
-      <link>https://iilq.netlify.com/articles/manufacturing-execution-system-vs-erp/</link>
+      <link>https://www.innovationlogistique.com/articles/manufacturing-execution-system-vs-erp/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/manufacturing-execution-system-vs-erp/</guid>
+      <guid>https://www.innovationlogistique.com/articles/manufacturing-execution-system-vs-erp/</guid>
       <description>Performance, délai de production et respect des normes sont trois mots d’ordre afin qu’une entreprise soit apte à répondre à la demande du marché. L’avancé des recherches ainsi que le progrès technologique ont permis aux dirigeants d’optimiser leur chaîne de production grâce à des logiciels de plus en plus performants. Cette pression pesant sur les épaules des manufacturiers afin de produire plus avec moins représente un défi quotidien dans l’atteinte de rentabilité.</description>
     </item>
     
     <item>
       <title>RFID</title>
-      <link>https://iilq.netlify.com/articles/rfid/</link>
+      <link>https://www.innovationlogistique.com/articles/rfid/</link>
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/rfid/</guid>
+      <guid>https://www.innovationlogistique.com/articles/rfid/</guid>
       <description>La technologie d’identification par radiofréquence (RFID) capture et mémorise automatiquement des données qui ont comme canal les ondes et les rayons émis par une radiofréquence. Son fonctionnement est relativement simple : un récepteur détectera et lira les données de la puce électronique d’une étiquette présente dans un objet. Cette puce n’est pas percevable par le consommateur et les fréquences peuvent même être captées au travers de matériaux peu épais. Afin d’assurer une lecture des données, les informations dans la puce sont regroupées sous un identifiant, généralement unique, et transmises par l’antenne plate de l’étiquette.</description>
     </item>
     
     <item>
       <title>Différenciation retardée</title>
-      <link>https://iilq.netlify.com/articles/differenciation-retardee/</link>
+      <link>https://www.innovationlogistique.com/articles/differenciation-retardee/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/articles/differenciation-retardee/</guid>
+      <guid>https://www.innovationlogistique.com/articles/differenciation-retardee/</guid>
       <description>La différenciation retardée est une stratégie visant une meilleure organisation de la production, en ne personnalisant la demande du client qu’à la toute fin du cycle de production. La complexité des échanges et la demande croissante de plus en plus précise des consommateurs nécessitent une massification de la production. La technique de différenciation retardée répond aux différentes caractéristiques recherchées par les consommateurs :
  Des prix réduits De courts délais de livraison Le pouvoir de commander au moment et à l’endroit désiré  Le rendement engendré par une production en grande série d’une gamme de produits dont les éléments de base sont communs permet à l’entreprise d’adapter son produit fini tout en le spécialisant à une demande dite individuelle.</description>
     </item>
     
     <item>
-      <title>Ateliers - Découvertes</title>
-      <link>https://iilq.netlify.com/logistic-4-0/ateliers-decouverte/</link>
+      <title>Des ateliers découverte pour rendre l&#39;innovation accessible | IILQ</title>
+      <link>https://www.innovationlogistique.com/logistic-4-0/formations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/logistic-4-0/ateliers-decouverte/</guid>
+      <guid>https://www.innovationlogistique.com/logistic-4-0/formations/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Clients et partenaires</title>
-      <link>https://iilq.netlify.com/clients-et-partenaires/</link>
+      <title>Découvrir les technologies émergentes | IILQ</title>
+      <link>https://www.innovationlogistique.com/logistic-4-0/ateliers-decouverte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/clients-et-partenaires/</guid>
+      <guid>https://www.innovationlogistique.com/logistic-4-0/ateliers-decouverte/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Conférences</title>
-      <link>https://iilq.netlify.com/logistic-4-0/conferences/</link>
+      <title>Démarche de groupe pour contrer des problématiques logistiques | IILQ</title>
+      <link>https://www.innovationlogistique.com/innovation/groupe-innovation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/logistic-4-0/conferences/</guid>
+      <guid>https://www.innovationlogistique.com/innovation/groupe-innovation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Contactez-nous pour toutes vos questions</title>
-      <link>https://iilq.netlify.com/contact/</link>
+      <title>La logistique 4.0 dans les PME québécoises | IILQ</title>
+      <link>https://www.innovationlogistique.com/logistic-4-0/conferences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/contact/</guid>
+      <guid>https://www.innovationlogistique.com/logistic-4-0/conferences/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Formations</title>
-      <link>https://iilq.netlify.com/logistic-4-0/formations/</link>
+      <title>Les réponses à vos questions sur la logistique 4.0 | IILQ</title>
+      <link>https://www.innovationlogistique.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/logistic-4-0/formations/</guid>
+      <guid>https://www.innovationlogistique.com/contact/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Groupe innovation</title>
-      <link>https://iilq.netlify.com/innovation/groupe-innovation/</link>
+      <title>Optimiser la chaîne logistique des PME québécoises | IILQ</title>
+      <link>https://www.innovationlogistique.com/iilq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://iilq.netlify.com/innovation/groupe-innovation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Optimiser votre chaîne logistique</title>
-      <link>https://iilq.netlify.com/iilq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iilq.netlify.com/iilq/</guid>
+      <guid>https://www.innovationlogistique.com/iilq/</guid>
       <description>Vision L’IILQ est devenu un Centre d’excellence dans les technologies de la logistique en s’appuyant sur l’effet de levier que représente son écosystème de développement d’applications mobiles, son laboratoire des technologies de la logistique et ses partenariats avec des partenaires publics et privés.
 Mission La mission de l’IILQ est d’augmenter la performance et la productivité des PME du Québec en renforçant les processus d’innovation qui permettront l’amélioration continue de leurs fonctions logistiques.</description>
+    </item>
+    
+    <item>
+      <title>Participer au développement de la technologie en logistique | IILQ</title>
+      <link>https://www.innovationlogistique.com/clients-et-partenaires/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.innovationlogistique.com/clients-et-partenaires/</guid>
+      <description></description>
     </item>
     
   </channel>

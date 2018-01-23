@@ -3,7 +3,7 @@ title: "Démarche de groupe pour contrer des problématiques logistiques | IILQ"
 description: "Nous proposons une démarche conjointe avec un groupe d'innovation répondant à vos besoins tout en effectuant une demande d'aide financière afin d'alléger vos coûts de fonctionnement. "
 draft: false
 layout: groupe
-image: "/img/InnovationLogisque.png"
+image: "/img/groupe-innovation.jpg"
 titre: Le groupe d'innovation
 introtext: >-
   Pour certaines entreprises ayant des problématiques spécifiques, nous proposerons la mise en place de groupe d’innovation regroupant de 4 à 8 entreprises afin d’initier une démarche conjointe.

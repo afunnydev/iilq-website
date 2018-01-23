@@ -39,3 +39,11 @@ La différentiation retardée se déploie soit dans l’étape de fabrication du
 
 ![Schema Differenciation retardee](/img/differenciation-retardee1.png "Schema Differenciation retardee")
 ![Schema Differenciation retardee](/img/differenciation-retardee2.png "Schema Differenciation retardee")
+
+### Pour en savoir plus :
+
+- http://logistique-pour-tous.fr/la-differenciation-retardee/ 
+- https://www.oqlf.gouv.qc.ca/ressources/bibliotheque/dictionnaires/terminologie_logistique/differenciation_retardee.html
+- https://www.definitions-marketing.com/definition/differenciation-retardee/
+- http://www.vialog.fr/differenciation-retardee.html
+

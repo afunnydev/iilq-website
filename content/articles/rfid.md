@@ -37,3 +37,17 @@ Cette technologie permet notamment de récolter plusieurs informations, grâce �
 On peut en conclure que cette technologie prendra le relai des codes à barres dans un futur plus proche que nous l’imaginons, puisqu’elle ne se limite pas au type de produits, mais permet d’attribuer une étiquette unique à chaque produit. Il s’agit d’un choix à considérer dans l’optique d’optimiser le rendement d’une chaîne logistique!
 
 ![Schema RFID](/img/schema-RFID.png "Schema RFID")
+
+### Pour en savoir plus :
+
+-http://www.centrenational-rfid.com/fonctionnement-dun-systeme-rfid-article-17-fr-ruid-17.html
+- http://www.centrenational-rfid.com/definition-de-la-rfid-article-71-fr-ruid-17.html
+- http://www.lefigaro.fr/secteur/high-tech/2007/12/26/01007-20071226ARTFIG00209-qu-est-ce-que-la-technologie-rfid.php 
+- http://www.epsilia.com/rfid
+- http://www.faq-logistique.com/GCL-Logiguide-Vol08Num08-RFID-Chaine-Logistique.htm
+- http://acteos.fr/actualite-and-evenements/la-rfid-un-atout-technologique-pour-le-supply-chain-management
+- https://www.coppernic.fr/informations-coppernic/solution-rfid-comment-optimiser-votre-chaine-logistique-grace-aux-tags-rfid/
+- https://www.companeo.com/portiques-de-securite/guide/rfid-logistique#0
+- http://www.ubisolutions.net/medias/banniere_banniere_logistique.png
+- http://www.lomag-man.org/rfid_demarchesapplications/images_demapplic_rfid/cicuitrfid_art01net_large.jpg
+

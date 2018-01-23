@@ -34,6 +34,11 @@ sitetitlefr: "IILQ | Institut d'Innovation en Logistique du Québec"
 titleautocompletion: false
 defaultsocialimage: "/img/logos/logo-iilq.png"
 removefromexternalsearch: false
+formations:
+  - name: Ateliers Découvertes
+  - name: Groupe Innovation
+  - name: Formations Logistic 4.0
+  - name: Conférence Logistic 4.0
 
 
 

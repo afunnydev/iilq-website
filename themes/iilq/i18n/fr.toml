@@ -69,3 +69,18 @@
 
 [writeus]
   other = "Écrivez-nous"
+
+[name]
+  other = "Nom"
+
+[domain]
+  other = "Domaine"
+
+[region]
+  other = "Région"
+
+[phone]
+  other = "Téléphone"
+
+[comment]
+  other = "Commentaire"

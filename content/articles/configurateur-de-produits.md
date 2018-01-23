@@ -26,4 +26,4 @@ Un configurateur de produit agit donc à titre de catalogue à partir duquel les
 
 ### Pour en savoir plus :
 
-http://www.agencesudo.ca/solutions/site-web-configurateur-de-produit/ 
+- http://www.agencesudo.ca/solutions/site-web-configurateur-de-produit/ 

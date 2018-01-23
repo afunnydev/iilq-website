@@ -48,7 +48,4 @@ Le commerce électronique a donc un impact important qui va bien au-delà de la 
 - http://www.cefrio.qc.ca/media/uploader/Fascicule2016-Commercelectronique-21032017FINAL.pdf
 - https://blog.cibleweb.com/2013/09/18/definition-du-jour-site-e-commerce-10288352
 - https://itelligencegroup.com/wp-content/usermedia/FR_itelligence_livre-blanc_commerce-omnicanal2.pdf
-- https://www.supplychain-masters.fr/index.php/expertises-et-services/supply-chain-digitale/logistique-e-commerce 
-
-
-
+- https://www.supplychain-masters.fr/index.php/expertises-et-services/supply-chain-digitale/logistique-e-commerce
