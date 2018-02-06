@@ -2,16 +2,16 @@
 title: RFID
 slug: rfid
 identifiant: rfid
+description: ''
+image: /img/Blogue-RFID.jpg
+imagecarree: /img/Blogue-RFID-carre.jpg
+banniere: /img/Blogue-RFID-NB-carroussel.jpg
+date: 2018-01-03T00:00:00.000Z
+author: Adèle Charest-Normandeau
+categories:
+  - RFID
 i18nlanguage: fr
-description: ""
-image: "/img/Blogue-RFID.jpg"
-imagecarree: "/img/Blogue-RFID-carre.jpg"
-banniere: "/img/Blogue-RFID-NB-carroussel.jpg"
-author: "Adèle Charest-Normandeau" 
-activemenu:
 weight: 0
-date: 2018-01-03
-categories: ["RFID"]
 ---
 
 La technologie d’identification par radiofréquence (RFID) capture et mémorise automatiquement des données qui ont comme canal les ondes et les rayons émis par une radiofréquence. Son fonctionnement est relativement simple : un récepteur détectera et lira les données de la puce électronique d’une étiquette présente dans un objet. Cette puce n’est pas percevable par le consommateur et les fréquences peuvent même être captées au travers de matériaux peu épais. Afin d’assurer une lecture des données, les informations dans la puce sont regroupées sous un identifiant, généralement unique, et transmises par l’antenne plate de l’étiquette. Lorsqu’il est activé, l’identifiant n’est plus sujet à quelconques modifications : il ne peut qu’être lu. 
@@ -40,7 +40,7 @@ On peut en conclure que cette technologie prendra le relai des codes à barres d
 
 ### Pour en savoir plus :
 
--http://www.centrenational-rfid.com/fonctionnement-dun-systeme-rfid-article-17-fr-ruid-17.html
+- http://www.centrenational-rfid.com/fonctionnement-dun-systeme-rfid-article-17-fr-ruid-17.html
 - http://www.centrenational-rfid.com/definition-de-la-rfid-article-71-fr-ruid-17.html
 - http://www.lefigaro.fr/secteur/high-tech/2007/12/26/01007-20071226ARTFIG00209-qu-est-ce-que-la-technologie-rfid.php 
 - http://www.epsilia.com/rfid
