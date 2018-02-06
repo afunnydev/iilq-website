@@ -8,6 +8,7 @@
 	padding-right: 3.125em;
 	padding-top: 5.000em;
 	font-size: 16px;
+	padding-bottom: 3.750em;
 	@include breakpoint(laptop) {
 		font-size: 14px;
 		padding-top: 3em;
@@ -117,6 +118,7 @@
 				padding-bottom: 10px;
 				position: relative;
 				padding-left: 15px;
+				word-wrap: break-word;
 				&:before {
 					width: 6px;
 					height: 6px;
@@ -136,6 +138,22 @@
 			box-shadow: 0;
 			display: inline;
 		}
+		.read-btn {
+			display: inline-block;
+			height: 50px;
+			line-height: 48px;
+			border:2px solid $yellow;
+			color:$text;
+			text-align: center;
+			font-size: 1.2em;
+			letter-spacing: 2px;
+			font-family: $fontzilaregular;
+			padding: 0 20px;
+			margin-top: 30px;
+			&:hover {
+				background:$yellow;
+			}
+		}
 	}
 	/* sidebar blog */
 	#blog-sidebar {
@@ -150,6 +168,22 @@
 		@include breakpoint(phone-xs) {
 			margin-top: 30px;
 			font-size: 14px;
+		}
+		&.fixed-sidebar {
+			@include breakpoint(no-mobile) {
+				position: fixed;
+				top: 10px;
+				-webkit-transition: 0.5s top;
+				-moz-transition: 0.5s top;
+				-ms-transition: 0.5s top;
+				-o-transition: 0.5s top;
+				transition: 0.5s top;
+			}
+			&.over-footer {
+				@include breakpoint(no-mobile) {
+					top: -200px;
+				}
+			}
 		}
 		#social-bar {
 			background:$blue;
@@ -459,6 +493,23 @@
 			font-size: 14px;
 			margin-top: 30px;
 		}
+		
+		&.fixed-sidebar {
+			@include breakpoint(no-mobile) {
+				position: fixed;
+				top: 10px;
+				-webkit-transition: 0.5s top;
+				-moz-transition: 0.5s top;
+				-ms-transition: 0.5s top;
+				-o-transition: 0.5s top;
+				transition: 0.5s top;
+			}
+			&.over-footer {
+				@include breakpoint(no-mobile) {
+					top: -200px;
+				}
+			}
+		}
 		#social-bar {
 			background:$blue;
 			padding:1.875em;
@@ -522,7 +573,7 @@
 			position: relative;
 			padding:1.875em;
 			padding-top: 3.750em;
-			margin-bottom: -200px;
+			// margin-bottom: -200px;
 			@include breakpoint(phone) {
 				height: auto!important;
 				min-height: auto!important;

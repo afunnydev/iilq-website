@@ -31,6 +31,10 @@
 
      @media only screen and (min-width : 1601px) { @content; }        
 
+  } @else if $value == 'no-mobile' {
+
+     @media only screen and (min-width : $screen-md) { @content; }        
+
   } @else {
 
     @media only screen and (min-width : 240px) and (max-width : $value) { @content; }

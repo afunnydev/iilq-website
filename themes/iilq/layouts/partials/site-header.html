@@ -30,7 +30,14 @@
                   {{ end }}
                 </ul>
             </li>                      
-            <li><a href='{{ $.Scratch.Get "logisticPage" }}'>LogisTIC 4.0</a></li>
+            <li class="has-menu">
+              <a href='{{ $.Scratch.Get "logisticPage" }}'>LogisTIC 4.0 <span></span></a>
+                <ul>
+                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/formations/">Formations</a></li>
+                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/ateliers-decouverte/">Ateliers Découvertes</a></li>
+                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/conferences/">Conférences</a></li>
+                </ul>
+            </li>
             <li><a href='{{ $.Scratch.Get "articlesPage" }}'>Blogue</a></li>
             <li><a href='{{ $.Scratch.Get "contactPage" }}'>Contact</a></li>
         </ul>

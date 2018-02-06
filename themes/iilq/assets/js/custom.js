@@ -25,7 +25,6 @@ $( '#hero-slider' )
     } );
 } );
 
-
     $('#hero-slider').on('init', function(e, slick) {
         var $firstAnimatingElements = $('div.hero-slide:first-child').find('[data-animation]');
         doAnimations($firstAnimatingElements);    
@@ -264,16 +263,31 @@ $('.menu-btn').click(function(){
 });
 
 $(function() {
-  $('.category-box').matchHeight({
-        target: $('#blog-single-block'),
-        property: 'min-height'
-    });
+  // $('.category-box').matchHeight({
+  //       target: $('#blog-single-block'),
+  //       property: 'min-height'
+  //   });
 });
 
 
 $(function() {
-  $('#blog-articles-list .category-box').matchHeight({
-        target: $('#blog-left-column'),
-        property: 'min-height'
+  var $blogSidebar   = $("#blog-sidebar"),
+      $blogFooter = $('#page-footer') ,
+        $blogWindow    = $(window),
+        blogSidebarHeight = $blogSidebar.height(),
+        blogFooterOffset = $blogFooter.offset(),
+        sidebarOffset     = $blogSidebar.offset(),
+        sidebarWidth      = $blogSidebar.width()
+    $blogWindow.scroll(function() {
+        if ($blogWindow.scrollTop() > sidebarOffset.top && (blogFooterOffset.top - blogSidebarHeight) > $blogWindow.scrollTop()) {
+            $blogSidebar.addClass('fixed-sidebar');
+            $blogSidebar.width(sidebarWidth);
+            $blogSidebar.removeClass('over-footer');
+        } else if ($blogWindow.scrollTop() > (blogFooterOffset.top - blogSidebarHeight)) {
+            $blogSidebar.addClass('over-footer');
+        }  else {
+            $blogSidebar.removeClass('fixed-sidebar');
+            $blogSidebar.removeClass('over-footer');
+        }
     });
 });

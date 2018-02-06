@@ -88,6 +88,11 @@
 				display: block;
 				line-height: 0.9;
 				letter-spacing: 6px;
+				-webkit-transition: 0.3s;
+				-moz-transition: 0.3s;
+				-ms-transition: 0.3s;
+				-o-transition: 0.3s;
+				transition: 0.3s;
 				@include breakpoint(tablet) {
 					font-size: 3em;
 				}
@@ -102,6 +107,11 @@
 				color:$yellow;
 				font-size: 2.2em;
 				line-height: 1.4;
+				-webkit-transition: 0.3s;
+				-moz-transition: 0.3s;
+				-ms-transition: 0.3s;
+				-o-transition: 0.3s;
+				transition: 0.3s;
 				@include breakpoint(laptop) {
 					line-height: 1.2;
 				}
@@ -116,6 +126,14 @@
 				@include breakpoint(phone-xs)  {
 					font-size: 1.5em;
 					line-height: 1.2;
+				}
+			}
+			&:hover {
+				span.title, p {
+					transform: scale(1.1);
+				}
+				:first-child {
+					margin-bottom: 20px;
 				}
 			}
 		}
@@ -329,6 +347,11 @@
 				line-height: 220px;		
 				margin: 63.51px auto;	
 				position: relative;
+				-webkit-transition: 0.3s;
+				-moz-transition: 0.3s;
+				-ms-transition: 0.3s;
+				-o-transition: 0.3s;
+				transition: 0.3s;
 				&.small-icon {
 					font-size: 90px;
 				}
@@ -428,13 +451,7 @@
 					}
 				}
 				&:hover {
-					// background:$blue-light;
-					// &:before {
-					// 	border-bottom-color: $blue-light;
-					// }
-					// &:after {
-					// 	border-top-color: $blue-light;
-					// }
+					transform: scale(1.1);
 				}
 			}
 			.title {
