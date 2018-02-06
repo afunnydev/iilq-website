@@ -262,13 +262,6 @@ $('.menu-btn').click(function(){
 
 });
 
-$(function() {
-  // $('.category-box').matchHeight({
-  //       target: $('#blog-single-block'),
-  //       property: 'min-height'
-  //   });
-});
-
 if ($("#blog-sidebar")){
   $(function() {
     var $blogSidebar      = $("#blog-sidebar"),

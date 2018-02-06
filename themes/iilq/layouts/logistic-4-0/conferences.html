@@ -24,6 +24,7 @@
         <div class="content-block hyphenate">
           {{ $element.text | markdownify }}
           {{ if eq (add $index 1) $len }}
+          <p><strong>Vous désirez vous inscrire à cet atelier ?</strong></p>
           {{- partial "site/popuptrigger.html" . -}}
           {{ end }}
         </div>
