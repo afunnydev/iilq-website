@@ -269,15 +269,15 @@ $(function() {
   //   });
 });
 
-
-$(function() {
-  var $blogSidebar   = $("#blog-sidebar"),
-      $blogFooter = $('#page-footer') ,
-        $blogWindow    = $(window),
+if ($("#blog-sidebar")){
+  $(function() {
+    var $blogSidebar      = $("#blog-sidebar"),
+        $blogFooter       = $('#page-footer') ,
+        $blogWindow       = $(window),
         blogSidebarHeight = $blogSidebar.height(),
-        blogFooterOffset = $blogFooter.offset(),
+        blogFooterOffset  = $blogFooter.offset(),
         sidebarOffset     = $blogSidebar.offset(),
-        sidebarWidth      = $blogSidebar.width()
+        sidebarWidth      = $blogSidebar.width();
     $blogWindow.scroll(function() {
         if ($blogWindow.scrollTop() > sidebarOffset.top && (blogFooterOffset.top - blogSidebarHeight) > $blogWindow.scrollTop()) {
             $blogSidebar.addClass('fixed-sidebar');
@@ -290,4 +290,5 @@ $(function() {
             $blogSidebar.removeClass('over-footer');
         }
     });
-});
+  });
+}
