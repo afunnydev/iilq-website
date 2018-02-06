@@ -153,6 +153,9 @@
 			&:hover {
 				background:$yellow;
 			}
+			@include breakpoint(phone-xs) {
+				font-size: 1em;
+			}
 		}
 	}
 	/* sidebar blog */
@@ -250,10 +253,6 @@
 			position: relative;
 			padding:1.875em;
 			padding-top: 3.750em;
-			@include breakpoint(phone) {
-				height: auto!important;
-				min-height: auto!important;
-			}
 			&:before {
 				width: 0;
 				height: 0;
@@ -573,11 +572,6 @@
 			position: relative;
 			padding:1.875em;
 			padding-top: 3.750em;
-			// margin-bottom: -200px;
-			@include breakpoint(phone) {
-				height: auto!important;
-				min-height: auto!important;
-			}
 			&:before {
 				width: 0;
 				height: 0;
