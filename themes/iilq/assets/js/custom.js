@@ -262,7 +262,7 @@ $('.menu-btn').click(function(){
 
 });
 
-if ($("#blog-sidebar")){
+if ($("#blog-sidebar").length){
   $(function() {
     var $blogSidebar      = $("#blog-sidebar"),
         $blogFooter       = $('#page-footer') ,
