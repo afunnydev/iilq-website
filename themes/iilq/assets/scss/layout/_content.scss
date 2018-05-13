@@ -760,6 +760,230 @@
 /*=====  End of Fomration Page  ======*/
 
 /*======================================
+=            Études de cas Page        =
+======================================*/
+
+#etudes-content {
+	.intro-block {
+		text-align: center;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 12px;
+		}
+		@include breakpoint(phone) {
+			font-size: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		@include breakpoint(phone-xs) {
+			font-size: 10px;
+		}
+		h1, h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 4em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			@include breakpoint(phone-xs) {
+				font-size: 3em
+			}
+		}
+		&.single {
+			padding-left: 100px;
+			padding-right: 100px;
+			@include breakpoint(laptop) {
+				padding:50px;
+			}
+			@include small-lap {
+				padding:70px;
+			}
+			@include breakpoint(laptop) {
+				padding:70px;
+			}
+			@include breakpoint(tablet) {
+				padding:50px;
+			}
+			@include breakpoint(phone) {
+				padding:40px;
+			}
+			@include breakpoint(phone-xs) {
+				padding:30px;
+			}
+			h1,h2 {
+				font-size: 3em;
+				@include breakpoint(phone-xs) {
+					font-size: 2em
+				}
+			}
+		}
+		img {
+			display: inline-block;
+			max-height: 50px;
+			margin-left: 40px;
+			@include breakpoint(laptop) {
+				max-height: 45px;
+				margin-left: 30px;
+			}
+			@include breakpoint(tablet) {
+				max-height: 38px;
+				margin-left: 25px;
+			}
+			@include breakpoint(phone) {
+				max-width: 100%;
+				display: block!important;
+				height: auto;
+				margin: 15px auto 0;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		&:nth-child(even) {
+			background:#efeff0;
+			h2 {
+				color:$blue;
+			}
+		}
+		&:nth-child(odd) {
+			background:#d4dfe1;
+			h2 {
+				color:$blue;
+			}
+		}		
+		h2 {
+			margin-bottom: 30px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+			hyphens: auto;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+				color: $blue;
+				font-size: 1.2em;
+			}
+		}
+		ul, ol {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			li {
+				display: block;
+				color:$text;
+				line-height: 1.2;
+				font-size: 1.5em;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				position: relative;
+				padding-left: 15px;
+				word-wrap: break-word;
+				&:before {
+					width: 6px;
+					height: 6px;
+					background:$blue;
+					content:'';
+					position: absolute;
+					left:0px;
+					top:17px;
+					border-radius:50%;
+				}
+			}
+		}
+		img.img-responsive {
+			margin-bottom: 30px;
+		}
+		h6 {
+			font-size: 2em;
+			color:$blue;
+			line-height: 120%;
+			margin-bottom: 50px;
+			font-weight: 400;
+			br {
+				@include breakpoint(phone) {
+					display: none;
+				}
+			}
+		}
+		.read-btn {
+			color:$text;
+			border:2px solid $blue;
+			display: inline-block;
+			font-size: 1.250em;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 17px;
+			font-family: $font-heading;
+			padding-bottom: 17px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}
+		}				
+	}
+}
+
+/*=====  End of Études de cas  ======*/
+
+/*======================================
 =            Clients Page            =
 ======================================*/
 
