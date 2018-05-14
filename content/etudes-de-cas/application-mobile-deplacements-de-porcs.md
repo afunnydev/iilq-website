@@ -1,7 +1,7 @@
 ---
-title: "Éleveurs du porc du Québec (ÉPQ) | IILQ"
+title: "Application mobile pour gérer les déplacements de porcs | IILQ"
 i18nlanguage: fr
-titre: "Éleveurs du porc du Québec (ÉPQ)"
+titre: "Application mobile pour gérer les déplacements de porcs"
 description: ""
 desc: >-
   L’objectif du mandat était de supporter les Éleveurs du porc du Québec dans le développement d’un outil novateur de gestion des opérations logistiques de la filière porcine du Québec, en lien avec leurs différents mandats. Cela permettra d’améliorer leur efficacité et surtout la conformité aux exigences grandissantes de leurs clients locaux et internationaux.

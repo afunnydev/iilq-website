@@ -1,7 +1,7 @@
 ---
-title: "Table bioalimentaire de la Côte-Nord | IILQ"
+title: "Colis Nord - Table bioalimentaire | IILQ"
 i18nlanguage: fr
-titre: "Table bioalimentaire de la Côte-Nord"
+titre: "Colis Nord"
 description: ""
 desc: >-
   Afin d’étudier la faisabilité d’une plateforme Web collaborative pour le covoiturage de colis, 3 cadres ont été analysés, soit : légal, économique et technologique. Chacun présentait des défis et des contraintes ayant des impacts directs les uns sur les autres. 

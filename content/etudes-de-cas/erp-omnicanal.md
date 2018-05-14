@@ -1,7 +1,7 @@
 ---
-title: "Gagnon et frères - Mise en place d'un ERP | IILQ"
+title: "Mise en place d'un ERP - Omnicanal | IILQ"
 i18nlanguage: fr
-titre: "Gagnon et frères - ERP"
+titre: "ERP - Omnicanal"
 description: ""
 desc: >-
   Réalisé en 2 phases, le projet consistait tout d’abord à rédiger le cahier de charge, sélectionner les meilleures solutions potentielles, ainsi qu’analyser les différentes propositions reçues par les fournisseurs. 
