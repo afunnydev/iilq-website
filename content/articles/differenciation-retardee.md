@@ -1,15 +1,21 @@
 ---
 title: Différenciation retardée
+description: >-
+  La différenciation retardée est une stratégie visant une meilleure
+  organisation de la production, en ne personnalisant la demande du client qu’à
+  la toute fin du cycle de production.
 slug: differenciation-retardee
 translationKey: differenciation-retardee
 i18nlanguage: fr
-image: "/img/Blogue-DifferenciationRetarde.jpg"
-imagecarree: "/img/Blogue-DifferenciationRetarde-carre.jpg"
-banniere: "/img/Blogue-DifferenciationRetarde-NB-carroussel.jpg"
-author: "Adèle Charest-Normandeau" 
+image: /img/Blogue-DifferenciationRetarde.jpg
+imagecarree: /img/Blogue-DifferenciationRetarde-carre.jpg
+banniere: /img/Blogue-DifferenciationRetarde-NB-carroussel.jpg
+author: Adèle Charest-Normandeau
 weight: 0
-date: 2018-01-01
-categories: ["Différenciation", "Production"]
+date: 2018-01-01T00:00:00.000Z
+categories:
+  - Différenciation
+  - Production
 ---
 
 La différenciation retardée est une stratégie visant une meilleure organisation de la production, en ne personnalisant la demande du client qu’à la toute fin du cycle de production. La complexité des échanges et la demande croissante de plus en plus précise des consommateurs nécessitent une massification de la production. La technique de différenciation retardée répond aux différentes caractéristiques recherchées par les consommateurs :
