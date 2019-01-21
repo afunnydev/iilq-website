@@ -1,14 +1,12 @@
 ---
 title: Configurateur de produits
 slug: configurateur-de-produits
-identifiant: configurateur-de-produits
+translationKey: configurateur-de-produits
 i18nlanguage: fr
-description: ""
 image: "/img/Blogue-Configurateur-de-produits.jpg"
 imagecarree: "/img/Blogue-Configurateur-de-produits-carre.jpg"
 banniere: "/img/Blogue-Configurateur-de-produits-NB-carroussel.jpg"
 author: "Guy Normandeau" 
-activemenu:
 weight: 0
 date: 2018-01-16
 categories: ["Commerce en ligne"]

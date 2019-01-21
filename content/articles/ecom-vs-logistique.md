@@ -1,14 +1,12 @@
 ---
 title: eCom vs logistique
 slug: ecom-vs-logistique
-identifiant: ecom-vs-logistique
+translationKey: ecom-vs-logistique
 i18nlanguage: fr
-description: ""
 image: "/img/E-com-vs-logistique.jpg"
 imagecarree: "/img/E-com-vs-logistique-carre.jpg"
 banniere: "/img/E-com-vs-logistique-NB-carroussel.jpg"
 author: "Guy Normandeau" 
-activemenu:
 weight: 0
 date: 2018-01-16
 categories: ["Commerce en ligne", "Logistique"]

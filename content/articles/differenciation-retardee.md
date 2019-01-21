@@ -1,14 +1,12 @@
 ---
 title: Différenciation retardée
 slug: differenciation-retardee
-identifiant: differenciation-retardee
+translationKey: differenciation-retardee
 i18nlanguage: fr
-description: ""
 image: "/img/Blogue-DifferenciationRetarde.jpg"
 imagecarree: "/img/Blogue-DifferenciationRetarde-carre.jpg"
 banniere: "/img/Blogue-DifferenciationRetarde-NB-carroussel.jpg"
 author: "Adèle Charest-Normandeau" 
-activemenu:
 weight: 0
 date: 2018-01-01
 categories: ["Différenciation", "Production"]

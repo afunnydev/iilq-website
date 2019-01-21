@@ -1,12 +1,11 @@
 ---
 title: RFID
 slug: rfid
-identifiant: rfid
-description: ''
+translationKey: rfid
 image: /img/Blogue-RFID.jpg
 imagecarree: /img/Blogue-RFID-carre.jpg
 banniere: /img/Blogue-RFID-NB-carroussel.jpg
-date: 2018-01-03T00:00:00.000Z
+date: 2018-01-03
 author: Adèle Charest-Normandeau
 categories:
   - RFID

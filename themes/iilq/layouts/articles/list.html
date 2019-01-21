@@ -36,7 +36,7 @@
                       {{ range (shuffle .Pages) }}
                       <div class="item">
                           <div class="article-box">
-                              <img src="{{.Params.imagecarree}}" alt="" class="img-responsive">
+                              <img src="/quart{{.Params.imagecarree}}" alt="" class="img-responsive">
                               <a href="{{.Permalink}}">
                                   <div class="article-caption">
                                       <h5>{{.Title}}</h5>
@@ -61,7 +61,7 @@
                           <article class="blog-article">
                               <div class="image-holder">
                                   <a href="{{.Permalink}}">
-                                      <img src="{{.Params.image}}" alt="" class="img-responsive">
+                                      <img src="/half{{.Params.image}}" alt="" class="img-responsive">
                                   </a>
                               </div>
                               <!-- // iamge holder  -->

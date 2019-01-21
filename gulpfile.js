@@ -3,6 +3,7 @@ const imagemin = require("gulp-imagemin");
 const imageresize = require('gulp-image-resize');
 const parallel = require("concurrent-transform");
 var runSequence = require('run-sequence');
+var newer = require('gulp-newer');
 var del = require('del');
 var exec = require('child_process').exec;
 
@@ -13,24 +14,11 @@ const imagehalf = 1024;
 const imagequart = 600;
 const imagethumb = 80;
 
-// clean images from dir
-gulp.task("clean-image", function(){
-  return del([
-    'themes/iilq/static/quart/**/*',
-    'themes/iilq/static/half/**/*',
-    'themes/iilq/static/thumb/**/*',
-    'themes/iilq/static/large/**/*',
-    'themes/iilq/static/img/*',
-    // we don't want to clean this file though so we negate the pattern
-    '!themes/iilq/static/img/ico',
-    '!themes/iilq/static/img/ico/*',
-    '!themes/iilq/static/img/logos',
-    '!themes/iilq/static/img/logos/*'
-  ]);
-});
 // resize and optimize images
 gulp.task("image-resize", () => {
-  return gulp.src("themes/iilq/source-images/*.{jpg,png,jpeg,gif}")
+  return gulp.src("themes/iilq/source-images/*.{jpg,png,jpeg,JPG}")
+    .pipe(newer("themes/iilq/static/img"))
+    .pipe(imagemin())
     .pipe(imageresize({ width: imagelarge }))
     .pipe(gulp.dest("themes/iilq/static/large/img"))
     .pipe(imageresize({ width: imagefull }))
@@ -66,7 +54,6 @@ gulp.task("dev",  function(callback) {
 
 // optimizing images and calling hugo for production
 gulp.task("prod",  function(callback) {
-  runSequence('clean-image',
-              'image-resize',
+  runSequence('image-resize',
               'hugo');
 });
