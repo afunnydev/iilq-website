@@ -19,7 +19,7 @@ categories:
 ---
 La différenciation retardée est une stratégie visant une meilleure organisation de la production, en ne personnalisant la demande du client qu’à la toute fin du cycle de production. La complexité des échanges et la demande croissante de plus en plus précise des consommateurs nécessitent une massification de la production. La technique de différenciation retardée répond aux différentes caractéristiques recherchées par les consommateurs :
 
-* Des prix réduit
+* Des prix réduits
 * De courts délais de livraison
 * Le pouvoir de commander au moment et à l’endroit désiré 
 
