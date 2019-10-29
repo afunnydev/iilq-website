@@ -1,10 +1,7 @@
 const gulp = require('gulp');
 const imagemin = require("gulp-imagemin");
 const imageresize = require('gulp-image-resize');
-const parallel = require("concurrent-transform");
-var runSequence = require('run-sequence');
 var newer = require('gulp-newer');
-var del = require('del');
 var exec = require('child_process').exec;
 
 // image resizing variables
@@ -32,7 +29,7 @@ gulp.task("image-resize", () => {
 });
 
 // hugo production call
-gulp.task("hugo", function (cb) {
+gulp.task("hugo", (cb) => {
   exec('hugo --cleanDestinationDir', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
@@ -41,19 +38,15 @@ gulp.task("hugo", function (cb) {
 });
 
 // watching images and resizing
-gulp.task("watch", function() {
-  gulp.watch('themes/iilq/source-images/*.{jpg,png,jpeg,gif}', function(){ runSequence('clean-image', 'image-resize') });
+gulp.task("watch", () => {
+  gulp.watch(
+    'themes/iilq/source-images/*.{jpg,png,jpeg,gif}',
+    gulp.series('image-resize') 
+  );
 });
 
 // watching images and resizing
-gulp.task("dev",  function(callback) {
-  runSequence('clean-image',
-              'image-resize',
-              'watch');
-});
+gulp.task("dev", gulp.series('image-resize', 'watch'));
 
 // optimizing images and calling hugo for production
-gulp.task("prod",  function(callback) {
-  runSequence('image-resize',
-              'hugo');
-});
+gulp.task("prod", gulp.series('image-resize','hugo'));

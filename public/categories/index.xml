@@ -6,6 +6,7 @@
     <description>Recent content in Categories on IILQ | Institut d&#39;Innovation en Logistique du Québec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.innovationlogistique.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,11 +21,11 @@
     </item>
     
     <item>
-      <title>Différenciation</title>
-      <link>https://www.innovationlogistique.com/categories/diff%C3%A9renciation/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Logistique</title>
+      <link>https://www.innovationlogistique.com/categories/logistique/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.innovationlogistique.com/categories/diff%C3%A9renciation/</guid>
+      <guid>https://www.innovationlogistique.com/categories/logistique/</guid>
       <description></description>
     </item>
     
@@ -38,29 +39,11 @@
     </item>
     
     <item>
-      <title>Logistique</title>
-      <link>https://www.innovationlogistique.com/categories/logistique/</link>
-      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.innovationlogistique.com/categories/logistique/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>MES</title>
       <link>https://www.innovationlogistique.com/categories/mes/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.innovationlogistique.com/categories/mes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Production</title>
-      <link>https://www.innovationlogistique.com/categories/production/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.innovationlogistique.com/categories/production/</guid>
       <description></description>
     </item>
     

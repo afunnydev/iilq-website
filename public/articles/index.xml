@@ -49,15 +49,5 @@ Ces transactions peuvent être complétées au moyen de différents terminaux co
       <description>La technologie d’identification par radiofréquence (RFID) capture et mémorise automatiquement des données qui ont comme canal les ondes et les rayons émis par une radiofréquence. Son fonctionnement est relativement simple : un récepteur détectera et lira les données de la puce électronique d’une étiquette présente dans un objet. Cette puce n’est pas percevable par le consommateur et les fréquences peuvent même être captées au travers de matériaux peu épais. Afin d’assurer une lecture des données, les informations dans la puce sont regroupées sous un identifiant, généralement unique, et transmises par l’antenne plate de l’étiquette.</description>
     </item>
     
-    <item>
-      <title>Différenciation retardée</title>
-      <link>https://www.innovationlogistique.com/articles/differenciation-retardee/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.innovationlogistique.com/articles/differenciation-retardee/</guid>
-      <description>La différenciation retardée est une stratégie visant une meilleure organisation de la production, en ne personnalisant la demande du client qu’à la toute fin du cycle de production. La complexité des échanges et la demande croissante de plus en plus précise des consommateurs nécessitent une massification de la production. La technique de différenciation retardée répond aux différentes caractéristiques recherchées par les consommateurs :
- Des prix réduits De courts délais de livraison Le pouvoir de commander au moment et à l’endroit désiré  Le rendement engendré par une production en grande série d’une gamme de produits dont les éléments de base sont communs permet à l’entreprise d’adapter son produit fini tout en le spécialisant à une demande dite individuelle.</description>
-    </item>
-    
   </channel>
 </rss>
