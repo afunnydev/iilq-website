@@ -1,0 +1,86 @@
+[contact]
+  other = "Contactez-nous"
+
+[home]
+  other = "Accueil"
+
+[services]
+  other = "Nos services"
+
+[about]
+  other = "À propos"
+
+[clients]
+  other = "Nos clients"
+
+[blog]
+  other = "Blogue"
+
+[find]
+  other = "Nous trouver"
+
+[email]
+  other = "Courriel"
+
+[call]
+  other = "Appelez-nous"
+
+[sitemap]
+  other = "Plan du site"
+
+[copyright]
+  other = "Tous droits réservés"
+
+[akiatagline]
+  other = 'Fait avec <i class="fa fa-heart"></i> par <a href="#">Akia Marketing</a>'
+
+[readmore]
+  other = "Lire la suite"
+
+[recent_articles]
+  other = "Articles récents"
+
+[popular_articles]
+  other = "Articles populaires"
+
+[yourname]
+  other = "Votre nom"
+
+[youremail]
+  other = "Votre courriel"
+
+[yoursubject]
+  other = "Votre sujet"
+
+[yourmessage]
+  other = "Votre message"
+
+[subscribe_newsletter]
+  other = "Inscrivez-vous à l’infolettre!"
+
+[follow_us]
+  other = "Suivez nous sur :"
+
+[search]
+  other = "Recherche"
+
+[article_subject]
+  other = "Articles par sujet"
+
+[writeus]
+  other = "Écrivez-nous"
+
+[name]
+  other = "Nom"
+
+[domain]
+  other = "Domaine"
+
+[region]
+  other = "Région"
+
+[phone]
+  other = "Téléphone"
+
+[comment]
+  other = "Commentaire"

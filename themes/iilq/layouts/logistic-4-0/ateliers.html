@@ -1,0 +1,39 @@
+{{ define "main" }}
+<header id="inner-header">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
+    <div class="header-caption">
+        
+    </div>
+    <!-- // caption  -->
+</header>
+<!-- // inner header  -->
+
+<div id="atelier-content">
+   <div class="container">
+       
+        <div class="intro-block">
+            {{ .Params.introblock | markdownify }}
+        </div>
+        <!-- // intro  -->
+
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
+
+        {{ range $index, $element := $list }}
+        <div class="content-block hyphenate">
+          {{ $element.text | markdownify }}
+        </div>
+        {{ end }}         
+
+        <div class="content-block no-margin hyphenate">
+            <p><strong>{{.Params.lastsection}}</strong></p>
+            {{- partial "site/popuptrigger.html" . -}}
+            
+        </div>
+        <!-- // content block  -->                                          
+
+   </div>
+   <!-- // container  -->
+</div>
+<!-- // foramtion content  -->
+{{ end }}

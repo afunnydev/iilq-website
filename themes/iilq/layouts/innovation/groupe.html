@@ -1,0 +1,37 @@
+{{ define "main" }}
+<header id="inner-header">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
+</header>
+<!-- // inner header  -->
+
+<div id="groupe-content">
+   <div class="container">
+       
+        <div class="intro-block">
+            <h1>{{.Params.titre}}</h1>
+        </div>
+        <!-- // intro  -->
+            
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
+
+        {{ range $index, $element := $list }}
+        <div class="content-block hyphenate no-margin">
+          {{ if eq (add $index 1) 1 }}
+          <p>{{$.Params.introtext}}</p> 
+          {{ end }}
+          {{ $element.text | markdownify }}
+        </div>
+        {{ end }}        
+
+        <div class="content-block no-margin hyphenate">
+            <p><strong>{{.Params.lastsection}}</strong></p>
+            {{- partial "site/popuptrigger.html" . -}}
+        </div>
+        <!-- // content block  -->                                          
+
+   </div>
+   <!-- // container  -->
+</div>
+<!-- // foramtion content  -->
+{{ end }}

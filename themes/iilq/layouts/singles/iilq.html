@@ -1,0 +1,77 @@
+{{ define "main" }}
+<main class="main" id="iilq">
+	<header id="inner-header">
+      <img src="{{.Params.image}}" alt="{{.Site.Title}}" class="img-responsive" style="object-position: top;">
+      <div class="header-caption">
+          
+      </div>
+      <!-- // caption  -->
+  </header>
+  <!-- // inner header  -->
+
+  <section id="inner-page-content">
+      <div class="container">
+          
+          <a href="#no">
+          <div id="intro-block">
+              <div class="content about">
+                  <p>{{.Params.section1}}</p>
+              </div>
+              <!-- // content  -->
+              <div class="page-link">
+                  <span class="icon-logosmall"></span>
+              </div>
+              <!-- // pag elink  -->                    
+          </div>
+          <!-- // intro block  -->
+          </a>
+
+          <div id="features-block">
+              <div class="row">
+                  
+									<div class="col-sm-4">
+                      <div class="features-box">
+                          <div class="icon-holder eye-icon">
+                              <img src="/img/ico/iris.svg" alt="">
+                          </div>
+                          <!-- // icon  -->
+                      </div>
+                  </div>
+                  <!-- // features box  -->
+
+                  <div class="col-sm-4">
+                      <div class="features-box">
+                          <div class="icon-holder target-icon">
+                              <img src="/img/ico/target.svg" alt="">
+                          </div>
+                          <!-- // icon  -->
+                      </div>
+                  </div>
+                  <!-- // features box  -->
+
+                  <div class="col-sm-4">
+                      <div class="features-box">
+                          <div class="icon-holder head-icon">
+                             <img src="/img/ico/icone-valeur.png" alt="">
+                          </div>
+                          <!-- // icon  -->
+                      </div>
+                  </div>
+                  <!-- // features box  -->                                                
+
+              </div>
+              <!-- // .row  -->
+          </div>
+          <!-- // features block  -->     
+          
+          <div id="inner-content">
+              {{.Content}}
+          </div>
+          <!-- // inner content -->
+
+      </div>
+      <!-- // . container  -->
+  </section>
+  <!-- // inner page  -->
+</main>
+{{ end }}

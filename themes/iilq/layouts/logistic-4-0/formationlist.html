@@ -1,0 +1,36 @@
+{{ define "main" }}
+<header id="inner-header">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
+    <div class="header-caption">
+        
+    </div>
+    <!-- // caption  -->
+</header>
+<!-- // inner header  -->
+
+<div id="formation-content">
+   <div class="container">
+       
+        <div class="intro-block">
+            <h1>{{.Params.titre}}</h1>
+            <img src="/img/logos/LOGO_Logistique40.png" alt="">
+        </div>
+        <!-- // intro  -->
+
+
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
+
+        {{ range $index, $element := $list }}
+        <div class="content-block hyphenate">
+          {{ $element.text | markdownify }}
+          <p><strong>Vous désirez vous inscrire à cet atelier ?</strong></p>
+          {{- partial "site/popuptrigger.html" . -}}
+        </div>
+        {{ end }}                                         
+
+   </div>
+   <!-- // container  -->
+</div>
+<!-- // foramtion content  -->
+{{ end }}

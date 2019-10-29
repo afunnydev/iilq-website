@@ -1,0 +1,35 @@
+{{ define "main" }}
+<header id="inner-header">
+    <img src="{{.Params.image}}" alt="" class="img-responsive">
+    <div class="header-caption">
+        
+    </div>
+    <!-- // caption  -->
+</header>
+<!-- // inner header  -->
+
+<div id="formation-content">
+   <div class="container">
+       
+        <div class="intro-block">
+            <h1>{{.Params.titre}}</h1>
+        </div>
+        <!-- // intro  -->
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
+
+        {{ range $index, $element := $list }}
+        <div class="content-block {{ if eq (add $index 1) 1 }}{{ else }}hyphenate{{ end }}">
+          {{ $element.text | markdownify }}
+          {{ if eq (add $index 1) $len }}
+          <a href='{{ $.Scratch.Get "contactPage" }}' class="read-btn">{{ i18n "contact" }}</a>
+          {{ end }}
+        </div>
+        {{ end }}                                        
+
+   </div>
+   <!-- // container  -->
+</div>
+<!-- // foramtion content  -->
+
+{{ end }}

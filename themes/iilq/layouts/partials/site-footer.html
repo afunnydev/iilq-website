@@ -1,3 +1,45 @@
-<footer id="site-footer" class="site-footer">
-
+<footer id="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="social-block">
+                    <h6>{{ i18n "follow_us" }}</h6>
+                    {{with .Site.Data.settings.socials.twitter}}
+                    <a href="{{.}}" target="_blank"><span class="icon-twitter"></span></a>
+                    {{ end }}
+                    {{with .Site.Data.settings.socials.facebook}}
+                    <a href="{{.}}" target="_blank"><span class="icon-fb"></span></a>
+                    {{ end }}
+                    {{with .Site.Data.settings.socials.linkedin}}
+                    <a href="{{.}}" target="_blank"><span class="icon-linkedin"></span></a>
+                    {{ end }}
+                    {{with .Site.Data.settings.socials.google}}
+                    <a href="{{.}}" target="_blank"><span class="icon-googleplus"></span></a>
+                    {{ end }}
+                </div>
+                <!-- // social  -->
+                <div id="newsletter-block">
+                    <h6>{{ i18n "subscribe_newsletter" }}</h6>
+                    <form id="form-wrapper" name="infolettre-{{.Lang}}" netlify method="post">
+                        <input type="text" name="name" placeholder='{{ i18n "yourname" }}'>
+                        <input type="email" name="email" placeholder='{{ i18n "email" }}'>
+                        <button type="submit"></button>
+                    </form>
+                    <!-- // form  -->
+                </div>
+                <!-- // newsleter bock  -->
+            </div>
+            <!-- // . col  -->
+        </div>
+        <!-- // . row  -->
+    </div>
+    <!-- // .container  -->
 </footer>
+<!-- // footer  -->
+
+<div class="floating-cta visible-xs">
+    <a href="tel:{{.Site.Data.settings.mphone}}"><img src="/img/ico/phone.svg" alt=""></a>
+</div>
+<!-- // floating cta  -->
+
+{{- partial "site/popup.html" . -}}

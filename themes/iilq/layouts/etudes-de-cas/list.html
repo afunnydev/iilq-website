@@ -1,0 +1,32 @@
+{{ define "main" }}
+<main class="main">
+	<header id="inner-header">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
+    <div class="header-caption">
+        
+    </div>
+    <!-- // caption  -->
+  </header>
+  <!-- // inner header  -->
+
+  <div id="etudes-content">
+   <div class="container">
+       
+        <div class="intro-block">
+            <h1>{{.Params.titre}}</h1>
+        </div>
+        <!-- // intro  -->
+        {{ range .Pages }}
+        <div class="content-block hyphenate">
+          <h6>{{.Params.titre}}</h6>
+          <p>{{.Params.desc | markdownify}}</p>
+          <a href="{{.Permalink}}" class="read-btn">En savoir plus</a>
+        </div>
+        {{ end }}
+
+   </div>
+   <!-- // container  -->
+</div>
+<!-- // foramtion content  -->
+</main>
+{{ end }}

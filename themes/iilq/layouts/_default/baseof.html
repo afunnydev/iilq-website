@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{$.Lang}}">
 	<head>
-		{{- partial "site-head.html" . -}}
+		{{- $.Scratch.Add "homePage" ("/" | absLangURL) -}}
+		{{- $.Scratch.Add "contactPage" ("contact/" | absLangURL) -}}
+		{{- $.Scratch.Add "aboutPage" ("iilq/" | absLangURL) -}}
+		{{- $.Scratch.Add "articlesPage" ("articles/" | absLangURL) -}}
+		{{- $.Scratch.Add "clientsPage" ("clients-et-partenaires/" | absLangURL) -}}
+		{{- $.Scratch.Add "logisticPage" ("logistic-4-0/" | absLangURL) -}}
+		{{- $.Scratch.Add "innovationPage" ("innovation/" | absLangURL) -}}
+		{{- $.Scratch.Add "transfertPage" ("transfert/" | absLangURL) -}}
+		{{- $.Scratch.Add "etudesPage" ("etudes-de-cas/" | absLangURL) -}}
+		{{- if eq .Lang "fr" -}}
+		{{- $.Scratch.Add "ateliersPage" ("logistic-4-0/ateliers-decouverte/" | absLangURL) -}}
+		{{- else if eq .Lang "en" -}}
+		{{- $.Scratch.Add "ateliersPage" ("logistic-4-0/ateliers-decouverte/" | absLangURL) -}}
+		{{- end -}}
+		{{ partial "site-head.html" . }}
 	</head>
 	<body>
+		{{ partial "header/google-tag-manager.html" }}
 		<div id="all-site-wrapper" class="all-site-wrapper">
-		  {{- partial "site-header.html" . -}}
+		  {{ partial "site-header.html" . }}
 			<div id="all-content-wrapper" class="all-content-wrapper">
 				{{block "main" . }}
 				{{end}}
 			</div>
-			{{- partial "site-footer.html" . -}}
+			{{ partial "site-footer.html" . }}
 		</div>
-		{{- partial "footer/site-scripts.html" . -}}
-		{{- partial "footer/google-analytics.html" . -}}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins and libraries -->
+    <script src="/js/hyphenator-loader.js"></script> 
+    <script src="/js/custom-dist.js"></script> 
 	</body>
 </html>

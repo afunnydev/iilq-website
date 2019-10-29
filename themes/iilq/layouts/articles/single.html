@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main class="main">
+	<header id="inner-header" class="single-article-header">
+      <img src="{{.Params.image}}" alt="{{.Title}}" class="img-responsive">
+      <div class="overlay"></div>
+      <!-- <div class="header-caption">
+      
+      </div> -->
+      <!-- // caption  -->
+  </header>
+  <!-- // inner header  -->
+
+  <section id="inner-page-content">
+      <div class="container">
+          
+          <div id="blog-page-content">
+          <div class="row">
+              <div class="col-lg-9 col-md-8 col-sm-8">
+                  <article id="blog-single-block">
+                    <h1>{{.Title}}</h1>
+                    <div class="hyphenate">
+                      {{.Content}}
+                    </div>
+                    {{- partial "site/social-share.html" . -}}
+                    <a href='{{ $.Scratch.Get "articlesPage" }}' class="read-btn">Retour aux articles</a>
+                  </article>
+                  <!-- // blg single  -->                        
+              </div>
+              <!-- // article  -->
+              <div class="col-lg-3 col-md-4 col-sm-4">
+                  {{- partial "site/sidebar.html" . -}}
+              </div>
+              <!-- // blog sidebar  -->
+          </div>
+          <!-- // row  -->
+
+          </div>
+          <!-- // blog page  -->
+
+
+      </div>
+      <!-- // . container  -->
+  </section>
+  <!-- // inner page  -->
+</main>
+{{ end }}

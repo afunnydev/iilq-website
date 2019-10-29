@@ -1,34 +1,41 @@
-{{ if and (.IsPage) (eq .Section "articles") }}
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "articleSection": "{{.Section | title}}",
-    "headline": "{{.Title}}",
-    "name": "{{.Title}}",
-    "url": "{{.Permalink }}",
-    "mainEntityOfPage": "{{.Permalink}}",
-    "datePublished": {{.PublishDate.Format "2006-01-02"}},
-    "dateModified": {{.Date.Format "2006-01-02"}},
-    "wordCount": {{.WordCount}},
-    "image": {
-        "@type": "ImageObject",
-        "url": "{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.defaultsocialimage }}",
-        "height": 533,
-        "width": 800
-    },
-    "author": {
-        "@type": "person",
-        "name": "{{range .Params.authors}}{{.}}{{end}}"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "{{.Site.Params.organizationname}}",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "{{.Site.BaseURL}}/assets/images/{{.Site.Params.defaultsocialimage}}"
-        }
-    }
-}
-</script>
-{{ end }}
+<script type="application/ld+json"> { 
+"@context" : "http://schema.org",
+"@type" : "ProfessionalService", 
+"address" : {
+"@type": "PostalAddress",
+"addressLocality": "{{.Site.Data.settings.address.fr.city}}", 
+"addressRegion": "{{.Site.Data.settings.address.fr.province}}", 
+"postalCode": "{{.Site.Data.settings.address.fr.postal}}", 
+"streetAddress": "{{.Site.Data.settings.address.fr.road}}{{ with .Site.Data.settings.address.fr.app}}, {{.}}{{end}}" }, 
+"name":"{{.Site.Params.schemabiz}}",
+"url":"{{.Site.Params.siteaddress}}",
+"email":"{{.Site.Data.settings.email}}",
+"telephone":"{{.Site.Data.settings.phone}}",
+"image":"{{.Site.Params.siteaddressno}}{{ .Site.Data.settings.defaultsocialimage }}",
+"openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "opens": "08:00",
+    "closes": "20:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Friday",
+    "opens": "09:00",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Saturday",
+    "opens": "10:00",
+    "closes": "16:00"}], 
+"aggregateRating":{
+"@type":"AggregateRating",
+"ratingValue":"5",
+"reviewCount":"12"},
+"priceRange":"1",
+"paymentAccepted":"Visa, Master Card"
+} </script>

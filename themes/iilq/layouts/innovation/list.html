@@ -1,0 +1,28 @@
+{{ define "main" }}
+<header id="yellow-header">
+    <div class="container">
+       <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive"> 
+    </div>
+</header>
+<!-- // inner header  -->
+
+<div id="innovation-content">
+    <div class="container">
+
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
+
+        {{ range $index, $element := $list }}
+        <div class="content-block hyphenate">
+          {{ $element.text | markdownify }}
+          {{ if eq (add $index 1) $len }}
+          <a href='{{ $.Scratch.Get "aboutPage" }}' class="read-btn">Découvrez nos réalisation</a>
+          {{ end }}
+        </div>
+        {{ end }}                               
+
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // innovation  -->
+{{ end }}

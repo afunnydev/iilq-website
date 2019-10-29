@@ -1,0 +1,31 @@
+<!-- Modal -->
+<div class="modal fade" id="bookingPopup" tabindex="-1" role="dialog" aria-labelledby="myBookingPopup">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myBookingPopup">Formulaire</h4>
+      </div>
+      <div class="content-block">
+        <h3>Remplir ce formulaire et nous communiquerons avec vous pour vous assigner une date selon vos disponibilités</h3>
+        <form action="/merci" id="popupForm" name="formulaire-{{.Lang}}" netlify method="post">
+          <input type="text" name="Nom*" placeholder='{{ i18n "name" }}'>
+          <input type="text" name="Domaine*" placeholder='{{ i18n "domain" }}'>
+          <input type="text" name="Region*" placeholder='{{ i18n "region" }}'>
+          <input type="text" name="Telephone*" placeholder='{{ i18n "phone" }}'>
+          <input type="text" name="Courriel*" placeholder='{{ i18n "email" }}'>
+          <select name="Formation" id="formation">
+            <option value="aucun">Formation</option>
+            {{ range .Site.Data.settings.formations}}
+            <option value="{{ .name | urlize }}">{{.name}}</option>
+            {{ end }}
+          </select>
+          <textarea name="Commentaire" id="comments" cols="30" rows="10" placeholder='{{ i18n "comment" }}'></textarea>
+          <div data-netlify-recaptcha></div>
+          <button type="submit"></button>
+          <p>*Remplir les champs obligatoires</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

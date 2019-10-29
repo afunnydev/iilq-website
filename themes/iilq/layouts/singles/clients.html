@@ -1,0 +1,51 @@
+{{ define "main" }}
+<header id="inner-header">
+    <img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive">
+    <div class="header-caption">
+        
+    </div>
+    <!-- // caption  -->
+</header>
+<!-- // inner header  -->
+
+<div id="clients-content">
+   <div class="container">
+       
+        <div class="intro-block">
+            <h1>{{.Params.titre}}</h1>
+        </div>
+        <!-- // intro  -->
+
+        <div class="content-block">
+            <div class="row partenaires">
+              {{ range .Params.partenaires }}
+              <div class="col-md-4 col-sm-6 col-xs-12 indiv">
+                <span class="helper"></span><img src="{{.img}}" alt="{{ with .nom }}{{ . }}{{ end }}" class="img-responsive">
+              </div>
+              {{ end }}
+            </div>
+        </div>
+        <!-- // content block  -->
+
+        <div class="intro-block">
+            <h2>{{.Params.titre2}}</h2>
+        </div>
+        <!-- // intro  -->   
+
+        <div class="content-block">
+            <div class="row clients">
+              {{ range .Params.clients }}
+              <div class="col-md-4 col-sm-6 col-xs-12 indiv">
+                <span class="helper"></span><img src="{{.img}}" alt="{{ with .nom }}{{ . }}{{ end }}" class="img-responsive">
+              </div>
+              {{ end }}
+            </div>
+        </div>
+        <!-- // content block  -->                                                
+
+   </div>
+   <!-- // container  -->
+</div>
+<!-- // foramtion content  -->
+
+{{ end }}

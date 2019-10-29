@@ -1,0 +1,31 @@
+{{ define "main" }}
+<header id="yellow-header" class="blue-header">
+    <div class="container">
+       <img src="{{.Params.image}}" alt="{{.Site.Title}}" class="img-responsive"> 
+    </div>
+</header>
+<!-- // inner header  -->
+
+<div id="innovation-content">
+    <div class="container">
+        
+        {{ $list := .Params.blocks }}
+        {{ $len := (len $list) }}
+
+        {{ range $index, $element := $list }}
+        <div class="content-block hyphenate">
+          {{ $element.text | markdownify }}
+          {{ if eq (add $index 1) $len }}
+          <footer>
+                <a href="{{$.Site.BaseURL}}logistic-4-0/conferences" class="read-btn">Découvrir nos conférences</a>
+                <a href="{{$.Site.BaseURL}}logistic-4-0/formations" class="read-btn">Découvrir nos formations</a>
+            </footer>
+          {{ end }}
+        </div>
+        {{ end }}                              
+
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // logistique  -->
+{{ end }}

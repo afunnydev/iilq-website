@@ -1,0 +1,1859 @@
+/*===================================
+=            Intro Block            =
+===================================*/
+
+#inner-page-content {
+	#intro-block {
+		background: $yellow;
+		min-height: 300px;
+		position: relative;
+		padding-left: 100px;
+		font-size: 16px;
+		@include small-lap {
+			min-height: 225px;
+			font-size: 15px;
+			padding-left: 50px;
+		}
+		@include breakpoint(laptop) {
+			font-size: 13px;
+			min-height: 225px;
+			padding-left: 50px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 13px;
+			padding-left: 30px;
+			min-height: 225px;
+		}
+		@include breakpoint(phone)  {
+			font-size: 14px;
+			padding-left: 25px;
+			min-height: auto;
+		}
+		&:hover {
+			.page-link {
+				background:$blue-light;
+				width: 350px;
+				@include small-lap {
+					width: 275px;
+				}
+				@include breakpoint(tablet) {
+					width: 250px;
+				}
+				&:before {
+					border-color: transparent $blue-light transparent transparent;	
+				}
+			}			
+		}
+		/* content */
+		.content {
+			@include centre(y);
+			padding-right: 375px;
+			color:$blue-dark;
+			font-family: $font-heading;
+			&.about {
+				padding-right: 400px;
+			}
+			@include breakpoint(tablet) {
+				padding-right: 300px;
+				&.about {
+					padding-right: 300px;
+				}
+			}
+			@include breakpoint(phone)  {
+				@include clear-pos;
+				padding-right: 15px;
+				text-align: center;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				&.about {
+					padding-right: 15px;
+				}
+			}
+			h1 {
+				color:$yellow;
+				font-size: 2.5em;
+				margin-bottom: 30px;
+				letter-spacing: 4px;
+				@include breakpoint(phone) {
+					font-size: 2.3em;
+					margin-bottom: 20px;
+					letter-spacing: 3px;
+				}
+				@include breakpoint(phone-xs)  {
+					font-size: 1.5em;
+					margin-bottom: 20px;
+					letter-spacing: 2px;
+				}
+			}
+			p {
+				line-height: 1.4;
+				font-size: 1.5em;
+				hyphens: auto;
+				@include breakpoint(phone-xs)  {
+					font-size: 1.2em;
+				}
+				@include breakpoint(tablet) {
+					font-size: 1.3em;
+				}
+			}
+		}
+		/* link */
+		.page-link {
+			@include breakpoint(phone) {
+				display: none;
+			}
+				display: block;
+				background:$blue;
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				right: 0px;
+				top:0px;
+				text-align: center;
+				color:$yellow;
+				font-size: 140px;
+				@include slow-fade;
+				@include small-lap {
+					height: 225px;
+					width: 250px;
+				}
+				@include breakpoint(laptop) {
+					height: 225px;
+					font-size: 100px;
+				}
+				@include breakpoint(tablet) {
+					width: 230px;
+					font-size: 100px;
+					height: 225px;
+				}				&:before {
+					content:'';
+					width: 30px;
+					height: 30px;
+					@include centre(y);
+					left:-25px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 25px 25px 25px 0;
+					border-color: transparent $blue transparent transparent;		
+					@include slow-fade;			
+				}
+				span {
+					@include centre(both);
+				}
+		}
+	}
+}
+
+/*=====  End of Intro Block  ======*/
+
+/*======================================
+=            Features Block            =
+======================================*/
+
+#inner-page-content {
+	#features-block {
+		background:#40444e;
+		padding-top: 4.250em;
+		padding-bottom: 4.250em;
+		font-size: 16px;
+		@include small-lap {
+			padding-top: 4em;
+			padding-bottom: 4em;
+			font-size: 15px;
+		}
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding-top: 4em;
+			padding-bottom: 4em;
+		}
+		@include breakpoint(tablet) {
+			font-size: 14px;
+			padding-top: 4em;
+			padding-bottom: 4em;
+		}
+		@include breakpoint(phone) {
+			padding-top: 3em;
+			padding-bottom: 3em;
+			font-size: 14px;
+		}
+		.col-sm-4 {
+			&:last-child(){
+				.features-box {
+					@include breakpoint(phone) {
+						margin-bottom: 81.96px;
+					}
+					@include breakpoint(phone-xs) {
+						margin-bottom: 79.07px;
+					}
+				}
+			}
+		}
+		.features-box {
+			text-align: center;
+			@include breakpoint(phone) {
+				margin-bottom: 133.92px;
+			}
+			@include breakpoint(phone-xs) {
+				margin-bottom: 128.14px;
+			}
+			.icon-holder {
+				position: relative;
+				font-size: 90px;
+				display: block;
+				-webkit-font-smoothing: antialiased;		
+				background:$yellow;
+				color:$blue;
+				width: 220px; 
+				height: 127.02px;
+				line-height: 220px;		
+				margin: 63.51px auto;	
+				position: relative;
+				&.target-icon {
+					img {
+						margin-left: -15px;
+						margin-top: -3px;
+					}
+				}
+				&.head-icon {
+					img {
+						max-width: 100px;
+					}
+				}
+				&.eye-icon {
+					img {
+						max-width: 160px;
+					}
+				}
+				@include breakpoint(tablet) {
+					font-size: 80px;
+					width: 180px; 
+  					height: 103.92px;
+  					margin: 51.96px auto;
+					line-height: 180px;
+				}
+				@include breakpoint(phone) {
+					width: 180px; 
+  					height: 103.92px;
+  					margin: 51.96px auto;
+					line-height: 180px;
+					font-size: 80px;
+				}
+				@include breakpoint(phone-xs) {
+					font-size: 70px;
+					width: 170px; 
+  					height: 98.15px;
+  					margin: 49.07px auto;
+					line-height: 170px;
+				}
+				&:after,
+				&:before {
+					content: "";
+					position: absolute;
+					width: 0;
+					border-left: 110px solid transparent;
+					border-right: 110px solid transparent;
+					left: 0;
+					@include breakpoint(phone) {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+					@include breakpoint(tablet) {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+					@include breakpoint(phone-xs) {
+						border-left: 85px solid transparent;
+						border-right: 85px solid transparent;
+					}
+				}
+				&:before {
+				  bottom: 100%;
+				  border-bottom: 63.51px solid $yellow;
+				  @include breakpoint(phone) {
+						border-bottom: 51.96px solid $yellow;
+					}
+					@include breakpoint(tablet) {
+						border-bottom: 51.96px solid $yellow;
+					}
+					@include breakpoint(phone-xs) {
+						border-bottom: 49.07px solid $yellow;
+					}
+				}
+
+				&:after {
+				  top: 100%;
+				  width: 0;
+				  border-top: 63.51px solid $yellow;
+				  @include breakpoint(phone) {
+						border-top: 51.96px solid $yellow;
+					}
+					@include breakpoint(tablet) {
+						border-top: 51.96px solid $yellow;
+					}
+					@include breakpoint(phone-xs) {
+						border-top: 49.07px solid $yellow;
+					}
+				}		
+				img {
+					z-index: 9999;
+					position: relative;
+					@include centre(both);
+					max-width: 130px;
+					&.icon-head-verse {
+						font-size: 120px;
+					}
+				}
+
+				// &:hover {
+				// 	background:$blue-light;
+				// 	span {
+				// 		font-size: 80px;
+				// 	}
+				// 	&:after {
+				// 		opacity: 1;
+				// 	}
+				// }
+			}
+
+			.title {
+				text-transform: uppercase;
+				font-size: 1.563em;
+				font-family: $font-heading;
+				color:$blue-dark;
+				letter-spacing: 2px;
+			}
+		}
+	}	
+}
+
+/*=====  End of Features Block  ======*/
+
+/*=====================================
+=            Inner Content            =
+=====================================*/
+
+#inner-page-content {
+	#inner-content {
+		font-size: 16px;
+		position: relative;
+		background:#efeff0;
+		padding:100px;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		&:before {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			top:0px;	
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		h2 {
+			margin-bottom: 10px;
+			color:$blue;
+			font-family: $font-heading;
+			font-size: 2.3em;
+			letter-spacing: 2px;
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 50px;
+			hyphens: auto;
+		}
+	}
+}
+
+/*=====  End of Inner Content  ======*/
+
+/*=======================================
+=            regular Content            =
+=======================================*/
+
+#regular-content {
+	background:#efeff0;
+	padding:50px;
+	font-size: 16px;
+	@include small-lap {
+		padding:40px;
+	}
+	@include breakpoint(laptop) {
+		padding:40px;
+		font-size: 14px;
+	}
+	@include breakpoint(tablet) {
+		padding: 35px;
+		font-size: 14px;
+	}
+	@include breakpoint(phone) {
+		padding:30px;
+		font-size: 15px;
+	}
+	@include breakpoint(phone-xs) {
+		padding:20px;
+		font-size: 14px;
+	}
+	h2 {
+		margin-bottom: 20px;
+		color:$blue;
+		font-family: $font-heading;
+		font-size: 2.5em;
+		letter-spacing: 3px;
+	}
+	p {
+		color:$text;
+		line-height: 1.3;
+		font-size: 1.2em;
+		hyphens: auto;
+	}
+}
+
+/*=====  End of regular Content  ======*/
+
+/*======================================
+=            Inovation Page            =
+======================================*/
+
+#innovation-content {
+	font-size: 16px;
+	position: relative;
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}		
+		&:first-child {
+			background:#40444e;
+			h2 {
+				color:$yellow;
+			}
+			p {
+				color:$white;
+			}
+		}		
+		&:nth-child(2) {
+			background:#d4dfe1;
+			&:before {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 30px 30px 0 30px;
+				border-color: #40444e transparent transparent transparent;
+				content:'';
+				@include centre(x);		
+				top:0px;	
+			}			
+		}
+		&:nth-child(3) {
+			background:#efeff0;
+			&:before {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 30px 30px 0 30px;
+				border-color: #d4dfe1 transparent transparent transparent;
+				content:'';
+				@include centre(x);		
+				top:0px;	
+			}				
+		}
+	}
+	h2 {
+		margin-bottom: 30px;
+		color:$blue;
+		font-family: $font-heading;
+		font-size: 3em;
+		letter-spacing: 3px;
+		span {
+			font-family: $fontzilaregular;
+		}
+	}
+	p {
+		@include regular-text;
+		margin-bottom: 30px;
+		hyphens: auto;
+	}
+	h6 {
+		font-size: 2em;
+		color:$blue;
+		line-height: 120%;
+		margin-bottom: 50px;
+		font-weight: 400;
+		br {
+			@include breakpoint(phone) {
+				display: none;
+			}
+		}
+	}
+	ul {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		li {
+			display: block;
+		    color:$text;
+		    line-height: 1.5;
+		    font-size: 1.5em;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			position: relative;
+			padding-left: 15px;
+			&:before {
+				width: 6px;
+				height: 6px;
+				background:$blue;
+				content:'';
+				position: absolute;
+				left:0px;
+				top:25px;
+				border-radius:50%;
+			}
+		}
+	}
+	footer {
+		text-align: center;
+		a {
+			margin-left: 50px;
+			margin-right: 50px;
+			@include breakpoint(phone) {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+		}
+	}
+	.read-btn {
+		color:$text;
+		border:2px solid $blue;
+		display: inline-block;
+		font-size: 1.250em;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 17px;
+		font-family: $font-heading;
+		padding-bottom: 17px;
+		margin-top: 20px;
+		&:hover {
+			background:$blue;
+			color:$white;
+		}
+	}
+}
+
+/*=====  End of Inovation Page  ======*/
+
+/*======================================
+=            Fomration Page            =
+======================================*/
+
+#formation-content {
+	.intro-block {
+		text-align: center;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 12px;
+		}
+		@include breakpoint(phone) {
+			font-size: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		@include breakpoint(phone-xs) {
+			font-size: 10px;
+		}
+		h1, h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 4em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			@include breakpoint(phone-xs) {
+				font-size: 3em
+			}
+		}
+		img {
+			display: inline-block;
+			max-height: 50px;
+			margin-left: 40px;
+			@include breakpoint(laptop) {
+				max-height: 45px;
+				margin-left: 30px;
+			}
+			@include breakpoint(tablet) {
+				max-height: 38px;
+				margin-left: 25px;
+			}
+			@include breakpoint(phone) {
+				max-width: 100%;
+				display: block!important;
+				height: auto;
+				margin: 15px auto 0;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		&:nth-child(even) {
+			background:#efeff0;
+			h2 {
+				color:$blue;
+			}
+		}
+		&:nth-child(odd) {
+			background:#d4dfe1;
+			h2 {
+				color:$blue;
+			}
+		}		
+		h2 {
+			margin-bottom: 30px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+			hyphens: auto;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		img.img-responsive {
+			margin-bottom: 30px;
+		}
+		h6 {
+			font-size: 2em;
+			color:$blue;
+			line-height: 120%;
+			margin-bottom: 50px;
+			font-weight: 400;
+			br {
+				@include breakpoint(phone) {
+					display: none;
+				}
+			}
+		}
+		.read-btn {
+			color:$text;
+			border:2px solid $blue;
+			display: inline-block;
+			font-size: 1.250em;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 17px;
+			font-family: $font-heading;
+			padding-bottom: 17px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}
+		}				
+	}
+}
+
+/*=====  End of Fomration Page  ======*/
+
+/*======================================
+=            Études de cas Page        =
+======================================*/
+
+#etudes-content {
+	.intro-block {
+		text-align: center;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 12px;
+		}
+		@include breakpoint(phone) {
+			font-size: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		@include breakpoint(phone-xs) {
+			font-size: 10px;
+		}
+		h1, h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 4em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			@include breakpoint(phone-xs) {
+				font-size: 3em
+			}
+		}
+		&.single {
+			padding-left: 100px;
+			padding-right: 100px;
+			@include breakpoint(laptop) {
+				padding:50px;
+			}
+			@include small-lap {
+				padding:70px;
+			}
+			@include breakpoint(laptop) {
+				padding:70px;
+			}
+			@include breakpoint(tablet) {
+				padding:50px;
+			}
+			@include breakpoint(phone) {
+				padding:40px;
+			}
+			@include breakpoint(phone-xs) {
+				padding:30px;
+			}
+			h1,h2 {
+				font-size: 3em;
+				@include breakpoint(phone-xs) {
+					font-size: 2em
+				}
+			}
+		}
+		img {
+			display: inline-block;
+			max-height: 50px;
+			margin-left: 40px;
+			@include breakpoint(laptop) {
+				max-height: 45px;
+				margin-left: 30px;
+			}
+			@include breakpoint(tablet) {
+				max-height: 38px;
+				margin-left: 25px;
+			}
+			@include breakpoint(phone) {
+				max-width: 100%;
+				display: block!important;
+				height: auto;
+				margin: 15px auto 0;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		&:nth-child(even) {
+			background:#efeff0;
+			h2 {
+				color:$blue;
+			}
+		}
+		&:nth-child(odd) {
+			background:#d4dfe1;
+			h2 {
+				color:$blue;
+			}
+		}		
+		h2 {
+			margin-bottom: 30px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+			hyphens: auto;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+				color: $blue;
+				font-size: 1.2em;
+			}
+		}
+		ul, ol {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			li {
+				display: block;
+				color:$text;
+				line-height: 1.2;
+				font-size: 1.5em;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				position: relative;
+				padding-left: 15px;
+				word-wrap: break-word;
+				&:before {
+					width: 6px;
+					height: 6px;
+					background:$blue;
+					content:'';
+					position: absolute;
+					left:0px;
+					top:17px;
+					border-radius:50%;
+				}
+			}
+		}
+		img.img-responsive {
+			margin-bottom: 30px;
+		}
+		h6 {
+			font-size: 2em;
+			color:$blue;
+			line-height: 120%;
+			margin-bottom: 50px;
+			font-weight: 400;
+			br {
+				@include breakpoint(phone) {
+					display: none;
+				}
+			}
+		}
+		.read-btn {
+			color:$text;
+			border:2px solid $blue;
+			display: inline-block;
+			font-size: 1.250em;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 17px;
+			font-family: $font-heading;
+			padding-bottom: 17px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}
+		}				
+	}
+}
+
+/*=====  End of Études de cas  ======*/
+
+/*======================================
+=            Clients Page            =
+======================================*/
+
+#clients-content {
+	.intro-block {
+		text-align: center;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 12px;
+		}
+		@include breakpoint(phone) {
+			font-size: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		@include breakpoint(phone-xs) {
+			font-size: 10px;
+		}
+		h1, h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 4em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			@include breakpoint(phone-xs) {
+				font-size: 3em;
+			}
+		}
+		img {
+			display: inline-block;
+			max-height: 50px;
+			margin-left: 40px;
+			@include breakpoint(laptop) {
+				max-height: 45px;
+				margin-left: 30px;
+			}
+			@include breakpoint(tablet) {
+				max-height: 38px;
+				margin-left: 25px;
+			}
+			@include breakpoint(phone) {
+				max-width: 100%;
+				display: block!important;
+				height: auto;
+				margin: 15px auto 0;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}		
+		h2 {
+			margin-bottom: 30px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+			hyphens: auto;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		img.img-responsive {
+			margin-bottom: 30px;
+		}
+		.clients,
+		.partenaires {
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		    .indiv {
+		    	text-align: center;
+		    	-ms-flex-preferred-size: 33%;
+        		flex-basis: 33%;
+        		@include breakpoint(tablet) {
+        			-ms-flex-preferred-size: 49%;
+        			flex-basis: 49%;
+        		}
+        		@include breakpoint(phone) {
+        			-ms-flex-preferred-size: 100%;
+        			flex-basis: 100%;
+        		}
+        		@include breakpoint(phone-lg) {
+        			-ms-flex-preferred-size: 49%;
+        			flex-basis: 49%;
+        		}
+        		@include breakpoint(phone-xs) {
+        			-ms-flex-preferred-size: 100%;
+        			flex-basis: 100%;
+        		}
+		    }
+			.helper {
+			    display: inline-block;
+			    height: 100%;
+			    vertical-align: middle;
+			}
+			img {
+				margin: 15px auto;
+				max-width: 80%;
+				vertical-align: middle;
+				display: inline-block;
+			}
+		}				
+	}
+}
+
+/*=====  End of Clients Page  ======*/
+
+/*======================================
+=            Ateliers Page            =
+======================================*/
+
+#atelier-content {
+	.intro-block {
+		text-align: center;
+		padding: 50px 100px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding: 50px 70px;
+		}
+		@include small-lap {
+			padding: 70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding: 50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding: 50px 40px;
+			font-size: 13px;
+		}
+		@include breakpoint(phone-xs) {
+			padding: 30px;
+			font-size: 12px;
+		}
+		h1, h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 3em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			margin-bottom: 30px;
+			@include breakpoint(phone) {
+				font-size: 2.5em;
+			}
+			@include breakpoint(phone-xs) {
+				font-size: 2em;
+			}
+		}
+		p {
+			@include regular-text;
+			color: white;
+			text-align: left;
+			margin-bottom: 15px;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		&:nth-child(odd) {
+			background:#efeff0;
+			h3 {
+				color:$blue;
+			}
+		}
+		&:nth-child(even) {
+			background:#d4dfe1;
+			h3 {
+				color:$blue;
+			}
+		}		
+		h3 {
+			margin-bottom: 15px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 70px;
+			hyphens: auto;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+			&:last-child(){
+				margin-bottom: 0;
+			}
+		}
+		.read-btn {
+			color:$text;
+			border:2px solid $blue;
+			display: inline-block;
+			font-size: 1.250em;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 17px;
+			font-family: $font-heading;
+			padding-bottom: 17px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}
+		}
+		&.no-margin {
+			p {
+				margin-bottom: 20px;
+			}
+		}				
+	}
+}
+
+/*=====  End of Ateliers Page  ======*/
+
+/*======================================
+=            Groupe d'innovation Page            =
+======================================*/
+
+#groupe-content {
+	.intro-block {
+		text-align: center;
+		padding: 40px 100px;
+		background:$blue-dark;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 30px 30px 0 30px;
+			border-color: #40444e transparent transparent transparent;
+			content:'';
+			@include centre(x);		
+			bottom:-30px;
+			z-index: 100;	
+		}		
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding: 40px 70px;
+		}
+		@include small-lap {
+			padding: 40 70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding: 40px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding: 40px 40px;
+			font-size: 13px;
+		}
+		@include breakpoint(phone-xs) {
+			padding: 30px;
+			font-size: 12px;
+		}
+		h1, h2 {
+			color:$yellow;
+			text-transform: uppercase;
+			font-size: 3em;
+			letter-spacing: 2px;
+			display: inline-block;
+			font-family: $fontsharpbold;
+			@include breakpoint(phone) {
+				font-size: 2.5em;
+			}
+			@include breakpoint(phone-xs) {
+				font-size: 2em;
+			}
+		}
+		p {
+			@include regular-text;
+			color: white;
+			text-align: left;
+			margin-bottom: 15px;
+			hyphens: auto;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+		}
+	}
+	.content-block {
+		padding:100px;
+		position: relative;
+		@include breakpoint(laptop) {
+			font-size: 14px;
+			padding:50px;
+		}
+		@include small-lap {
+			font-size: 15px;
+			padding:70px;
+		}
+		@include breakpoint(laptop) {
+			padding:70px;
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			padding:50px;
+			font-size: 15px;
+		}
+		@include breakpoint(phone) {
+			padding:40px;
+			font-size: 13px;
+			padding-top: 60px;
+		}
+		@include breakpoint(phone-xs) {
+			padding:30px;
+			font-size: 12px;
+			padding-top: 60px;
+		}
+		&:nth-child(odd) {
+			background:#efeff0;
+			h3 {
+				color:$blue;
+			}
+		}
+		&:nth-child(even) {
+			background:#d4dfe1;
+			h3 {
+				color:$blue;
+			}
+		}		
+		h3 {
+			margin-bottom: 15px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 70px;
+			hyphens: auto;
+			a {
+				color:$blue;
+				&:hover {
+					color:$blue-dark;
+				}
+			}
+			strong {
+				font-family: $font-heading;
+			}
+			&:last-child(){
+				margin-bottom: 0;
+			}
+		}
+		.read-btn {
+			color:$text;
+			border:2px solid $blue;
+			display: inline-block;
+			font-size: 1.250em;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 17px;
+			font-family: $font-heading;
+			padding-bottom: 17px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}
+		}
+		h6 {
+			font-size: 1.5em;
+			color:$blue-dark;
+			line-height: 120%;
+			margin-bottom: 20px;
+			font-weight: 700;
+			font-family: $font-heading;
+			br {
+				@include breakpoint(phone) {
+					display: none;
+				}
+			}
+		}
+		ul {
+			li {
+				display: block;
+				color:$blue;
+				line-height: 1.2;
+				font-size: 1.2em;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				position: relative;
+				padding-left: 15px;
+				font-family: $font-heading;
+				&:before {
+					width: 6px;
+					height: 6px;
+					background:$blue;
+					content:'';
+					position: absolute;
+					left:0px;
+					top:13px;
+					border-radius:50%;
+				}
+			}
+		}
+		&.no-margin {
+			p {
+				margin-bottom: 20px;
+			}
+		}				
+	}
+}
+
+/*=====  End of Groupe Page  ======*/
+
+/*===============================================
+=            Transfer Single Content            =
+===============================================*/
+
+#transfer-single-content {
+	padding-left: 3.125em;
+	padding-right: 3.125em;
+	padding-top: 5.000em;
+	font-size: 16px;	
+	background:#efeff0;
+	padding-bottom: 70px;
+	position: relative;
+	@include breakpoint(laptop) {
+		font-size: 14px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 14px;
+		padding:2em;
+		padding-top: 3em;
+	}
+	@include breakpoint(phone) {
+		font-size: 14px;
+		padding::1.5em;
+		padding-top: 2em;
+	}
+	.single-content {
+		padding-right: 30px;
+		@include breakpoint(tablet) {
+			padding-right: 15px;
+		}
+		@include breakpoint(phone) {
+			padding-right: 0px;
+		}
+		h2 {
+			margin-bottom: 20px;
+			color:$blue;
+			font-family: $font-heading;
+			font-size: 2.5em;
+			letter-spacing: 3px;
+		}		
+		h3 {
+			font-family: $font-book;
+			color:$blue;
+			font-size: 1.8em;
+			margin-bottom: 10px;
+		}
+		img {
+			display: block;
+		    max-width: 100%;
+		    height: auto;
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+			hyphens: auto;
+		}
+		h6 {
+			font-size: 2em;
+			color:$blue;
+			line-height: 120%;
+			margin-bottom: 50px;
+			font-weight: 400;
+			br {
+				@include breakpoint(phone) {
+					display: none;
+				}
+			}
+		}
+		ul {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			li {
+				display: block;
+			    color:$text;
+			    line-height: 1.5;
+			    font-size: 1.5em;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				position: relative;
+				padding-left: 15px;
+				&:before {
+					width: 6px;
+					height: 6px;
+					background:$blue;
+					content:'';
+					position: absolute;
+					left:0px;
+					top:25px;
+					border-radius:50%;
+				}
+			}
+		}		
+	}	
+	footer {
+		text-align: center;
+		margin-top: 70px;
+		position: relative;
+		@include breakpoint(tablet) {
+			margin-top: 40px;
+		}
+		@include breakpoint(phone) {
+			margin-top: 30px;
+			font-size: 14px;
+		}
+		h5 {
+			display: inline-block;
+			font-size: 2em;
+			color:$blue;
+			line-height: 120%;
+			font-weight: 400;	
+			text-align: left;		
+			@include breakpoint(tablet) {
+				text-align: center;
+			}
+			@include breakpoint(phone) {
+				text-align: center;
+			}
+		}
+		a {
+			display: inline-block;
+			color:$text;
+			border:2px solid $blue;
+			font-size: 1.250em;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 20px;
+			font-family: $font-alt;
+			padding-bottom: 20px;
+			margin-top: 20px;
+			&:hover {
+				background:$blue;
+				color:$white;
+			}			
+		}	
+	}	
+	.single-sidebar-transfer {
+		margin-top: 25px;
+		@include breakpoint(phone) {
+			height: auto!important;
+			min-height: auto!important;
+		}	
+		.subpages-box {
+			background:$blue-dark;
+			position: relative;
+			padding:1.875em;	
+			padding-top: 3.750em;	
+			@include breakpoint(laptop) {
+				padding::1em;
+				padding-top: 3em;
+			}
+			@include breakpoint(tablet) {
+				padding:1em;
+				padding-top: 3em;
+			}
+			&:before {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 25px 25px 0 25px;
+				border-color: #efeff0 transparent transparent transparent;
+				content:'';
+				@include centre(x);		
+				top:0px;				
+			}				
+		}	
+		h5 {
+			text-transform: uppercase;
+			color:$yellow;
+			margin-bottom: 25px;
+			font-size: 1em;
+			letter-spacing: 2px;
+			@include breakpoint(tablet) {
+				font-size: 0.8em;
+			}
+		}
+		ul {
+			li {
+				a {
+					display: block;
+					padding-top: 6px;
+					padding-bottom: 6px;
+					font-size: 1.1em;
+					color:$white;
+					&:hover {
+						opacity: 0.5;
+					}
+				}
+			}
+		}		
+	}
+	.blog-sidebar {
+		margin-top: 30px;
+		h4 {
+			color:$blue;
+			font-size: 1.7em;
+			margin-bottom: 20px;
+		}
+		.article-box {
+			position: relative;
+			overflow: hidden;
+			&:hover {
+				img {
+					transform: scale(1.1);
+					filter: grayscale(100%);
+				}					
+			}
+			a {
+				display: block;
+				&:hover {
+					.article-caption {
+						background:rgba(0,0,0,0.5);
+					}
+				}
+			}
+			img {
+				width: 100%;
+			}
+			.article-caption {
+				@extend .dark-overlay;
+				background:rgba(0,0,0,0.7);
+				padding:15px;
+				padding-top: 30px;
+				color:$white;
+				@include breakpoint(phone-lg) {
+					padding:25px;
+					padding-top: 20px;
+				}
+				h6 {
+					font-size: 1.7em;
+					line-height: 1.2;
+					margin-bottom: 5px;
+					@include breakpoint(phone) {
+						font-size: 2.5em;
+					}
+				}
+				p {
+					font-size: 1.2em;
+					line-height: 1.2;
+					max-width: 70%;
+				}
+			}
+		}
+
+	}
+	&:after {
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 30px 30px 0 30px;
+	    border-color: #efeff0 transparent transparent transparent;
+	    content: '';
+	    position: absolute;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    bottom: -30px;
+	    z-index: 100;
+	}
+}
+/* popular */
+#popular-blogs.transfert {
+	padding: 2em 3.125em 3.125em;
+	background-color: $blue;
+	header {
+		padding-top: 1.875em;
+		padding-bottom: 1.875em;
+		text-align: center;
+		h4 {
+			color:$yellow;
+			font-size: 2.8em;
+			letter-spacing: 2px;
+		}
+	}
+}
+/* slider */
+.popular-articles-slider.transfert {
+	.item {
+		padding: 10px;
+	}
+	.article-box {
+		position: relative;
+		overflow: hidden;
+		&:hover {
+			img {
+				transform: scale(1.1);
+				filter: grayscale(100%);
+			}					
+		}
+		a {
+			display: block;
+			&:hover {
+				.article-caption {
+					background:rgba(0,0,0,0.5);
+				}
+			}
+		}
+		img {
+			width: 100%;
+		}
+		.article-caption {
+			@extend .dark-overlay;
+			/* Fixed because image faded */
+			background:rgba(0,0,0,0.0);
+			padding:15px;
+			padding-top: 30px;
+			color:$white;
+			@include breakpoint(phone-lg) {
+				padding:10px;
+				padding-top: 20px;
+			}
+			h5 {
+				font-size: 1.7em;
+				line-height: 1.2;
+				margin-bottom: 5px;
+				color: white;
+			}
+			p {
+				font-size: 1.2em;
+				line-height: 1.2;
+				max-width: 70%;
+			}
+		}
+	}
+}
+
+.all-content-wrapper .content-block img {
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*=====  End of Transfer Single Content  ======*/

@@ -1,5 +1,106 @@
-{{- define "main" -}}
+{{ define "main" }}
 <main class="main">
+	<header id="inner-header-slider">
+      <div id="hero-slider">
+          {{ range (shuffle .Pages)}}
+          <div class="item hero-slide">
+              <img src="{{.Params.banniere}}" alt="">
+              <div class="slider-caption">
+                  <span class="title" data-animation="fadeInDown" data-delay="0.2s">{{.Title}}</span>
+                  <!-- <p data-animation="fadeInUp" data-delay="0.2s">Par: {{.Params.author}}</p> -->
+                  <a href="{{.Permalink}}" class="read-btn" data-animation="fadeIn" data-delay="0.4s">Lire l’article</a>
+              </div>
+              <!-- // slider caption  -->
+          </div>
+          <!-- // slider item  -->
+          {{ end }}
 
+
+      </div>
+      <!-- // hero slider  -->
+  </header>
+  <!-- // hero  -->
+
+  <section id="blog-listing-page">
+      <div class="container">
+          
+          <div id="blog-articles-list">
+              
+              <div id="popular-blogs" class="categories"> 
+                  <header>
+                      <h4>{{.Title}}</h4>
+                  </header>
+
+              </div>
+              <!-- // popular articles  -->
+
+              <div class="row">
+
+                  <div class="col-lg-8 col-md-8 col-sm-8">
+                      <div id="blog-left-column">
+                        {{ range .Pages }}
+                          <article class="blog-article">
+                              <div class="image-holder">
+                                  <a href="{{.Permalink}}">
+                                      <img src="{{.Params.image}}" alt="" class="img-responsive">
+                                  </a>
+                              </div>
+                              <!-- // iamge holder  -->
+                              <h3>{{ .Title }}</h3>
+                              <p class="hyphenate">{{ .Summary }}</p>
+                              <footer>
+                                  <div class="meta-info">
+                                      <ul>
+                                          {{ if eq .Lang "fr" }}
+                                            {{ range $i, $e := .Params.categories }}
+                                            <li><a href="{{ $.Site.BaseURL }}categories/{{ $e | urlize }}">#{{$e}}</a></li>
+                                            {{end}}
+                                          {{ else if eq .Lang "en" }}
+                                            {{ range $i, $e := .Params.categories }}{{ if $i }}/{{ end }} 
+                                            <li><a href="{{ $.Site.BaseURL }}en/categories/{{ $e | urlize }}">#{{$e}}</a></li>
+                                            {{end}}
+                                          {{ end }}
+                                      </ul>
+                                  </div>
+                                  <!-- // meta  -->                                
+                                  <a href="{{ .Permalink }}" class="read-btn">Lire l’article</a>
+                              </footer>
+                          </article>
+                          <!-- // article  -->
+												{{ end }}
+                          
+                          
+                          <!-- <div id="pagination-block">
+                              <ul>
+                                  <li class="prev-btn"><a href="#">Précédent</a></li>
+                                  <li><a href="#">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#">3</a></li>
+                                  <li class="next-btn"><a href="#">Suivant</a></li>
+                              </ul>
+                          </div> -->
+                          <!-- // pagination -->
+
+                      </div>
+                      <!-- // blog left column  -->                            
+                  </div>
+                  <!-- // col md 8  -->
+
+                  <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4" style="overflow: hidden;">
+                      {{- partial "site/sidebar.html" . -}}
+                  </div>
+                  <!-- // blog sidebar  -->                        
+
+              </div>
+              <!-- // row  -->
+
+
+          </div>
+          <!-- // list of articles  -->
+
+      </div>
+      <!-- // container  -->
+  </section>
+  <!-- // blog listing  -->
 </main>
-{{- end -}}
+{{ end }}

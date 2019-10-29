@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+# http://iilm.ca/* https://www.innovationlogistique.com/:splat 301!
+http://iilm.ca/* https://www.innovationlogistique.com/ 301!
+/etudes-de-cas/gagnon-et-freres-erp /etudes-de-cas/erp-omnicanal
+/etudes-de-cas/eleveurs-du-porc-du-quebec /etudes-de-cas/application-mobile-deplacements-de-porcs
+/etudes-de-cas/table-bioalimentaire-de-la-cote-nord /etudes-de-cas/colis-nord

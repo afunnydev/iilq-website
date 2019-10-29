@@ -1,0 +1,70 @@
+{{ define "main" }}
+<header id="transfer-header" class="yellow-border">
+    <img src="/large{{ .Params.banniere.desktop }}" alt="{{ .Params.identifiant }}" class="img-responsive hidden">
+    <img src="{{ .Params.banniere.desktop }}" alt="{{ .Params.identifiant }}" class="img-responsive hidden-xs regular">
+    <img src="{{ .Params.banniere.mobile }}" alt="{{ .Params.identifiant }}" class="img-responsive visible-xs">
+    <div class="header-caption">
+        
+    </div>
+    <!-- // caption  -->
+</header>
+<!-- // inner header  -->
+
+<div class="container">
+<div id="transfer-single-content">
+
+    <div class="row">
+        
+        <div class="col-sm-12">
+            <div class="single-content hyphenate">
+                {{ .Content }}
+            </div>
+        </div>
+        <!-- // single content  -->
+
+    </div>
+    <!-- // row   -->
+
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Nous sommes prêts à optimiser votre chaîne logistique, l’êtes-vous ?</h5>
+            </div>
+            <div class="col-md-6">
+                <a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!-- // foramtion content  -->
+<div id="popular-blogs" class="transfert">
+    <header>
+      <h4>{{ i18n "popular_articles" }}</h4>
+    </header>
+
+    <div class="popular-articles-slider transfert">
+      
+      {{ range (shuffle (where .Site.RegularPages "Type" "articles")) }}
+      <div class="item">
+          <div class="article-box">
+              <img src="/quart{{.Params.imagecarree}}" alt="" class="img-responsive">
+              <a href="{{.Permalink}}">
+                  <div class="article-caption">
+                      <h5>{{.Title}}</h5>
+                      <!-- <p>Ulparcie ndelentemo cor aut...</p> -->
+                  </div>
+              </a>
+          </div>
+      </div>
+      <!-- // article  -->
+      {{ end }}
+
+    </div>
+    <!-- // slider  -->
+
+</div>
+<!-- // popular articles  -->
+</div>
+<!-- // container  -->
+{{ end }}

@@ -1,4 +1,5 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.sitedescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectiondescriptions .Title }}{{ end }}" />
-<title>{{.Site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}</title>
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Data.settings.sitedescriptionfr }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Data.settings.sitedescriptionfr }}{{ end }}" />
+<title>{{if .IsHome}}{{.Site.Data.settings.sitetitlefr}}{{ else if .Data.Singular }}{{.Title}} | Apprenez-en plus avec l'IILQ{{ else }}{{.Title}}{{end}}{{if .Site.Data.settings.titleautocompletion}} | {{.Site.Title}}{{end}}</title>
+
