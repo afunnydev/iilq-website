@@ -22,12 +22,43 @@
 
     // Change articles preview template
     var PostPreview = createClass({
+      subscribed: true,
+
+      getInitialState: function () {
+        return {
+          src: '',
+        };
+      },
+
+      _fetchAsset: function () {
+        const path = this.props.entry.getIn(['data', 'image']);
+        path &&
+          this.props.getAsset(path).then(value => {
+            if (this.subscribed) {
+              this.setState({ src: value.toString() });
+            }
+          });
+      },
+
+      componentDidMount: function () {
+        this._fetchAsset();
+      },
+
+      componentWillUnmount: function () {
+        this.subscribed = false;
+      },
+
+      componentDidUpdate: function (prevProps) {
+        const prevPath = prevProps.entry.getIn(['data', 'image']);
+        const path = this.props.entry.getIn(['data', 'image']);
+        if (prevPath !== path || prevProps.getAsset !== this.props.getAsset) {
+          this._fetchAsset();
+        }
+      },
       render: function() {
         var entry = this.props.entry;
-        var image = entry.getIn(['data', 'image']);
-        var bg = this.props.getAsset(image);
         return h('div', {},
-          h('img', {src: bg.toString()}),
+          h('img', {src: this.state.src}),
           h('h1', {}, entry.getIn(['data', 'title'])),
           h('div', {"className": "text"}, this.props.widgetFor('body'))
         );
@@ -36,19 +67,50 @@
     CMS.registerPreviewTemplate("articles-fr", PostPreview);
 
     // Change case study preview template
-    // var CasePreview = createClass({
-    //   render: function () {
-    //     var entry = this.props.entry;
-    //     var image = entry.getIn(['data', 'image']);
-    //     var bg = this.props.getAsset(image);
-    //     return h('div', {},
-    //       h('img', { src: bg.toString() }),
-    //       h('h1', {}, entry.getIn(['data', 'title'])),
-    //       h('div', { "className": "text" }, this.props.widgetFor('body'))
-    //     );
-    //   }
-    // });
-    // CMS.registerPreviewTemplate("case-studies-fr", CasePreview);
+    var CasePreview = createClass({
+      subscribed: true,
+
+      getInitialState: function () {
+        return {
+          src: '',
+        };
+      },
+
+      _fetchAsset: function () {
+        const path = this.props.widgetsFor('general').getIn(['data', 'img']);
+        path &&
+          this.props.getAsset(path).then(value => {
+            if (this.subscribed) {
+              this.setState({ src: value.toString() });
+            }
+          });
+      },
+
+      componentDidMount: function () {
+        this._fetchAsset();
+      },
+
+      componentWillUnmount: function () {
+        this.subscribed = false;
+      },
+
+      componentDidUpdate: function (prevProps) {
+        const prevPath = prevProps.widgetsFor('general').getIn(['data', 'img']);
+        const path = this.props.widgetsFor('general').getIn(['data', 'img']);
+        if (prevPath !== path || prevProps.getAsset !== this.props.getAsset) {
+          this._fetchAsset();
+        }
+      },
+      render: function () {
+        var entry = this.props.entry;
+        return h('div', {},
+          h('img', { src: this.state.src }),
+          h('h1', {}, this.props.widgetsFor('general').getIn(['data', 'title']) || 'Please add a title'),
+          h('div', { "className": "text" }, this.props.widgetFor('body'))
+        );
+      }
+    });
+    CMS.registerPreviewTemplate("case-studies-fr", CasePreview);
   </script>
 </body>
 </html>
