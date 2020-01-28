@@ -6,6 +6,6 @@ description: >-
 image: /img/realisations.jpg
 top:
   img: /img/realisations.jpg
-  title: Nos Réalisations!
+  title: Nos Réalisations
 ---
 
