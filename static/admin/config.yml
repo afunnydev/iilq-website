@@ -10,7 +10,7 @@ public_folder: "/img" # The src attribute for uploaded media will begin with
 publish_mode: editorial_workflow
 
 collections:
-### AUTRES
+### ARTICLES
   - name: "articles-fr" # Used in routes, e.g. /admin/collections/blog
     label: "Articles - FR" # Used in the UI
     folder: "content/articles" # The path to the folder where the documents are stored
@@ -49,6 +49,37 @@ collections:
       - {label: "Hide from website?", name: "draft", widget: "boolean", required: false, default: false}
       - {label: "Remove from search engine?", name: "noindex", widget: "boolean", required: false, default: false}
       - {label: "Texte", name: "body", widget: "markdown"}
+### CASE STUDIES FR
+  - name: "case-studies-fr" # Used in routes, e.g. /admin/collections/blog
+    label: "Études de cas - FR" # Used in the UI
+    folder: "content/etudes-de-cas" # The path to the folder where the documents are stored
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    editor:
+      preview: true
+    create: true # Allow users to create new documents in this collection
+    filter: 
+      field: "i18nlanguage"
+      value: "fr"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description SEO", name: "description", widget: "text", required: false}
+      - {label: "Lien", name: "slug", widget: "string", default: "this-is-an-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"], hint: "Si le lien désiré est https://www.innovationlogistique.com/articles/les-mecanismes-de-l-algorithme-airbnb, entrez 'les-mecanismes-de-l-algorithme-airbnb' dans ce champ."}
+      - {label: "Image de partage", name: "image", widget: "image" , required: false, hint: "La taille recommandée est de 1200px x 630px"}
+      - name: general
+        label: "Général"
+        widget: object
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Image - Haut de page", name: "img", widget: "image", hint: "La taille recommandée est de 1920px par 930px"}
+      - {label: "Priorité sur la page liste (0 est prioritaire)", name: "weight", widget: "number", default: 0, required: false}
+      - {label: "Ne pas rendre visible", name: "draft", widget: "boolean", required: false, default: false}
+      - {label: "Cacher des moteurs de recherche", name: "noindex", widget: "boolean", required: false, default: false}
+      - {label: "Texte", name: "body", widget: "markdown"}
+      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
+### OTHER
   - name: "pages"
     label: "Pages"
     editor:
@@ -105,3 +136,17 @@ collections:
                       - { label: "Écran", value: icon-monitor-ico }
                       - { label: "Téléphone intelligent", value: icon-mobile-ico}
                   - {label: "Visible", name: "visible", widget: "boolean", required: false, default: true}
+      - name: "etudes-de-cas"
+        label: "Études de cas"
+        file: "content/etudes-de-cas/_index.md"
+        description: "Texte de votre page études de cas"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text"}
+          - {label: "Image de partage", name: "image", widget: "image" , required: false, hint: "La taille recommandée est de 1200px x 630px"}
+          - name: top
+            label: "Section du haut"
+            widget: object
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Image", name: "img", widget: "image", hint: "La taille recommandée est de 1920px par 930px"}

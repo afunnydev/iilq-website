@@ -1,13 +1,14 @@
 ---
 title: "Aménagement d’entrepôt | IILQ"
-i18nlanguage: fr
-titre: "Aménagement d’entrepôt"
-description: ""
-desc: >-
-  L’IILQ a été mandaté pour faire l’analyse des besoins menant à la conception d’un plan d’aménagement, afin d’optimiser les opérations d’entreposage de l’entreprise. En alignement avec cet objectif, un plan d’aménagement devait être conçu, évalué et présenté. 
+description: "L’IILQ a été mandaté pour faire l’analyse des besoins menant à la conception d’un plan d’aménagement, afin d’optimiser les opérations d’entreposage de l’entreprise."
 image: "/img/realisations.jpg"
-activemenu:
+general:
+  title: "Aménagement d’entrepôt"
+  description: >-
+    L’IILQ a été mandaté pour faire l’analyse des besoins menant à la conception d’un plan d’aménagement, afin d’optimiser les opérations d’entreposage de l’entreprise. En alignement avec cet objectif, un plan d’aménagement devait être conçu, évalué et présenté. 
+  img: "/img/realisations.jpg"
 weight: 0
+i18nlanguage: fr
 ---
 
 **Année** : 2017

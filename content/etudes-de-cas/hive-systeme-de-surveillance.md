@@ -1,13 +1,14 @@
 ---
 title: "Hive - Application mobile de gestion | IILQ"
-i18nlanguage: fr
-titre: "Hive - Application mobile de gestion"
-description: ""
-desc: >-
-  L'objectif du projet est de développer un système de surveillance des ruches, à distance et en temps réel, pour garantir la traçabilité et gérer la production du miel. Le projet a pris la forme d’une application mobile pour la gestion des tournées des apiculteurs et la gestion de la traçabilité du miel.
+description: "L'objectif du projet est de développer un système de surveillance des ruches, à distance et en temps réel, pour garantir la traçabilité et gérer la production du miel."
 image: "/img/realisations.jpg"
-activemenu:
+general:
+  title: "Hive - Application mobile de gestion"
+  description: >-
+    L'objectif du projet est de développer un système de surveillance des ruches, à distance et en temps réel, pour garantir la traçabilité et gérer la production du miel. Le projet a pris la forme d’une application mobile pour la gestion des tournées des apiculteurs et la gestion de la traçabilité du miel.
+  img: "/img/realisations.jpg"
 weight: 0
+i18nlanguage: fr
 ---
 
 **Année** : 2015-2017 

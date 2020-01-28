@@ -1,13 +1,14 @@
 ---
 title: "Application mobile pour gérer les déplacements de porcs | IILQ"
-i18nlanguage: fr
-titre: "Application mobile pour gérer les déplacements de porcs"
-description: ""
-desc: >-
-  L’objectif du mandat était de supporter les Éleveurs du porc du Québec dans le développement d’un outil novateur de gestion des opérations logistiques de la filière porcine du Québec, en lien avec leurs différents mandats. Cela permettra d’améliorer leur efficacité et surtout la conformité aux exigences grandissantes de leurs clients locaux et internationaux.
+description: "L’objectif du mandat était de supporter les Éleveurs du porc du Québec dans le développement d’un outil novateur de gestion des opérations logistiques de la filière porcine du Québec, en lien avec leurs différents mandats."
 image: "/img/realisations.jpg"
-activemenu:
+general:
+  title: "Application mobile pour gérer les déplacements de porcs"
+  description: >-
+    L’objectif du mandat était de supporter les Éleveurs du porc du Québec dans le développement d’un outil novateur de gestion des opérations logistiques de la filière porcine du Québec, en lien avec leurs différents mandats. Cela permettra d’améliorer leur efficacité et surtout la conformité aux exigences grandissantes de leurs clients locaux et internationaux.
+  img: "/img/realisations.jpg"
 weight: 0
+i18nlanguage: fr
 ---
 
 **Année** : 2016-2018

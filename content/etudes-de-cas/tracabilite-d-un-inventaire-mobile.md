@@ -1,13 +1,14 @@
 ---
 title: "Traçabilité d’un inventaire mobile | IILQ"
-i18nlanguage: fr
-titre: "Traçabilité d’un inventaire mobile"
-description: ""
-desc: >-
-  L'objectif du projet est de diminuer les pertes d’équipements et le temps de recherche sur le chantier par les employés. Dans le cadre d’une meilleure gestion de chantier, la solution proposée par l’IILQ devra faciliter et assurer la gestion des disponibilités et la localisation des outils et des équipements en temps réel. De plus, elle devra permettre d’assurer la réalisation des inspections de chaque outil et équipement au bon moment afin de prolonger leur durée de vie et par conséquent, diminuer les achats d’outils spécialisés.
+description: "Dans le cadre d’une meilleure gestion de chantier, la solution proposée par l’IILQ devra faciliter et assurer la gestion des disponibilités et la localisation des outils et des équipements en temps réel."
 image: "/img/realisations.jpg"
-activemenu:
+general:
+  title: "Traçabilité d’un inventaire mobile"
+  description: >-
+    L'objectif du projet est de diminuer les pertes d’équipements et le temps de recherche sur le chantier par les employés. Dans le cadre d’une meilleure gestion de chantier, la solution proposée par l’IILQ devra faciliter et assurer la gestion des disponibilités et la localisation des outils et des équipements en temps réel. De plus, elle devra permettre d’assurer la réalisation des inspections de chaque outil et équipement au bon moment afin de prolonger leur durée de vie et par conséquent, diminuer les achats d’outils spécialisés.
+  img: "/img/realisations.jpg"
 weight: 0
+i18nlanguage: fr
 ---
 
 **Année** : 2017-2018

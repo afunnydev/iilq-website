@@ -1,16 +1,17 @@
 ---
 title: "Colis Nord - Table bioalimentaire | IILQ"
-i18nlanguage: fr
-titre: "Colis Nord"
-description: ""
-desc: >-
-  Afin d’étudier la faisabilité d’une plateforme Web collaborative pour le covoiturage de colis, 3 cadres ont été analysés, soit : légal, économique et technologique. Chacun présentait des défis et des contraintes ayant des impacts directs les uns sur les autres. 
-  
-
-  L’économie de partage étant peu réglementée, nous devions évaluer les diverses plateformes collaboratives existantes afin d’encadrer le projet de covoiturage de colis sur le déplacement d’aliments et de marchandises, sur les assurances, ainsi que sur les termes et conditions d’utilisation. Il fallait aussi évaluer les différents scénarios d’expédition ainsi que les coûts et la rentabilité d’une telle plateforme Web. Pour le cadre technologique, nous devions étudier et proposer différentes structures et fonctionnalités. 
+description: "Afin d’étudier la faisabilité d’une plateforme Web collaborative pour le covoiturage de colis, 3 cadres ont été analysés, soit : légal, économique et technologique."
 image: "/img/realisations.jpg"
-activemenu:
+general:
+  title: "Colis Nord"
+  description: >-
+    Afin d’étudier la faisabilité d’une plateforme Web collaborative pour le covoiturage de colis, 3 cadres ont été analysés, soit : légal, économique et technologique. Chacun présentait des défis et des contraintes ayant des impacts directs les uns sur les autres. 
+    
+
+    L’économie de partage étant peu réglementée, nous devions évaluer les diverses plateformes collaboratives existantes afin d’encadrer le projet de covoiturage de colis sur le déplacement d’aliments et de marchandises, sur les assurances, ainsi que sur les termes et conditions d’utilisation. Il fallait aussi évaluer les différents scénarios d’expédition ainsi que les coûts et la rentabilité d’une telle plateforme Web. Pour le cadre technologique, nous devions étudier et proposer différentes structures et fonctionnalités. 
+  img: "/img/realisations.jpg"
 weight: 0
+i18nlanguage: fr
 ---
 
 **Année** : 2017-2018

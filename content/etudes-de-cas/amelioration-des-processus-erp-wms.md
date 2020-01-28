@@ -1,13 +1,14 @@
 ---
 title: Amélioration des processus - ERP - WMS | IILQ
-i18nlanguage: fr
-titre: Amélioration des processus / ERP / WMS
-description: ""
-desc: >-
-  Le premier mandat était d’accompagner l’entreprise dans le déploiement des modules de son ERP et dans l’amélioration de leurs processus d’affaires. L’IILQ devait cibler et cartographier les processus actuels, sujets de réorganisation et d’amélioration de la part du client, ainsi qu’analyser les exigences des cahiers de charges des clients, en termes des codes-barres et de traçabilité. Les normes de codification du système GS1-128 ont amené plusieurs contraintes et défis, notamment le manque de compatibilité avec l’ERP en place. Lors du deuxième mandat, divisé en trois volets, l’IIQ a accompagné l’entreprise pour des interventions ciblées suite aux recommandations du rapport précédent.
+description: "L’IILQ devait cibler et cartographier les processus actuels, sujets de réorganisation et d’amélioration de la part du client, ainsi qu’analyser les exigences des cahiers de charges des clients, en termes des codes-barres et de traçabilité."
 image: "/img/realisations.jpg"
-activemenu:
+general:
+  title: Amélioration des processus / ERP / WMS
+  description: >-
+    Le premier mandat était d’accompagner l’entreprise dans le déploiement des modules de son ERP et dans l’amélioration de leurs processus d’affaires. L’IILQ devait cibler et cartographier les processus actuels, sujets de réorganisation et d’amélioration de la part du client, ainsi qu’analyser les exigences des cahiers de charges des clients, en termes des codes-barres et de traçabilité. Les normes de codification du système GS1-128 ont amené plusieurs contraintes et défis, notamment le manque de compatibilité avec l’ERP en place. Lors du deuxième mandat, divisé en trois volets, l’IIQ a accompagné l’entreprise pour des interventions ciblées suite aux recommandations du rapport précédent.
+  img: "/img/realisations.jpg"
 weight: 0
+i18nlanguage: fr
 ---
 
 **Année** : 2015-2017

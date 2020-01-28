@@ -34,6 +34,21 @@
       }
     });
     CMS.registerPreviewTemplate("articles-fr", PostPreview);
+
+    // Change case study preview template
+    // var CasePreview = createClass({
+    //   render: function () {
+    //     var entry = this.props.entry;
+    //     var image = entry.getIn(['data', 'image']);
+    //     var bg = this.props.getAsset(image);
+    //     return h('div', {},
+    //       h('img', { src: bg.toString() }),
+    //       h('h1', {}, entry.getIn(['data', 'title'])),
+    //       h('div', { "className": "text" }, this.props.widgetFor('body'))
+    //     );
+    //   }
+    // });
+    // CMS.registerPreviewTemplate("case-studies-fr", CasePreview);
   </script>
 </body>
 </html>

@@ -1,16 +1,17 @@
 ---
 title: "Mise en place d'un ERP - Omnicanal | IILQ"
-i18nlanguage: fr
-titre: "ERP - Omnicanal"
-description: ""
-desc: >-
-  Réalisé en 2 phases, le projet consistait tout d’abord à rédiger le cahier de charge, sélectionner les meilleures solutions potentielles, ainsi qu’analyser les différentes propositions reçues par les fournisseurs. 
-
-
-  Par la suite, l’IILQ a soutenu le client durant la phase de sélection du fournisseur de l’ERP, notamment en préparant un scénario de démonstration et un formulaire d’évaluation, en assistant aux démonstrations puis, en analysant les solutions afin d’effectuer une recommandation finale. 
+description: "Réalisé en 2 phases, le projet consistait tout d’abord à rédiger le cahier de charge, sélectionner les meilleures solutions potentielles, ainsi qu’analyser les différentes propositions reçues par les fournisseurs. "
 image: "/img/realisations.jpg"
-activemenu:
+general:
+  title: "ERP - Omnicanal"
+  description: >-
+    Réalisé en 2 phases, le projet consistait tout d’abord à rédiger le cahier de charge, sélectionner les meilleures solutions potentielles, ainsi qu’analyser les différentes propositions reçues par les fournisseurs. 
+
+
+    Par la suite, l’IILQ a soutenu le client durant la phase de sélection du fournisseur de l’ERP, notamment en préparant un scénario de démonstration et un formulaire d’évaluation, en assistant aux démonstrations puis, en analysant les solutions afin d’effectuer une recommandation finale. 
+  img: "/img/realisations.jpg"
 weight: 0
+i18nlanguage: fr
 ---
 
 **Année** : 2017
