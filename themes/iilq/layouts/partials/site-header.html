@@ -106,9 +106,9 @@
               <li class="dropdown">
                 <a class="dropdown-toggle" href='{{ $.Scratch.Get "etudesPage" }}'>Études de cas </a>
                 <ul class="dropdown-menu animated fadeIn">
-                    {{ range where .Site.RegularPages "Type" "etudes-de-cas"}}
-                    <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
-                    {{ end }}
+                    {{- range where .Site.RegularPages "Type" "etudes-de-cas" -}}
+                    <li><a href="{{- .Permalink -}}">{{- .Params.general.title -}}</a></li>
+                    {{- end -}}
                   </ul>
               </li>
               <li class="dropdown">
