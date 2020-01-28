@@ -1,183 +1,196 @@
 {{ define "main" }}
 <main class="main" id="homepage">
 	<header id="hero-header">
-      <div id="hero-slider">
-          {{ range .Params.slider }}
-          {{ $link := .link}}
-          <div class="item hero-slide">
-            <a href='{{ $.Scratch.Get $link }}'>
-              <img src="{{.img}}" alt="">
-              <div class="slider-caption">
-                {{ if eq .layout 1}}
-                  <span class="title" data-animation="fadeInDown" data-delay="0.2s">{{.toptxt | markdownify}}</span>
-                  <p data-animation="fadeInUp" data-delay="0.2s">{{.bottomtxt | markdownify}}</p>
-                {{ else if eq .layout 2 }}
-                  <p data-animation="fadeInDown" data-delay="0.2s">{{.toptxt | markdownify}}</p>
-                  <span class="title" data-animation="fadeInUp" data-delay="0.2s">{{.bottomtxt | markdownify}}</span>
-                {{ end }}
-              </div>
-              <!-- // slider caption  -->
+        <div id="hero-slider">
+            {{ range .Params.slider }}
+            {{ $link := .link}}
+            <div class="item hero-slide">
+                <a href="{{- $.Site.BaseURL -}}{{- .link -}}">
+                <img src="{{- .img -}}" alt="">
+                <div class="slider-caption">
+                    {{ if eq .layout 1}}
+                    <span class="title" data-animation="fadeInDown" data-delay="0.2s">{{.toptxt | markdownify}}</span>
+                    <p data-animation="fadeInUp" data-delay="0.2s">{{.bottomtxt | markdownify}}</p>
+                    {{ else if eq .layout 2 }}
+                    <p data-animation="fadeInDown" data-delay="0.2s">{{.toptxt | markdownify}}</p>
+                    <span class="title" data-animation="fadeInUp" data-delay="0.2s">{{.bottomtxt | markdownify}}</span>
+                    {{ end }}
+                </div>
+                <!-- // slider caption  -->
+                </a>
+            </div>
+            <!-- // slider item  -->
+            {{ end }}
+
+        </div>
+        <!-- // hero slider  -->
+    </header>
+    <!-- // hero  -->
+
+    <section id="main-home-content">
+        <div class="container">
+            <a href='{{ $.Scratch.Get "aboutPage" }}'>
+                <div id="about-block">
+                    <div class="content">
+                        {{.Params.introtext | markdownify}}
+                    </div>
+                    <!-- // content  -->
+                    <div class="page-link">
+                        <span class="icon-search-icon"></span>
+                    </div>
+                    <!-- // pag elink  -->
+                </div>
+                <!-- // about block  -->
             </a>
-          </div>
-          <!-- // slider item  -->
-          {{ end }}
+            {{- with .Params.section2 -}}
+            <div id="features-block">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href='{{ $.Scratch.Get "innovationPage" }}'>
+                            <div class="features-box">
+                                <div class="icon-holder">
+                                    <span class="icon-head-ico"></span>
+                                </div>
+                                <!-- // icon  -->
+                                <span class="title">{{- .title1 -}}</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- // features box  -->
 
-      </div>
-      <!-- // hero slider  -->
-  </header>
-  <!-- // hero  -->
+                    <div class="col-sm-4">
+                        <a href='{{ $.Scratch.Get "transfertPage" }}'>
+                            <div class="features-box">
+                                <div class="icon-holder">
+                                    <span class="ico-shake-hand shake"></span>
+                                </div>
+                                <!-- // icon  -->
+                                <span class="title">{{- .title2 -}}</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- // features box  -->
 
-  <section id="main-home-content">
-      <div class="container">
-          
-          <a href='{{ $.Scratch.Get "aboutPage" }}'>
-              <div id="about-block">
-                  <div class="content">
-                    {{.Params.introtext | markdownify}}
-                  </div>
-                  <!-- // content  -->
-                  <div class="page-link">
-                      <span class="icon-search-icon"></span>
-                  </div>
-                  <!-- // pag elink  -->
-              </div>
-              <!-- // about block  -->
-          </a>
+                    <div class="col-sm-4">
+                        <a href='{{ $.Scratch.Get "logisticPage" }}'>
+                            <div class="features-box">
+                                <div class="icon-holder small-icon">
+                                    <span class="icon-ver-ico"></span>
+                                </div>
+                                <!-- // icon  -->
+                                <span class="title">{{- .title3 -}}</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- // features box  -->                                                
+                </div>
+                <!-- // .row  -->
+            </div>
+            <!-- // features block  -->
+            {{- end -}}
+            {{- with .Params.boites.boite1 -}}
+            {{- if .visible -}}
+            <section id="question-block">
+                <a href="{{- $.Site.BaseURL -}}{{- .link -}}">
+                    <div class="link-box">
+                        <div class="icon-holder">
+                            <span class="ico-head-light"></span>
+                        </div>
+                    </div>
+                    <!-- // link box  -->
+                    <div class="content-box">
+                        <h3>{{- .title -}}</h3>
+                    </div>
+                    <!-- // content box  -->
+                    <div class="image-box">
+                        <img src="/half{{- .img -}}" alt="IILQ" class="img-responsive">
+                    </div>
+                    <!-- // image box  -->
+                    <span class="clearfix"></span>
+                </a>
+            </section>
+            {{- end -}}
+            <!-- // quesiton block  -->
+            {{- end -}}
 
-          <div id="features-block">
-              <div class="row">
-                  
-                  <div class="col-sm-4">
-                    <a href='{{ $.Scratch.Get "innovationPage" }}'>
-                      <div class="features-box">
-                          <div class="icon-holder">
-                              <span class="icon-head-ico"></span>
-                          </div>
-                          <!-- // icon  -->
-                          <span class="title">{{.Params.section2.title1}}</span>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- // features box  -->
+            {{- with .Params.boites.boite2 -}}
+            {{- if .visible -}}
+            <section id="formations-block">
+                <a href="{{- $.Site.BaseURL -}}{{- .link -}}">                       
+                    <div class="content-box">
+                        <h3>{{- .title -}}</h3>
+                    </div>
+                    <!-- // content box  -->                        
+                    <div class="link-box">
+                        <div class="icon-holder">
+                            <span class="icon-chart-ico"></span>
+                        </div>
+                    </div>
+                    <!-- // link box  -->           
+                    <div class="image-box">
+                        <img src="/half{{- .img -}}" alt="IILQ" class="img-responsive">
+                    </div>
+                    <!-- // image box  -->                                      
+                    <span class="clearfix"></span>                        
+                </a>
+            </section>
+            <!-- // formations  -->
+            {{- end -}}
+            {{- end -}}
 
-                  <div class="col-sm-4">
-                    <a href='{{ $.Scratch.Get "transfertPage" }}'>
-                      <div class="features-box">
-                          <div class="icon-holder">
-                              <span class="ico-shake-hand shake"></span>
-                          </div>
-                          <!-- // icon  -->
-                          <span class="title">{{.Params.section2.title2}}</span>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- // features box  -->
+            {{- with .Params.boites.boite3 -}}
+            {{- if .visible -}}
+            <section id="contact-block">
+                <a href="{{- $.Site.BaseURL -}}{{- .link -}}">
+                    <div class="content-box">
+                        <h3>{{- .title -}}</h3>
+                    </div>
+                    <!-- // content box  -->
+                    <div class="link-box">
+                        <div class="icon-holder">
+                            <span class="icon-monitor-ico"></span>
+                        </div>
+                    </div>
+                    <!-- // link box  -->
+                    <div class="image-box">
+                        <img src="/half{{- .img -}}" alt="IILQ" class="img-responsive">
+                    </div>
+                    <!-- // image box  -->  
+                    <span class="clearfix"></span>
+                </a>                    
+            </section>
+            <!-- // contact block  -->
+            {{- end -}}
+            {{- end -}}
 
-                  <div class="col-sm-4">
-                    <a href='{{ $.Scratch.Get "logisticPage" }}'>
-                      <div class="features-box">
-                          <div class="icon-holder small-icon">
-                              <span class="icon-ver-ico"></span>
-                          </div>
-                          <!-- // icon  -->
-                          <span class="title">{{.Params.section2.title3}}</span>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- // features box  -->                                                
+            {{- with .Params.boites.boite4 -}}
+            {{- if .visible -}}
+            <section id="blog-block">
+                <a href="{{- $.Site.BaseURL -}}{{- .link -}}">
+                    <div class="link-box">
+                        <div class="icon-holder">
+                            <span class="icon-mobile-ico"></span>
+                        </div>
+                    </div>
+                    <!-- // link box  --> 
+                    <div class="content-box">
+                        <h3>{{- .title -}}</h3>
+                    </div>
+                    <!-- // content box  --> 
+                    <div class="image-box">
+                        <img src="/half{{- .img -}}" alt="IILQ" class="img-responsive">
+                    </div>
+                    <!-- // image box  -->                       
+                    <span class="clearfix"></span>                        
+                </a>
+            </section>
+            <!-- // blog block  -->
+            {{- end -}}
+            {{- end -}}
 
-              </div>
-              <!-- // .row  -->
-          </div>
-          <!-- // features block  -->
-
-          <sectioN id="question-block">
-              <a href='{{ $.Scratch.Get "innovationPage" }}'>
-              		<div class="link-box">
-                      <div class="icon-holder">
-                          <span class="ico-head-light"></span>
-                      </div>
-                  </div>
-                  <!-- // link box  -->
-                  <div class="content-box">
-                      <h3>{{.Params.boites.boite1.title}}</h3>
-                  </div>
-                  <!-- // content box  -->
-                  <div class="image-box">
-                      <img src="/half{{.Params.boites.boite1.img}}" alt="{{.Params.titre}}" class="img-responsive">
-                  </div>
-                  <!-- // image box  -->
-                  <span class="clearfix"></span>
-              </a>
-          </sectioN>
-          <!-- // quesiton block  -->
-
-          <section id="formations-block">
-              <a href='{{ $.Scratch.Get "ateliersPage" }}'>                       
-                  <div class="content-box">
-                      <h3>{{.Params.boites.boite2.title}}</h3>
-                  </div>
-                  <!-- // content box  -->                        
-                  <div class="link-box">
-                      <div class="icon-holder">
-                          <span class="icon-chart-ico"></span>
-                      </div>
-                  </div>
-                  <!-- // link box  -->           
-                  <div class="image-box">
-                      <img src="/half{{.Params.boites.boite2.img}}" alt="{{.Params.titre}}" class="img-responsive">
-                  </div>
-                  <!-- // image box  -->                                      
-                  <span class="clearfix"></span>                        
-              </a>
-          </section>
-          <!-- // formations  -->
-
-          <section id="contact-block">
-              <a href='{{ $.Scratch.Get "articlesPage" }}'>
-                  <div class="content-box">
-                      <h3>{{.Params.boites.boite3.title}}</h3>
-                  </div>
-                  <!-- // content box  -->
-                  <div class="link-box">
-                      <div class="icon-holder">
-                          <span class="icon-monitor-ico"></span>
-                      </div>
-                  </div>
-                  <!-- // link box  -->
-                  <div class="image-box">
-                      <img src="/half{{.Params.boites.boite3.img}}" alt="{{.Params.titre}}" class="img-responsive">
-                  </div>
-                  <!-- // image box  -->  
-                  <span class="clearfix"></span>
-              </a>                    
-          </section>
-          <!-- // contact block  -->
-
-          <section id="blog-block">
-              <a href='{{ $.Scratch.Get "contactPage" }}'>
-                  <div class="link-box">
-                      <div class="icon-holder">
-                          <span class="icon-mobile-ico"></span>
-                      </div>
-                  </div>
-                  <!-- // link box  --> 
-                  <div class="content-box">
-                      <h3>{{.Params.boites.boite4.title}}</h3>
-                  </div>
-                  <!-- // content box  --> 
-                  <div class="image-box">
-                      <img src="/half{{.Params.boites.boite4.img}}" alt="{{.Params.titre}}" class="img-responsive">
-                  </div>
-                  <!-- // image box  -->                       
-                  <span class="clearfix"></span>                        
-              </a>
-          </section>
-          <!-- // blog block  -->
-
-      </div>
-      <!-- // container  -->
-  </section>
-  <!-- // main home content  -->
+        </div>
+        <!-- // container  -->
+    </section>
+    <!-- // main home content  -->
 </main>
 {{ end }}

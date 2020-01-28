@@ -1,7 +1,6 @@
 ---
 title: "IILQ | Institut d'Innovation en Logistique du Québec"
-descripton: "L'IILQ vous offre des services d'aide technique, de recherche appliquée, de formation et de sensibilisation dans le domaine de la logistique auprès des PME du Québec."
-titre: IILQ
+description: "L'IILQ vous offre des services d'aide technique, de recherche appliquée, de formation et de sensibilisation dans le domaine de la logistique auprès des PME du Québec."
 image: ""
 slider:
   - img: "/img/Accueil-carroussel-formation.jpg"
@@ -10,40 +9,35 @@ slider:
     bottomtxt: >-
       afin d'augmenter votre productivité.
     layout: 1
-    order: 1
-    link: ateliersPage
+    link: logistic-4-0/ateliers-decouverte
   - img: "/img/Accueil-carroussel-blogue.jpg"
     toptxt: >-
       Curieux d'en apprendre sur l'innovation logistique ?
     bottomtxt: >-
       Consultez nos articles </br>sur le blogue !
     layout: 2
-    order: 2
-    link: articlesPage
+    link: articles
   - img: "/img/Accueil-carroussel-logistic.jpg"
     toptxt: >-
       Atteignez le plein potentiel</br> de votre entreprise grâce à la
     bottomtxt: >-
       Logistic 4.0 ?
     layout: 2
-    order: 3
-    link: logisticPage
+    link: logistic-4-0
   - img: "/img/Accueil-carroussel-maillon.jpg"
     toptxt: >-
       Nous veillons à optimiser </br>votre chaîne logistique,
     bottomtxt: >-
       un maillon à la fois.
     layout: 2
-    order: 4
-    link: contactPage
+    link: contact
   - img: "/img/Accueil-carroussel-infolettre.jpg"
     toptxt: >-
       Apprenez-en plus avec
     bottomtxt: >-
       notre infolettre
     layout: 2
-    order: 5
-    link: contactPage
+    link: contact
 introtext: >-
   # Qui sommes nous...
 
@@ -58,13 +52,25 @@ boites:
   boite1:
     img: /img/Accueil-faites-mieux.jpg
     title: Faites mieux avec moins, grâce à l'intelligence matérielle
+    link: innovation
+    icon: ico-head-light
+    visible: true
   boite2:
     img: /img/Accueil-conference.jpg
     title: Découvrez nos ateliers et conférences
+    link: logistic-4-0/ateliers-decouverte
+    icon: icon-chart-ico
+    visible: true
   boite3:
     img: /img/Accueil-blogue.jpg
     title: Découvrir notre blogue
+    link: articles
+    icon: icon-monitor-ico
+    visible: true
   boite4:
     img: /img/Accueil-contact.jpg
     title: Contactez notre équipe
+    link: contact
+    icon: icon-mobile-ico
+    visible: true
 ---
