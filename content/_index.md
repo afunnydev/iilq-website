@@ -1,76 +1,53 @@
 ---
-title: "IILQ | Institut d'Innovation en Logistique du Québec"
-description: "L'IILQ vous offre des services d'aide technique, de recherche appliquée, de formation et de sensibilisation dans le domaine de la logistique auprès des PME du Québec."
-image: ""
+title: IILQ | Institut d'Innovation en Logistique du Québec
+description: >-
+  L'IILQ vous offre des services d'aide technique, de recherche appliquée, de
+  formation et de sensibilisation dans le domaine de la logistique auprès des
+  PME du Québec..
+image: ''
 slider:
-  - img: "/img/Accueil-carroussel-formation.jpg"
-    toptxt: >-
-      Découvrez nos ateliers</br>et formations
-    bottomtxt: >-
-      afin d'augmenter votre productivité.
+  - bottomtxt: afin d'augmenter votre productivité.
+    img: /img/Accueil-carroussel-formation.jpg
     layout: 1
     link: logistic-4-0/ateliers-decouverte
-  - img: "/img/Accueil-carroussel-blogue.jpg"
-    toptxt: >-
-      Curieux d'en apprendre sur l'innovation logistique ?
-    bottomtxt: >-
-      Consultez nos articles </br>sur le blogue !
+    toptxt: Découvrez nos ateliers</br>et formations
+  - bottomtxt: Consultez nos articles </br>sur le blogue !
+    img: /img/Accueil-carroussel-blogue.jpg
     layout: 2
     link: articles
-  - img: "/img/Accueil-carroussel-logistic.jpg"
-    toptxt: >-
-      Atteignez le plein potentiel</br> de votre entreprise grâce à la
-    bottomtxt: >-
-      Logistic 4.0 ?
+    toptxt: Curieux d'en apprendre sur l'innovation logistique ?
+  - bottomtxt: Logistic 4.0 ?
+    img: /img/Accueil-carroussel-logistic.jpg
     layout: 2
     link: logistic-4-0
-  - img: "/img/Accueil-carroussel-maillon.jpg"
-    toptxt: >-
-      Nous veillons à optimiser </br>votre chaîne logistique,
-    bottomtxt: >-
-      un maillon à la fois.
+    toptxt: Atteignez le plein potentiel</br> de votre entreprise grâce à la
+  - bottomtxt: un maillon à la fois.
+    img: /img/Accueil-carroussel-maillon.jpg
     layout: 2
     link: contact
-  - img: "/img/Accueil-carroussel-infolettre.jpg"
-    toptxt: >-
-      Apprenez-en plus avec
-    bottomtxt: >-
-      notre infolettre
+    toptxt: 'Nous veillons à optimiser </br>votre chaîne logistique,'
+  - bottomtxt: notre infolettre
+    img: /img/Accueil-carroussel-infolettre.jpg
     layout: 2
     link: contact
+    toptxt: Apprenez-en plus avec
 introtext: >-
   # Qui sommes nous...
 
-  Nous sommes un centre collégial de transfert de technologie (CCTT) et de recherche en logistique.</br>
-  Nous sommes à l'affût des tendances et implantons l'innovation.</br>
-  Nous sommes au service des PME du Québec ! 
+
+  Nous sommes un centre collégial de transfert de technologie (CCTT) et de
+  recherche en logistique.</br> Nous sommes à l'affût des tendances et
+  implantons l'innovation.</br> Nous sommes au service des PME du Québec !
 section2:
-  title1: "Innovation"
-  title2: "Transfert"
-  title3: "Logistic 4.0"
-boites: 
+  title1: Innovation
+  title2: Transfert
+  title3: Logistic 4.0
+boites:
   boite1:
-    img: /img/Accueil-faites-mieux.jpg
-    title: Faites mieux avec moins, grâce à l'intelligence matérielle
-    link: innovation
     icon: ico-head-light
-    visible: true
-  boite2:
-    img: /img/Accueil-conference.jpg
-    title: Découvrez nos ateliers et conférences
-    link: logistic-4-0/ateliers-decouverte
-    icon: icon-chart-ico
-    visible: true
-  boite3:
-    img: /img/Accueil-blogue.jpg
-    title: Découvrir notre blogue
-    link: articles
-    icon: icon-monitor-ico
-    visible: true
-  boite4:
-    img: /img/Accueil-contact.jpg
-    title: Contactez notre équipe
-    link: contact
-    icon: icon-mobile-ico
+    img: /img/Accueil-faites-mieux.jpg
+    link: innovation
+    title: 'Faites mieux avec moins, grâce à l''intelligence matérielle'
     visible: true
 ---
+
