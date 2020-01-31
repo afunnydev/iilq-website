@@ -2,7 +2,7 @@
 <main class="main">
 	<header id="inner-header-slider">
       <div id="hero-slider">
-          {{ range (shuffle .Pages)}}
+          {{ range (shuffle (first 3 .Pages))}}
           <div class="item hero-slide">
               <img src="{{.Params.banniere}}" alt="">
               <div class="slider-caption">

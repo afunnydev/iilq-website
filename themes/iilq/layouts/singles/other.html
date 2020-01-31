@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="main">
+  <header id="inner-header">
+    <img src="{{- .Params.general.img -}}" alt="{{- .Params.general.title -}}" class="img-responsive">
+    <div class="header-caption"></div>
+    <!-- // caption  -->
+  </header>
+  <!-- // inner header  -->
+
+  <div id="etudes-content">
+    <div class="container">
+      <div class="intro-block single">
+        <h1>{{- .Params.general.title -}}</h1>
+      </div>
+      <!-- // intro  -->
+      <div class="content-block hyphenate">
+        {{- .Content -}}
+      </div>
+    </div>
+    <!-- // container  -->
+  </div>
+  <!-- // foramtion content  -->
+</main>
+{{ end }}

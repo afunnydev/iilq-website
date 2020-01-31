@@ -895,7 +895,17 @@
 			h2 {
 				color:$blue;
 			}
-		}		
+		}
+		h1 {
+			margin-bottom: 30px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 3.5em;
+			letter-spacing: 3px;
+			strong {
+				font-family: $font-heading;
+			}
+		}	
 		h2 {
 			margin-bottom: 30px;
 			color:$blue;
@@ -906,6 +916,16 @@
 				font-family: $font-heading;
 			}
 		}
+		h3 {
+			margin-bottom: 30px;
+			color:$blue;
+			font-family: $fontzilaregular;
+			font-size: 2.5em;
+			letter-spacing: 2px;
+			strong {
+				font-family: $font-heading;
+			}
+		}	
 		p {
 			@include regular-text;
 			margin-bottom: 30px;
