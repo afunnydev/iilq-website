@@ -36,8 +36,13 @@ introtext: >-
 
 
   Nous sommes un centre collégial de transfert de technologie (CCTT) et de
-  recherche en logistique.</br> Nous sommes à l'affût des tendances et
-  implantons l'innovation.</br> Nous sommes au service des PME du Québec !
+  recherche en logistique.
+
+
+  Nous sommes à l'affût des tendances et implantons l'innovation.
+
+
+  Nous sommes au service des PME du Québec !
 section2:
   title1: Innovation
   title2: Transfert
