@@ -1,63 +1,61 @@
 links:
-  - text: IILQ
+  - external: ''
     link: iilq
-    external: ''
     submenu:
       active: true
-      transfert: false
       casestudy: false
       links:
-        - text: Clients et Partenaires
-          link: clients-et-partenaires
-        - text: "À propos"
-          link: iilq
-  - text: Études de cas
+        - link: clients-et-partenaires
+          text: Clients et Partenaires
+        - link: iilq
+          text: À propos
+      transfert: false
+    text: IILQ
+  - external: ''
     link: etudes-de-cas
-    external: ''
     submenu:
       active: true
-      transfert: false
       casestudy: true
-      links:
-  - text: Innovation
+      transfert: false
+    text: Études de cas
+  - external: ''
     link: innovation
-    external: ''
     submenu:
       active: true
-      transfert: false
       casestudy: false
       links:
-        - text: Groupe Innovation
-          link: innovation/groupe-innovation
-  - text: Transfert
+        - link: innovation/groupe-innovation
+          text: Groupe Innovation
+      transfert: false
+    text: Innovation
+  - external: ''
     link: transfert
-    external: ''
     submenu:
       active: true
+      casestudy: false
       transfert: true
-      casestudy: false
-      links:
-  - text: LogisTIC 4.0
+    text: Transfert
+  - external: ''
     link: logistic-4-0
-    external: ''
     submenu:
       active: true
-      transfert: false
       casestudy: false
       links:
-        - text: Formations
-          link: logistic-4-0/formations
-        - text: Ateliers Découvertes
-          link: logistic-4-0/ateliers-decouverte
-        - text: Conférences
-          link: logistic-4-0/conferences
-  - text: Blogue
+        - link: logistic-4-0/formations
+          text: Formations
+        - link: logistic-4-0/ateliers-decouverte
+          text: Ateliers Découvertes
+        - link: logistic-4-0/conferences
+          text: Conférences
+      transfert: false
+    text: LogisTIC 4.0
+  - external: ''
     link: articles
-    external: ''
     submenu:
       active: false
-  - text: Contact
+    text: Blogue
+  - external: ''
     link: contact
-    external: ''
     submenu:
       active: false
+    text: Contact
