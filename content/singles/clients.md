@@ -26,7 +26,6 @@ partenaires:
   - img: /img/logo-cegep-andre-laurendeau.png
     nom: Cégep André-Laurendeau
 clients:
-  
   - img: /img/your-bar-factory.jpg
     nom: Your Bar Factory
   - img: /img/recyclage-vanier.jpg
