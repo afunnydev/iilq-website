@@ -263,4 +263,36 @@ collections:
             fields:
               - {label: "Nom", name: "nom", widget: "string"}
               - {label: "Image", name: "img", widget: "image" , hint: "La taille minimum devrait être de 400px."}
+  - name: "autres"
+    label: "Autres"
+    editor:
+      preview: false
+    files:
+      - name: "menu"
+        label: "Menu"
+        file: "data/menu.yml"
+        description: "Menu"
+        fields:
+          - name: links
+            label: Liens
+            widget: list
+            allow_add: true
+            fields:
+              - {label: "Texte", name: "text", widget: "string"}
+              - {label: "Lien interne", name: "link", default: "", required: false, widget: "string", hint: "Si vous voulez aller à https://www.innovationlogistique.com/contact, vous devez entrer seulement 'contact'."}
+              - {label: "Lien externe", name: "external", default: "", required: false, widget: "string", hint: "Vous devez mettre le lien complet, incluent le http:// ou https://."}
+              - name: submenu
+                label: "Sous-menu"
+                widget: object
+                fields:
+                  - {label: "Actif", name: "active", widget: "boolean", required: false, default: false}
+                  - {label: "Pages transferts", name: "transfert", widget: "boolean", required: false, default: false, hint: "Si vous cochez cette case, toutes les pages de type 'transfert' vont apparaitre dans le sous-menu, rien d'autre."}
+                  - {label: "Pages études de cas", name: "casestudy", widget: "boolean", required: false, default: false, hint: "Si vous cochez cette case, toutes les pages de type 'etudes-de-cas' vont apparaitre dans le sous-menu, rien d'autre."}
+                  - name: links
+                    label: Liens
+                    widget: list
+                    allow_add: true
+                    fields:
+                      - {label: "Texte", name: "text", widget: "string"}
+                      - {label: "Lien interne", name: "link", default: "", widget: "string", hint: "Si vous voulez aller à https://www.innovationlogistique.com/contact, vous devez entrer seulement 'contact'."}
             

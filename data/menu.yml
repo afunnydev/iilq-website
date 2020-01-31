@@ -1,0 +1,63 @@
+links:
+  - text: IILQ
+    link: iilq
+    external: ''
+    submenu:
+      active: true
+      transfert: false
+      casestudy: false
+      links:
+        - text: Clients et Partenaires
+          link: clients-et-partenaires
+        - text: "À propos"
+          link: iilq
+  - text: Études de cas
+    link: etudes-de-cas
+    external: ''
+    submenu:
+      active: true
+      transfert: false
+      casestudy: true
+      links:
+  - text: Innovation
+    link: innovation
+    external: ''
+    submenu:
+      active: true
+      transfert: false
+      casestudy: false
+      links:
+        - text: Groupe Innovation
+          link: innovation/groupe-innovation
+  - text: Transfert
+    link: transfert
+    external: ''
+    submenu:
+      active: true
+      transfert: true
+      casestudy: false
+      links:
+  - text: LogisTIC 4.0
+    link: logistic-4-0
+    external: ''
+    submenu:
+      active: true
+      transfert: false
+      casestudy: false
+      links:
+        - text: Formations
+          link: logistic-4-0/formations
+        - text: Ateliers Découvertes
+          link: logistic-4-0/ateliers-decouverte
+        - text: Conférences
+          link: logistic-4-0/conferences
+  - text: Blogue
+    link: articles
+    external: ''
+    submenu:
+      active: false
+  - text: Contact
+    link: contact
+    external: ''
+    submenu:
+      active: false

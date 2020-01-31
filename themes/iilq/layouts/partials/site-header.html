@@ -7,47 +7,32 @@
     </header>
 
     <div id="menu">
-
         <ul class="nav-links">
-            <li class="has-menu">
-              <a href='{{ $.Scratch.Get "aboutPage" }}'>IILQ <span></span></a>
-              <ul>
-                <li><a href='{{ $.Scratch.Get "clientsPage" }}'>Clients et Partenaires</a></li>
-                <li><a href='{{ $.Scratch.Get "aboutPage" }}'>À propos</a></li>
-              </ul>
-            </li>
-            <li class="has-menu">
-              <a href='{{ $.Scratch.Get "etudesPage" }}'>Études de cas <span></span></a>
-              <ul>
-                  {{ range where .Site.RegularPages "Type" "etudes-de-cas"}}
-                  <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
-                  {{ end }}
-                </ul>
-            </li>
-            <li class="has-menu">
-              <a href='{{ $.Scratch.Get "innovationPage" }}'>Innovation <span></span></a> 
-              <ul>
-                <li><a href="/innovation/groupe-innovation">Groupe Innovation</a></li>
-              </ul>
-            </li>
-            <li class="has-menu"> 
-            	<a href='{{ $.Scratch.Get "transfertPage" }}'>Transfert <span></span></a>
-                <ul>
-                  {{ range where .Site.RegularPages "Type" "transfert"}}
-                  <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
-                  {{ end }}
-                </ul>
-            </li>                      
-            <li class="has-menu">
-              <a href='{{ $.Scratch.Get "logisticPage" }}'>LogisTIC 4.0 <span></span></a>
-                <ul>
-                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/formations/">Formations</a></li>
-                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/ateliers-decouverte/">Ateliers Découvertes</a></li>
-                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/conferences/">Conférences</a></li>
-                </ul>
-            </li>
-            <li><a href='{{ $.Scratch.Get "articlesPage" }}'>Blogue</a></li>
-            <li><a href='{{ $.Scratch.Get "contactPage" }}'>Contact</a></li>
+          {{- range .Site.Data.menu.links -}}
+          {{- $internal := or (eq .external "") (not (isset . "external")) -}}
+          <li class="{{- if .submenu.active -}}has-menu{{- end -}}">
+            <a href="{{- if not $internal -}}{{- .external -}}{{- else -}}{{- $.Site.BaseURL -}}{{- .link -}}{{- end -}}">
+              {{- .text -}}{{ if .submenu.active }} <span></span>{{ end }}
+            </a>
+            {{- if .submenu.active -}}
+            <ul>
+              {{- if .submenu.transfert -}}
+              {{- range where $.Site.RegularPages "Type" "transfert" -}}
+              <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
+              {{ end }}
+              {{- else if .submenu.casestudy -}}
+              {{- range where $.Site.RegularPages "Type" "etudes-de-cas" -}}
+              <li><a href="{{- .Permalink -}}">{{- .Params.general.title -}}</a></li>
+              {{- end -}}
+              {{ else }}
+              {{- range .submenu.links -}}
+              <li><a href="{{- $.Site.BaseURL -}}{{- .link -}}">{{- .text -}}</a></li>
+              {{- end -}}
+              {{- end -}}
+            </ul>
+            {{- end -}}
+          </li>
+          {{- end -}}
         </ul>
         <!-- // ul  -->
     
@@ -78,10 +63,7 @@
           {{with .Site.Data.settings.socials.google}}
           <a href="{{.}}" target="_blank"><span class="icon-googleplus"></span></a>
           {{ end }}
-        </div>
-        <!-- <input type="text" placeholder='{{ i18n "search" }}'>
-        <button type="search"><span class="icon-if_11_Search_106236"></span></button> -->  
-                                        
+        </div>                          
         <!-- // socials  -->    
     </div>
     <!-- // .container  -->
@@ -95,47 +77,31 @@
 
         <nav class="navbar">
             <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href='{{ $.Scratch.Get "aboutPage" }}' class="dropdown-toggle">IILQ
-                <!-- <span class="caret"></span> --></a>
+              {{- range .Site.Data.menu.links -}}
+              {{- $internal := or (eq .external "") (not (isset . "external")) -}}
+              <li class="{{- if .submenu.active -}}dropdown{{- end -}}">
+                <a href="{{- if not $internal -}}{{- .external -}}{{- else -}}{{- $.Site.BaseURL -}}{{- .link -}}{{- end -}}" class="{{- if .submenu.active -}}dropdown-toggle{{- end -}}">
+                  {{- .text -}}
+                </a>
+                {{- if .submenu.active -}}
                 <ul class="dropdown-menu animated fadeIn">
-                  <li><a href='{{ $.Scratch.Get "clientsPage" }}'>Clients et Partenaires</a></li>
-                  <li><a href='{{ $.Scratch.Get "aboutPage" }}'>À propos</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href='{{ $.Scratch.Get "etudesPage" }}'>Études de cas </a>
-                <ul class="dropdown-menu animated fadeIn">
-                    {{- range where .Site.RegularPages "Type" "etudes-de-cas" -}}
-                    <li><a href="{{- .Permalink -}}">{{- .Params.general.title -}}</a></li>
-                    {{- end -}}
-                  </ul>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href='{{ $.Scratch.Get "innovationPage" }}'>Innovation </a> 
-                <ul class="dropdown-menu animated fadeIn">
-                  <li><a href="/innovation/groupe-innovation">Groupe Innovation</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href='{{ $.Scratch.Get "transfertPage" }}'>Transfert
-                <!-- <span class="caret"></span> --></a>
-                <ul class="dropdown-menu animated fadeIn">
-                  {{ range where .Site.RegularPages "Type" "transfert"}}
+                  {{- if .submenu.transfert -}}
+                  {{- range where $.Site.RegularPages "Type" "transfert" -}}
                   <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
                   {{ end }}
+                  {{- else if .submenu.casestudy -}}
+                  {{- range where $.Site.RegularPages "Type" "etudes-de-cas" -}}
+                  <li><a href="{{- .Permalink -}}">{{- .Params.general.title -}}</a></li>
+                  {{- end -}}
+                  {{ else }}
+                  {{- range .submenu.links -}}
+                  <li><a href="{{- $.Site.BaseURL -}}{{- .link -}}">{{- .text -}}</a></li>
+                  {{- end -}}
+                  {{- end -}}
                 </ul>
+                {{- end -}}
               </li>
-              <li class="dropdown">
-              	<a href='{{ $.Scratch.Get "logisticPage" }}' class="dropdown-toggle">LogisTIC 4.0</a>
-              	<ul class="dropdown-menu animated fadeIn">
-	            		<li><a href="{{ .Site.BaseURL }}logistic-4-0/formations/">Formations</a></li>
-                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/ateliers-decouverte/">Ateliers Découvertes</a></li>
-                  <li><a href="{{ .Site.BaseURL }}logistic-4-0/conferences/">Conférences</a></li>
-	            	</ul>
-              </li>
-              <li><a href='{{ $.Scratch.Get "articlesPage" }}'>Blogue</a></li>
-	            <li><a href='{{ $.Scratch.Get "contactPage" }}'>Contact</a></li>
+              {{- end -}}
             </ul>
         </nav>
 
