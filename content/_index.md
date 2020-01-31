@@ -1,5 +1,5 @@
 ---
-title: institut d'Innovation en Logistique du Québec | IILQ
+title: Institut d'Innovation en Logistique du Québec | IILQ
 description: >-
   L'IILQ vous offre des services d'aide technique, de recherche appliquée, de
   formation et de sensibilisation dans le domaine de la logistique auprès des
