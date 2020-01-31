@@ -111,6 +111,53 @@
       }
     });
     CMS.registerPreviewTemplate("case-studies-fr", CasePreview);
+
+    // Change preview template for new pages
+    var OtherPagesPreview = createClass({
+      subscribed: true,
+
+      getInitialState: function () {
+        return {
+          src: '',
+        };
+      },
+
+      _fetchAsset: function () {
+        const path = this.props.widgetsFor('general').getIn(['data', 'img']);
+        path &&
+          this.props.getAsset(path).then(value => {
+            if (this.subscribed) {
+              this.setState({ src: value.toString() });
+            }
+          });
+      },
+
+      componentDidMount: function () {
+        this._fetchAsset();
+      },
+
+      componentWillUnmount: function () {
+        this.subscribed = false;
+      },
+
+      componentDidUpdate: function (prevProps) {
+        const prevPath = prevProps.widgetsFor('general').getIn(['data', 'img']);
+        const path = this.props.widgetsFor('general').getIn(['data', 'img']);
+        if (prevPath !== path || prevProps.getAsset !== this.props.getAsset) {
+          this._fetchAsset();
+        }
+      },
+      render: function () {
+        var entry = this.props.entry;
+        return h('div', {},
+          h('img', { src: this.state.src }),
+          h('h1', {}, this.props.widgetsFor('general').getIn(['data', 'title']) || 'Please add a title'),
+          h('hr', {}),
+          h('div', { "className": "text" }, this.props.widgetFor('body'))
+        );
+      }
+    });
+    CMS.registerPreviewTemplate("other-pages", OtherPagesPreview);
   </script>
 </body>
 </html>
